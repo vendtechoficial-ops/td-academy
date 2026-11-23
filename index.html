@@ -602,6 +602,49 @@ a.pts{text-decoration:none}a.pts:hover{color:var(--brand)}
 .ltabs a{padding:12px 14px;font-weight:600;font-size:14px;color:var(--ink3);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}.ltabs a.on{color:var(--ink);border-color:var(--ink)}
 .fmore{flex:0 0 100%;display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:4px}.fmore button{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--ink2);cursor:pointer}.fmore button:hover{border-color:var(--brand);color:var(--brand)}
 .cv .lock{inset:auto;right:12px;bottom:14px;max-width:44%;display:flex;align-items:center;gap:4px;background:rgba(10,9,16,.72);backdrop-filter:blur(6px);border-radius:999px;padding:5px 11px;font-size:11.5px;line-height:1.2}
+/* ---------- Admin V2 ---------- */
+.anav .ag{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);padding:16px 14px 4px}
+.anav .ag:first-child{padding-top:2px}
+.akpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.akpi{display:flex;gap:12px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:left;font:inherit;color:inherit}
+button.akpi{cursor:pointer}button.akpi:hover{border-color:color-mix(in srgb,var(--brand) 40%,var(--line))}
+.akpi.on{outline:2px solid var(--brand)}
+.akpi b{display:block;font-size:24px;font-weight:700;line-height:1.1;letter-spacing:-.01em}.akpi>span:last-child>span{font-size:12.5px;color:var(--ink2);line-height:1.25;display:block}
+.ki{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
+.ki.c1{background:color-mix(in srgb,var(--brand) 14%,transparent);color:var(--brand)}.ki.c2{background:var(--okbg);color:var(--ok)}.ki.c3{background:color-mix(in srgb,#6C4DFF 14%,transparent);color:#6C4DFF}.ki.c4{background:var(--warnbg);color:var(--warn)}.ki.c5{background:color-mix(in srgb,#2D7FF9 14%,transparent);color:#2D7FF9}.ki.c6{background:var(--badbg);color:var(--bad)}
+.atool{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.dd{position:relative}
+.ddm{position:absolute;top:calc(100% + 6px);left:0;z-index:30;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(0,0,0,.16);padding:6px;min-width:220px;display:grid}
+.ddm button{text-align:left;border:0;background:none;padding:9px 10px;border-radius:8px;cursor:pointer;font-size:13.5px;display:flex;gap:8px;align-items:center;color:var(--ink)}
+.ddm button:hover{background:var(--paper2)}
+.uwrap{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
+.uwrap.sel{grid-template-columns:minmax(0,1fr) 400px}
+table.ut tbody tr{cursor:pointer}table.ut tbody tr:hover td{background:color-mix(in srgb,var(--brand) 4%,transparent)}
+table.ut td:first-child,table.ut th:first-child{width:40px;padding-right:0}
+tr.sel td{background:color-mix(in srgb,var(--brand) 8%,transparent)!important}
+th.sort{cursor:pointer;user-select:none}
+.upanel{position:sticky;top:calc(84px + env(safe-area-inset-top,0px));background:var(--paper);border:1px solid var(--line);border-radius:22px;max-height:calc(100vh - 100px);overflow:auto}
+.uph{display:flex;gap:12px;align-items:center;padding:18px 18px 0}
+.utabs{display:flex;gap:2px;border-bottom:1px solid var(--line);padding:0 10px;margin-top:14px;overflow-x:auto;scrollbar-width:none}
+.utabs button{border:0;background:none;padding:10px 10px;font-weight:600;font-size:13px;color:var(--ink3);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.utabs button.on{color:var(--brand);border-color:var(--brand)}
+.ubody{padding:16px 18px 18px;display:grid;gap:12px}
+.ubox{border:1px solid var(--line);border-radius:16px;padding:14px;display:grid;gap:8px}
+.ubox h4{margin:0;font-size:14px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.kv{display:grid;grid-template-columns:118px minmax(0,1fr);gap:7px 10px;font-size:13.5px}.kv>span{color:var(--ink2)}.kv b{font-weight:600;overflow-wrap:anywhere}
+.utr{display:flex;flex-wrap:wrap;gap:6px}.utr span{display:inline-flex;gap:5px;align-items:center;font-size:12px;padding:4px 9px;border-radius:999px;background:var(--paper2);color:var(--ink3)}.utr span.on{background:var(--okbg);color:var(--ok);font-weight:600}
+.ubars{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;height:90px;align-items:end}.ubars div{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}.ubars i{display:block;width:100%;background:var(--brand);border-radius:6px 6px 2px 2px;min-height:3px}.ubars span{font-size:11px;color:var(--ink3)}
+.hb2{display:grid;grid-template-columns:minmax(0,1fr) 90px 36px;gap:8px;align-items:center}.hb2 .meter{margin:0}
+.tl{display:grid;gap:12px}.tl>div{display:grid;grid-template-columns:10px minmax(0,1fr);gap:10px;font-size:13.5px}.tl i{width:8px;height:8px;border-radius:50%;background:var(--brand);margin-top:6px}
+.pg{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;align-items:center;padding:12px 2px;font-size:13px}
+.pg button{min-width:32px;height:32px;border:1px solid var(--line);background:var(--paper);border-radius:8px;cursor:pointer;color:var(--ink)}.pg button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.acl{display:grid;gap:8px;margin-top:8px}.acm{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border:1px solid var(--line);border-radius:14px;padding:12px}.acm>div{flex:1;min-width:160px;display:grid}.acm b{font-size:14px;line-height:1.3}
+.thr{display:grid;gap:10px}.thr>div{background:var(--paper2);border-radius:14px 14px 14px 4px;padding:12px;max-width:92%}.thr>div.me{justify-self:end;background:color-mix(in srgb,var(--brand) 10%,transparent);border-radius:14px 14px 4px 14px}.thr p{margin-top:4px;font-size:14px}
+.fbg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.fbc{padding:18px;display:grid;gap:10px;align-content:start}.fbh{display:flex;gap:12px;align-items:center}.fbh>div{display:grid}
+.fbn{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:700;background:var(--paper2);flex:0 0 auto;font-size:15px}.fbn.ok{background:var(--okbg);color:var(--ok)}.fbn.bad{background:var(--badbg);color:var(--bad)}.fbn.s{background:color-mix(in srgb,var(--brand) 12%,transparent);color:var(--brand)}
+@media (max-width:1180px){.uwrap.sel{grid-template-columns:1fr}.upanel{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);max-height:none;border-radius:0;z-index:45;box-shadow:-10px 0 40px rgba(0,0,0,.2);padding-top:env(safe-area-inset-top,0px)}}
+@media (max-width:1000px){.anav .ag{display:none}}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -1031,7 +1074,7 @@ function userDrawer(id){const u=S.users.find(x=>x.id===+id);if(!u)return;const o
  <div id="rmz"><button class="btn danger sm" type="button" data-act="rmask" data-x="${u.id}">Remover acesso</button></div>
  <p class="small mut">Ninguém define senha aqui: o acesso é por link enviado ao e-mail ou pela conta corporativa da organização.</p>
  </form>`);}
-A.acessos=()=>{const R=Object.keys(ROLES);return `<div class="ph" style="margin-bottom:18px"><div><h1 style="font-size:48px">Perfis e acessos</h1><p class="mut">O que cada perfil pode fazer e o que cada organização contratou. Clique para ligar ou desligar uma permissão.</p></div></div>
+A.acessos=()=>{const R=Object.keys(ROLES);return `<div class="ph" style="margin-bottom:18px"><div><h1 style="font-size:48px">Organizações e planos</h1><p class="mut">O que cada perfil pode fazer e o que cada organização contratou. Clique para ligar ou desligar uma permissão.</p></div></div>
  <div class="tw matrix"><table><thead><tr><th>Permissão</th>${R.map(r=>`<th>${ROLES[r].label}</th>`).join("")}</tr></thead><tbody>${PERM_ROWS.map((p,i)=>`<tr><td>${p}</td>${R.map(r=>`<td><button class="tg-sw ${S.perms[r][i]?"on":""}" data-act="perm" data-x="${r}" data-i="${i}" aria-label="${esc(p)} · ${ROLES[r].label}" ${r==="admin"&&i>=9?"disabled":""}></button></td>`).join("")}</tr>`).join("")}</tbody></table></div>
  <section class="sec" style="margin-top:36px"><div class="sh"><h2>Organizações</h2><span class="cnt">${S.orgs.length} com acesso</span><button class="btn line sm sp" data-act="neworg">${ic("plus",14)} Nova organização</button></div><div class="orgs">${S.orgs.map((o,k)=>{const used=S.users.filter(u=>u.org===o.n).length;return `<div class="card pad"><span class="eyebrow">${esc(o.tipo)}</span><h3 class="serif" style="font-size:28px;margin:4px 0 8px">${esc(o.n)}</h3>${o.lic?`<div class="small mut">${used} de ${o.lic} licenças em uso</div><div class="meter"><i style="width:${Math.min(100,used/o.lic*100)}%"></i></div>`:`<div class="small mut">${used} pessoas · sem limite</div><div class="meter"><i style="width:100%;background:var(--ink3)"></i></div>`}<div class="small" style="display:grid;gap:4px;margin-top:6px"><span><span class="mut">Validade:</span> ${fmtD(o.val)}</span><span><span class="mut">Trilhas:</span> ${o.grupos.length===GRUPOS.length?"Todas":esc(o.grupos.join(" · "))}</span><span><span class="mut">Marca:</span> ${esc(S.brands[o.marca]?S.brands[o.marca].nome:o.marca)}</span><span><span class="mut">Entrada:</span> ${esc(o.acesso)}</span></div><button class="btn line sm" style="margin-top:12px" data-act="editorg" data-x="${k}">${ic("edit",14)} Editar</button></div>`;}).join("")}</div></section>`;};
 A.conteudo=()=>`<div class="ph" style="margin-bottom:18px"><div><h1 style="font-size:48px">Conteúdo</h1><p class="mut">Catálogo da TD e trilhas próprias de clientes. Duplique uma trilha da TD para adaptar à realidade de um cliente: a cópia fica só para as pessoas daquela organização.</p></div><div class="act"><button class="btn dark" data-act="newTr">${ic("plus",16)} Nova trilha</button></div></div>
@@ -1427,9 +1470,195 @@ function trDom(c){const e=expDaTrilha(c);const A=getAulas(c),d=A.filter((_,i)=>S
  <div class="card pad texp">${e?`<span class="eyebrow">Expert da trilha</span><div class="texr">${exAv(e)}<div><b>${esc(e.nome)}</b><span class="small mut">Expert TD · tem uma IA treinada no acervo</span></div></div><a class="btn dark sm" href="#expert-${e.id}">${ic("spark",14)} Perguntar à IA do Expert sobre esta trilha</a>`:""}<div class="tcert"><span class="eyebrow">Seu certificado</span><p class="small">${st}</p><div class="meter"><i style="width:${prog(c)*100}%"></i></div></div></div></section>`;}
 
 function phero(o){return `<section class="phero"><div><span class="eyebrow">${o.ey}</span><h1>${o.t}</h1>${o.d?`<p>${o.d}</p>`:""}${o.act?`<div class="hbtn">${o.act}</div>`:""}</div>${o.side?o.side:o.st?`<div class="phs">${o.st.map(([v,l])=>`<div><b>${v}</b><span>${l}</span></div>`).join("")}</div>`:""}</section>`;}
+/* ---------- Admin V2: usuários (modelo Atlas), Experts e acervo, atendimento, auditoria ---------- */
+function nowBR(){const d=new Date();return d.toLocaleDateString("pt-BR")+" "+d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});}
+function audit(acao,alvo,det){S.audit=S.audit||[];S.audit.unshift({dt:nowBR(),quem:S.user?S.user.nome:"Sistema",acao,alvo:alvo||"",det:det||"",ip:"192.0.2.10"});save();}
+const CARGOS={1:"Coordenadora de Operações",2:"Diretor de Pessoas",3:"Gerente de Agência",4:"Analista de Crédito",5:"Analista de Dados",6:"Assistente Administrativo",7:"Gerente de Programas",8:"Analista de BI",9:"Analista de Projetos",10:"Especialista em Análise de Dados",11:"Especialista em Estratégia",12:"Equipe da escola",13:"Consultora autônoma",14:"Empreendedor"};
+function uCargo(u){return u.cargo||CARGOS[u.id]||"—";}
+function uTerm(u){if(u.status==="Convite pendente")return {st:"Pendente"};const i=u.id;return {st:"Aceito",v:"V1",dt:`${String(10+i%12).padStart(2,"0")}/11/2026, ${8+i%11}:${String(i*7%60).padStart(2,"0")}`,ip:`192.0.2.${10+i%240}`,nav:["Chrome 156 / macOS","Edge 142 / Windows","Safari 19 / iOS","Chrome 156 / Android"][i%4]};}
+function genUsers(){const F=["Adriana","Beatriz","Caio","Daniela","Eduardo","Fábio","Giovana","Hugo","Isadora","Jorge","Larissa","Mateus","Nathalia","Patrícia","Renato","Sabrina","Tiago","Vanessa","Wagner","Yasmin","Alice","Bernardo","Clara","Douglas","Elisa","Fernando","Gustavo","Helena","Igor","Joana","Lucas","Manuela","Nelson","Priscila","Rodrigo","Simone"];
+ const L=["Almeida","Barbosa","Cardoso","Duarte","Esteves","Fontes","Gomes","Lopes","Moreira","Pacheco","Ribeiro","Teles","Vieira","Machado","Nogueira","Queiroz"];
+ const CG=["Analista de Crédito","Gerente de Agência","Coordenadora Administrativa","Assistente de Atendimento","Supervisor Comercial","Analista de Dados","Gerente de Projetos","Analista de RH"];
+ const ULT=["Hoje, 07:40","Hoje, 08:15","Ontem","Há 2 dias","Há 3 dias","Há uma semana","Hoje, 06:55","Há 4 dias"];
+ return F.map((f,i)=>{const id=101+i,org=i<22?"Coop Vale Verde":i<30?"Instituto Horizonte":"Turma aberta",o=ORGS0.find(x=>x.n===org);
+  const st=i%11===5?"Convite pendente":i===17?"Suspenso":"Ativo";const nm=f+" "+L[(i*5)%L.length];
+  return {id,nome:nm,email:(f+"."+L[(i*5)%L.length]).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")+(org==="Turma aberta"?"@email.exemplo":org==="Coop Vale Verde"?"@valeverde.exemplo":"@horizonte.exemplo"),org,perfil:"membro",cargo:org==="Turma aberta"?"Profissional liberal":CG[i%CG.length],
+   turma:org==="Coop Vale Verde"?(i%2?"Analistas 2026":"Lideranças 2026.2"):org==="Instituto Horizonte"?"Dados 2026":"Turma aberta dez/26",status:st,ult:st==="Convite pendente"?"—":st==="Suspenso"?"Há 52 dias":ULT[i%ULT.length],val:o?o.val:"",grupos:o?o.grupos.slice():[],prog:st==="Ativo"?(i*29+13)%96:0};});}
+function seedAcervo(){const A={};EXPERTS.forEach((e,k)=>{let L;
+ if(e.dest)L=[["Palestra · Transformação digital começa pela liderança","Palestra","Em uso pela IA"],["Palestra · A escola como motor de negócios","Palestra","Em uso pela IA"],["Artigo · Dados para decidir no setor público","Artigo","Em uso pela IA"],["Método TD de planejamento estratégico","Método","Em uso pela IA"],["Aula · Estratégia e modelos de negócio","Aula","Em uso pela IA"],["Entrevista · O papel da IA nas cooperativas","Vídeo","Em uso pela IA"],["Artigo · Observatórios e território","Artigo","Autorizado"],["Palestra · Liderança na era da IA","Palestra","Em revisão"]];
+ else{L=e.temas.slice(1).map(t=>["Aula · "+t,"Aula","Em uso pela IA"]);L.push(["Material de apoio da disciplina","PDF",k%3?"Em uso pela IA":"Autorizado"]);if(k%4===0)L.push(["Gravação do encontro ao vivo","Vídeo","Em revisão"]);}
+ A[e.id]=L.map(([t,tp,st],i)=>({id:e.id+"-"+i,t,tp,st,dt:`${String(3+i*2).padStart(2,"0")}/11/2026`}));});return A;}
+function ensureAdm(){let ch=0;
+ if(!S.adm7){S.users=S.users.concat(genUsers().filter(g=>!S.users.some(u=>u.id===g.id)));S.adm7=1;ch=1;}
+ if(!S.reqs){S.reqs=[{id:1,uid:4,tipo:"Liberar trilha",alvo:"Planejamento e Gestão Estratégica",data:"22/11/2026",st:"Pendente"},{id:2,uid:103,tipo:"Liberar trilha",alvo:"Futuros e Inteligência Estratégica",data:"22/11/2026",st:"Pendente"},{id:3,uid:6,tipo:"Primeiro acesso",alvo:"Reenvio do link de acesso",data:"21/11/2026",st:"Pendente"},{id:4,uid:121,tipo:"Liberar trilha",alvo:"Planejamento e Gestão Estratégica",data:"20/11/2026",st:"Pendente"},{id:5,uid:13,tipo:"Acesso para a equipe",alvo:"Turma fechada para a empresa",data:"19/11/2026",st:"Pendente"}];ch=1;}
+ if(!S.acervo){S.acervo=seedAcervo();S.consent={};EXPERTS.forEach(e=>{if(e.id!=="sk7"&&e.id!=="sk11")S.consent[e.id]=e.dest?"18/11/2026":"12/11/2026";});ch=1;}
+ if(!S.tickets){S.tickets=[
+  {id:1042,ass:"Não recebi o link de acesso",uid:6,tipo:"Acesso",pri:"Alta",st:"Aberto",ab:"23/11/2026 09:12",prazo:"Hoje, 13:12",msgs:[["Bruno Siqueira","Fui convidado, mas o e-mail não chegou. Já olhei o spam."]]},
+  {id:1041,ass:"Certificado com o nome sem acento",uid:3,tipo:"Certificado",pri:"Média",st:"Em andamento",ab:"22/11/2026 16:40",prazo:"Amanhã, 16:40",msgs:[["Mariana Costa","Meu sobrenome saiu sem acento no certificado."],["Equipe da escola","Vamos reemitir hoje com o nome corrigido."]]},
+  {id:1040,ass:"Vídeo da aula 3 travando",uid:8,tipo:"Problema técnico",pri:"Média",st:"Em andamento",ab:"22/11/2026 10:05",prazo:"Hoje, 10:05",msgs:[["Diego Lima","O vídeo para no minuto 4 e não volta."],["Equipe da escola","Pode me dizer o navegador que você usa?"]]},
+  {id:1039,ass:"Posso convidar a minha equipe?",uid:2,tipo:"Dúvida",pri:"Baixa",st:"Aberto",ab:"21/11/2026 18:22",prazo:"Amanhã, 18:22",msgs:[["Carlos Mendes","Quero incluir mais 8 pessoas da área comercial."]]},
+  {id:1038,ass:"Dúvida sobre o quiz da trilha de dados",uid:105,tipo:"Conteúdo",pri:"Baixa",st:"Resolvido",ab:"19/11/2026 14:10",prazo:"—",msgs:[["Eduardo Fontes","A questão 3 tem duas respostas certas?"],["Equipe da escola","Você tem razão. Corrigimos e liberamos o ponto."]]},
+  {id:1037,ass:"Trocar o e-mail de acesso",uid:13,tipo:"Acesso",pri:"Média",st:"Resolvido",ab:"18/11/2026 09:30",prazo:"—",msgs:[["Fernanda Alves","Mudei de empresa e quero usar outro e-mail."],["Equipe da escola","E-mail atualizado. O histórico foi mantido."]]},
+  {id:1036,ass:"Não consigo baixar o material",uid:110,tipo:"Problema técnico",pri:"Baixa",st:"Resolvido",ab:"17/11/2026 11:48",prazo:"—",msgs:[["Larissa Ribeiro","O PDF da aula 2 não abre."],["Equipe da escola","Arquivo substituído. Já está funcionando."]]}];ch=1;}
+ if(!S.fbs){S.fbs=[{tp:"Aula",n:5,ref:"IA na prática",txt:"Exemplos muito próximos da nossa rotina.",org:"Coop Vale Verde",dt:"22/11/2026"},{tp:"Aula",n:4,ref:"Dados para líderes",txt:"Poderia ter um modelo de painel para baixar.",org:"Instituto Horizonte",dt:"21/11/2026"},{tp:"Aula",n:3,ref:"OKRs na prática",txt:"Ficou rápido demais. Faltou um exemplo completo.",org:"Coop Vale Verde",dt:"20/11/2026"},{tp:"Aula",n:5,ref:"Feedback que desenvolve",txt:"Apliquei na mesma semana com a minha equipe.",org:"Coop Vale Verde",dt:"19/11/2026"},
+  {tp:"Sugestão",ref:"Nova trilha",txt:"Trilha sobre crédito e risco para cooperativas.",org:"Coop Vale Verde",dt:"21/11/2026"},{tp:"Sugestão",ref:"Eventos",txt:"Encontros presenciais também no oeste do estado.",org:"Coop Vale Verde",dt:"18/11/2026"},{tp:"Sugestão",ref:"Acessibilidade",txt:"Legendas em todas as aulas.",org:"Instituto Horizonte",dt:"17/11/2026"}];ch=1;}
+ if(!S.audit){S.audit=[
+  {dt:"23/11/2026 13:58",quem:"Administração da escola",acao:"Liberou trilha",alvo:"Mariana Costa",det:"Futuros e Inteligência Estratégica",ip:"192.0.2.10"},
+  {dt:"23/11/2026 11:20",quem:"Especialista de Dados",acao:"Liberou material para a IA",alvo:"Especialista em Análise de Dados",det:"Aula · Letramento em dados",ip:"192.0.2.31"},
+  {dt:"23/11/2026 10:02",quem:"Administração da escola",acao:"Exportou dados",alvo:"Usuários",det:"Planilha com 50 usuários",ip:"192.0.2.10"},
+  {dt:"23/11/2026 06:41",quem:"Ana Martins",acao:"Aceitou termo de uso",alvo:"Termo V1",det:"Chrome 156 / macOS",ip:"192.0.2.45"},
+  {dt:"22/11/2026 17:15",quem:"Administração da escola",acao:"Emitiu certificado",alvo:"Ana Martins",det:"Liderança de Alta Performance",ip:"192.0.2.10"},
+  {dt:"22/11/2026 15:03",quem:"Administração da escola",acao:"Alterou a marca",alvo:"Escola Vale Verde",det:"Cor principal e logo",ip:"192.0.2.10"},
+  {dt:"22/11/2026 09:48",quem:"Carlos Mendes",acao:"Convidou pessoa",alvo:"Bruno Siqueira",det:"Coop Vale Verde",ip:"192.0.2.52"},
+  {dt:"21/11/2026 18:30",quem:"Administração da escola",acao:"Pausou acesso",alvo:"Lívia Nunes",det:"40 dias sem acesso",ip:"192.0.2.10"},
+  {dt:"18/11/2026 14:12",quem:"Administração da escola",acao:"Registrou consentimento",alvo:"Sidnei Rodrigues",det:"Uso do acervo na IA do Expert",ip:"192.0.2.10"},
+  {dt:"17/11/2026 16:55",quem:"Administração da escola",acao:"Revogou certificado",alvo:"TDA-2026-K7Q2",det:"Emitido com nome errado",ip:"192.0.2.10"},
+  {dt:"17/11/2026 10:21",quem:"Administração da escola",acao:"Alterou permissão",alvo:"Gestor do cliente",det:"Convidar pessoas da própria organização",ip:"192.0.2.10"},
+  {dt:"16/11/2026 08:37",quem:"Paula Ramos",acao:"Exportou dados",alvo:"Painel da equipe",det:"Instituto Horizonte",ip:"192.0.2.77"}];ch=1;}
+ if(ch)save();}
+ensureAdm();
+
+/* componentes do admin */
+function aHead(t,d,act){return `<div class="ph" style="margin-bottom:18px"><div><h1 style="font-size:48px">${t}</h1>${d?`<p class="mut">${d}</p>`:""}</div>${act?`<div class="act">${act}</div>`:""}</div>`;}
+function aKpis(L){return `<div class="akpis">${L.map(([ico,c,v,l,act,on])=>`<${act?"button":"div"} class="akpi ${on?"on":""}" ${act?`data-act="${act}"`:""}><span class="ki ${c}">${ic(ico,20)}</span><span><b>${v}</b><span>${l}</span></span></${act?"button":"div"}>`).join("")}</div>`;}
+function aDD(id,label,ico,items,cls){return `<div class="dd"><button class="btn ${cls||"line"}" data-act="dd" data-x="${id}">${ico?ic(ico,16):""} ${label} <span style="opacity:.6">▾</span></button>${UI.dd===id?`<div class="ddm">${items}</div>`:""}</div>`;}
+P.users='<circle cx="9" cy="8" r="4"/><path d="M2 21v-1a6 6 0 0 1 12 0v1M16 3.5a4 4 0 0 1 0 8M22 21v-1a6 6 0 0 0-4-5.6"/>';
+P.shield='<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>';
+P.inbox='<path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 3h6l1-3h5"/>';
+P.cal='<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>';
+P.down='<path d="M12 4v12M6 10l6 6 6-6M4 20h16"/>';
+P.cols='<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>';
+P.file='<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/>';
+P.chat='<path d="M4 5h16v11H8l-4 4z"/>';
+
+/* Usuários */
+const UCOLS=[["org","Organização"],["cargo","Cargo / Função"],["trilhas","Trilhas liberadas"],["prog","Progresso"],["ult","Último acesso"],["status","Status"]];
+Object.assign(UI,{ucols:{org:1,cargo:1,trilhas:0,prog:1,ult:1,status:1},upage:1,usel:null,uchk:{},utab:"geral",usort:1,ureq:0,dd:null,sup:"Todos",fbt:"Todos",aq:"",at:""});
+const UPP=12;
+function uFiltered(){const q=(UI.uq||"").toLowerCase();const pend=new Set(S.reqs.filter(r=>r.st==="Pendente").map(r=>r.uid));
+ return S.users.filter(u=>(!q||(u.nome+u.email+uCargo(u)).toLowerCase().includes(q))&&(!UI.up||u.perfil===UI.up)&&(!UI.uo||u.org===UI.uo)&&(!UI.us||u.status===UI.us)&&(!UI.ureq||pend.has(u.id))).sort((a,b)=>a.nome.localeCompare(b.nome,"pt-BR")*UI.usort);}
+function ucolsEff(){return UI.usel?{org:1,status:1}:UI.ucols;}
+function uRow(u){const c=ucolsEff();return `<tr class="${UI.usel===u.id?"sel":""}" data-act="usel" data-x="${u.id}"><td><input type="checkbox" data-act="uchk" data-x="${u.id}" ${UI.uchk[u.id]?"checked":""} aria-label="Selecionar ${esc(u.nome)}"></td><td><div class="nm">${esc(u.nome)}</div><div class="em">${esc(u.email)}</div></td>${c.org?`<td>${esc(u.org)}</td>`:""}${c.cargo?`<td class="small">${esc(uCargo(u))}</td>`:""}${c.trilhas?`<td class="small">${u.grupos.length} de ${GRUPOS.length}</td>`:""}${c.prog?`<td style="min-width:110px"><div class="meter"><i style="width:${u.prog}%"></i></div><span class="small mut">${u.prog}%</span></td>`:""}${c.ult?`<td class="small mut">${esc(u.ult)}</td>`:""}${c.status?`<td>${stPill(u.status)}</td>`:""}</tr>`;}
+listUsers=function(){const el=$("#list");if(!el)return;const L=uFiltered(),np=Math.max(1,Math.ceil(L.length/UPP));if(UI.upage>np)UI.upage=np;const pg=L.slice((UI.upage-1)*UPP,UI.upage*UPP);
+ el.innerHTML=pg.map(uRow).join("")||`<tr><td colspan="9" class="mut">Ninguém encontrado.</td></tr>`;
+ const p=$("#upg");if(p)p.innerHTML=`<span class="mut" style="margin-right:auto">${L.length} usuário(s) · página ${UI.upage} de ${np}</span>${Array.from({length:np},(_,i)=>`<button class="${UI.upage===i+1?"on":""}" data-act="upage" data-x="${i+1}">${i+1}</button>`).join("")}`;
+ const n=Object.values(UI.uchk).filter(Boolean).length,s=$("#usc");if(s)s.textContent=`${n} selecionado(s)`;};
+A.usuarios=()=>{const orgs=[...new Set(S.users.map(u=>u.org))],U=S.users;const tA=U.filter(u=>uTerm(u).st==="Aceito").length,rq=S.reqs.filter(r=>r.st==="Pendente").length;const c=UI.ucols;const sel=UI.usel&&S.users.find(u=>u.id===UI.usel);
+ return aHead("Usuários","Pessoas, acessos, solicitações e termos de uso de todas as organizações.")+aKpis([["users","c1",U.length,"usuários cadastrados"],["check","c2",tA,`termos aceitos (${Math.round(tA/U.length*100)}%)`],["play","c3",rq,"solicitações de acesso","ureq",UI.ureq],["users","c4",U.filter(u=>u.ult!=="—").length,"acessaram a plataforma"],["cal","c5",U.filter(u=>/^(Hoje|Agora)/.test(u.ult)).length,"acessos hoje"]])+
+ `<div class="atool"><button class="btn pri" data-act="invite" data-x="">${ic("plus",16)} Novo usuário</button><button class="btn line" data-act="import">${ic("file",16)} Importar planilha</button>
+ ${aDD("exp","Exportar","down",`<button data-act="uexp" data-x="Planilha (.xlsx)">Planilha (.xlsx)</button><button data-act="uexp" data-x="Arquivo CSV">Arquivo CSV</button>`)}
+ ${aDD("bulk","Ações em massa","users",`<button data-act="ubulk" data-x="lib">Liberar trilha…</button><button data-act="ubulk" data-x="inv">Reenviar convite</button><button data-act="ubulk" data-x="pause">Pausar acesso</button><button data-act="ubulk" data-x="on">Reativar acesso</button>`)}
+ ${aDD("cols","Colunas","cols",UCOLS.map(([k,t])=>`<button data-act="ucol" data-x="${k}">${c[k]?ic("check",14):'<span style="width:14px;display:inline-block"></span>'} ${t}</button>`).join(""))}
+ <span class="small mut" id="usc"></span></div>
+ <div class="fbar"><input class="inp srch" data-f="uq" placeholder="Buscar por nome, e-mail ou cargo" value="${esc(UI.uq)}" aria-label="Buscar usuário"><select class="inp" data-f="uo" aria-label="Organização"><option value="">Todas as organizações</option>${orgs.map(o=>`<option ${UI.uo===o?"selected":""}>${esc(o)}</option>`).join("")}</select><select class="inp" data-f="up" aria-label="Perfil"><option value="">Todos os perfis</option>${Object.entries(ROLES).map(([k,r])=>`<option value="${k}" ${UI.up===k?"selected":""}>${r.label}</option>`).join("")}</select><select class="inp" data-f="us" aria-label="Status"><option value="">Todos os status</option>${["Ativo","Convite pendente","Suspenso"].map(s=>`<option ${UI.us===s?"selected":""}>${s}</option>`).join("")}</select></div>
+ <div class="uwrap ${sel?"sel":""}"><div style="min-width:0"><div class="tw"><table class="ut"><thead><tr><th><input type="checkbox" data-act="uchkall" aria-label="Selecionar a página"></th><th class="sort" data-act="usort">Nome ${UI.usort>0?"↑":"↓"}</th>${UCOLS.filter(([k])=>ucolsEff()[k]).map(([,t])=>`<th>${t}</th>`).join("")}</tr></thead><tbody id="list"></tbody></table></div><div class="pg" id="upg"></div></div>${sel?uPanel(sel):""}</div>`;};
+function uPanel(u){const t=UI.utab,T=uTerm(u),R=S.reqs.filter(r=>r.uid===u.id);const tabs=[["geral","Visão geral"],["uso","Uso"],["acoes","Ações recentes"],["solic",`Solicitações${R.some(r=>r.st==="Pendente")?" •":""}`],["termo","Termo de uso"]];let b="";
+ if(t==="geral")b=`<div class="ubox"><h4>${ic("users",16)} Informações</h4><div class="kv"><span>E-mail</span><b>${esc(u.email)}</b><span>Cargo / Função</span><b>${esc(uCargo(u))}</b><span>Organização</span><b>${esc(u.org)}</b><span>Turma</span><b>${esc(u.turma)}</b><span>Perfil</span><b>${esc(ROLES[u.perfil].label)}</b><span>Acesso até</span><b>${fmtD(u.val)}</b></div></div>
+  <div class="ubox"><h4>${ic("book",16)} Trilhas liberadas (${u.grupos.length}) <button class="btn line sm" style="margin-left:auto" data-act="edituser" data-x="${u.id}">${ic("edit",13)} Editar acessos</button></h4><div class="utr">${GRUPOS.map(g=>`<span class="${u.grupos.includes(g)?"on":""}">${u.grupos.includes(g)?ic("check",12):ic("lock",12)} ${esc(g)}</span>`).join("")}</div></div>
+  <div class="ubox"><h4>${ic("shield",16)} Termo de uso</h4>${T.st==="Aceito"?`<div class="kv"><span>Situação</span><b><span class="pill ok">Aceito</span></b><span>Versão</span><b>${T.v}</b><span>Data e hora</span><b>${T.dt}</b><span>IP</span><b>${T.ip}</b><span>Navegador / SO</span><b>${T.nav}</b></div>`:`<span class="pill warn">Pendente · aceite no primeiro acesso</span>`}</div>`;
+ if(t==="uso"){const w=[u.id%5+2,u.id%7+1,u.id%4+3,u.id%6+2].map(v=>u.status==="Ativo"?v:0);const mx=Math.max(...w,1);
+  b=`<div class="ubox"><h4>Progresso geral · ${u.prog}%</h4><div class="meter"><i style="width:${u.prog}%"></i></div><div class="kv" style="margin-top:10px"><span>Certificados</span><b>${S.certs.filter(c=>c.u===u.nome).length}</b><span>Conversas com IA</span><b>${u.status==="Ativo"?u.id*3%17+2:0}</b><span>Eventos</span><b>${u.status==="Ativo"?u.id%4:0}</b><span>Último acesso</span><b>${esc(u.ult)}</b></div></div>
+  <div class="ubox"><h4>Acessos nas últimas 4 semanas</h4><div class="ubars">${w.map((v,i)=>`<div><i style="height:${v/mx*100}%"></i><span>S${i+1}</span></div>`).join("")}</div></div>
+  <div class="ubox"><h4>Por trilha</h4>${u.grupos.map((g,i)=>{const p=u.status==="Ativo"?Math.max(0,Math.min(100,u.prog+((i*23+u.id*7)%41)-20)):0;return `<div class="hb2"><span class="small">${esc(g)}</span><div class="meter"><i style="width:${p}%"></i></div><b class="small">${p}%</b></div>`;}).join("")||'<p class="small mut">Nenhuma trilha liberada.</p>'}</div>`;}
+ if(t==="acoes"){const own=S.audit.filter(a=>a.alvo===u.nome||a.quem===u.nome).map(a=>[a.dt,a.acao+(a.det?" · "+a.det:"")]);const syn=u.status==="Convite pendente"?[["21/11/2026","Convite enviado por e-mail"]]:[[u.ult,"Acessou a plataforma"],["20/11/2026",`Concluiu uma aula de ${u.grupos[0]||"trilha"}`],["18/11/2026","Conversou com a IA de um Expert"],[uTerm(u).dt,"Aceitou o termo de uso V1"],["03/11/2026","Convite aceito"]];
+  b=`<div class="ubox"><div class="tl">${own.concat(syn).map(([d,x])=>`<div><i></i><span><b>${esc(x)}</b><br><span class="small mut">${esc(d)}</span></span></div>`).join("")}</div></div>`;}
+ if(t==="solic")b=R.length?R.map(r=>`<div class="ubox"><h4>${esc(r.tipo)} <span style="margin-left:auto">${r.st==="Pendente"?'<span class="pill warn">Pendente</span>':r.st==="Aprovado"?'<span class="pill ok">Aprovado</span>':'<span class="pill bad">Recusado</span>'}</span></h4><p class="small">${esc(r.alvo)}</p><p class="small mut">Pedido em ${esc(r.data)}</p>${r.st==="Pendente"?`<div class="hbtn" style="margin-top:10px"><button class="btn pri sm" data-act="reqok" data-x="${r.id}">Aprovar</button><button class="btn line sm" data-act="reqno" data-x="${r.id}">Recusar</button></div>`:""}</div>`).join(""):`<p class="small mut">Nenhuma solicitação desta pessoa.</p>`;
+ if(t==="termo")b=`<div class="ubox"><h4>${ic("shield",16)} Histórico de aceites</h4>${T.st==="Aceito"?`<div class="tl"><div><i></i><span><b>Aceitou o termo de uso V1</b><br><span class="small mut">${T.dt} · IP ${T.ip} · ${T.nav}</span></span></div><div><i></i><span><b>Aceitou a política de privacidade</b><br><span class="small mut">${T.dt}</span></span></div><div><i></i><span><b>Autorizou o uso das conversas para melhoria do serviço</b><br><span class="small mut">Não autorizado · as conversas não treinam a IA</span></span></div></div>`:`<p class="small mut">Ainda não acessou. O termo aparece no primeiro acesso.</p>`}</div>`;
+ return `<aside class="upanel"><div class="uph"><span class="exav">${esc(initials(u.nome))}</span><div style="min-width:0;flex:1"><b style="display:block;font-size:17px">${esc(u.nome)}</b><span class="small mut">${esc(uCargo(u))} · ${esc(u.org)}</span></div>${stPill(u.status)}<button class="mclose" style="position:static" data-act="uclose" aria-label="Fechar">×</button></div>
+ <div class="utabs">${tabs.map(([k,l])=>`<button class="${t===k?"on":""}" data-act="utab" data-x="${k}">${l}</button>`).join("")}</div><div class="ubody">${b}
+ <div class="hbtn"><button class="btn line sm" data-act="resend" data-x="${u.id}">Reenviar link de acesso</button><button class="btn ${u.status==="Suspenso"?"pri":"danger"} sm" data-act="upause" data-x="${u.id}">${u.status==="Suspenso"?"Reativar acesso":"Pausar acesso"}</button></div></div></aside>`;}
+
+/* Experts e acervo */
+function acvStats(id){const L=S.acervo[id]||[];return {n:L.length,uso:L.filter(m=>m.st==="Em uso pela IA").length,rev:L.filter(m=>m.st==="Em revisão").length};}
+function iaSt(e){if(!S.consent[e.id])return ["Aguardando consentimento","warn"];return acvStats(e.id).uso?["IA ativa","ok"]:["Em preparação",""];}
+function abTabs(on){return `<div class="tabs ltabs" style="margin:0 0 18px"><a href="#admin-experts" class="${on==="experts"?"on":""}">Acervo dos Experts</a><a href="#admin-biblioteca" class="${on==="biblioteca"?"on":""}">Biblioteca de referências</a></div>`;}
+A.experts=()=>{const all=EXPERTS.map(e=>acvStats(e.id));const tot=all.reduce((s,x)=>s+x.n,0),rev=all.reduce((s,x)=>s+x.rev,0),pc=EXPERTS.filter(e=>!S.consent[e.id]).length;
+ return abTabs("experts")+aHead("Experts e acervo","O conteúdo de cada Expert que alimenta a IA dele. Nada entra na IA sem revisão e consentimento.")+aKpis([["spark","c1",EXPERTS.filter(e=>iaSt(e)[0]==="IA ativa").length+" de "+EXPERTS.length,"IAs de Experts ativas"],["file","c5",tot,"materiais no acervo"],["edit","c4",rev,"em revisão"],["shield",pc?"c6":"c2",pc,"consentimentos pendentes"]])+
+ `<div class="tw"><table><thead><tr><th>Expert</th><th>Materiais</th><th>Em uso pela IA</th><th>Em revisão</th><th>Consentimento</th><th>IA</th></tr></thead><tbody>${EXPERTS.map(e=>{const x=acvStats(e.id),st=iaSt(e);return `<tr style="cursor:pointer" data-act="acv" data-x="${e.id}"><td><div style="display:flex;gap:10px;align-items:center">${exAv(e)}<div><div class="nm">${esc(e.nome)}</div><div class="em">${esc(e.dest?e.cargo:"Disciplina "+pad(e.sk[0]))}</div></div></div></td><td>${x.n}</td><td>${x.uso}</td><td>${x.rev?`<span class="pill warn">${x.rev}</span>`:"0"}</td><td class="small">${S.consent[e.id]?`${ic("check",13)} Assinado em ${S.consent[e.id]}`:'<span class="pill warn">Pendente</span>'}</td><td><span class="pill ${st[1]}">${st[0]}</span></td></tr>`;}).join("")}</tbody></table></div>`;};
+function acvDrawer(id){const e=expById(id);if(!e)return;const L=S.acervo[id]||[];
+ openDrawer(`<div style="display:flex;justify-content:space-between;align-items:start;gap:12px"><div style="display:flex;gap:12px;align-items:center">${exAv(e,"")}<div><span class="eyebrow">Acervo do Expert</span><h2 style="font-size:28px">${esc(e.nome)}</h2></div></div><button class="mclose" style="position:static" data-act="close" aria-label="Fechar">×</button></div>
+ <div class="ubox">${S.consent[id]?`<h4>${ic("shield",16)} Consentimento assinado em ${S.consent[id]}</h4><p class="small mut">O Expert autorizou o uso do acervo na IA com o nome dele. Pode revogar a qualquer momento.</p>`:`<h4>${ic("shield",16)} Consentimento pendente</h4><p class="small mut">A IA só fica disponível para os membros depois que o Expert assina o termo de uso do acervo.</p><button class="btn pri sm" style="margin-top:10px" data-act="acvcons" data-x="${id}">Registrar consentimento</button>`}</div>
+ <form id="acvf" data-x="${id}" class="ubox ckl" style="gap:10px"><h4>${ic("plus",16)} Enviar material</h4><label class="f">Título<input class="inp" name="t" required placeholder="Ex.: Palestra sobre liderança e IA"></label><div class="fg"><label class="f">Tipo<select class="inp" name="tp">${["Aula","Palestra","Artigo","PDF","Vídeo","Método"].map(x=>`<option>${x}</option>`).join("")}</select></label><label class="f">Arquivo<input class="inp" type="file" name="f"></label></div><button class="btn dark sm" style="justify-self:start">Enviar para revisão</button></form>
+ <div><span class="eyebrow">Materiais (${L.length})</span><div class="acl">${L.map(m=>`<div class="acm"><div style="min-width:0"><b>${esc(m.t)}</b><span class="small mut">${esc(m.tp)} · ${esc(m.dt)}</span></div><span class="pill ${m.st==="Em uso pela IA"?"ok":m.st==="Em revisão"?"warn":""}">${esc(m.st)}</span>${m.st==="Em revisão"?`<button class="btn line sm" data-act="acvst" data-x="${m.id}" data-to="Autorizado">Aprovar</button>`:m.st==="Autorizado"?`<button class="btn pri sm" data-act="acvst" data-x="${m.id}" data-to="Em uso pela IA">Liberar para a IA</button>`:`<button class="btn line sm" data-act="acvst" data-x="${m.id}" data-to="Autorizado">Retirar da IA</button>`}</div>`).join("")}</div></div>`);}
+
+/* Atendimento: suporte e feedbacks */
+function tkUser(t){return S.users.find(u=>u.id===t.uid)||{nome:"Membro",org:"—"};}
+A.suporte=()=>{const T=S.tickets,f=UI.sup;const L=T.filter(t=>f==="Todos"||t.st===f);
+ return aHead("Suporte","Chamados abertos pelos membros. Primeira resposta em até 4 horas úteis.")+aKpis([["inbox","c4",T.filter(t=>t.st==="Aberto").length,"abertos"],["chat","c1",T.filter(t=>t.st==="Em andamento").length,"em andamento"],["check","c2",18+T.filter(t=>t.st==="Resolvido").length,"resolvidos no mês"],["cal","c5","3h40","tempo médio da 1ª resposta"]])+
+ `<div class="chips" style="margin-bottom:14px">${["Todos","Aberto","Em andamento","Resolvido"].map(s=>`<button class="chip ${f===s?"on":""}" data-act="sup" data-x="${s}">${s}</button>`).join("")}</div>
+ <div class="tw"><table><thead><tr><th>#</th><th>Assunto</th><th>Organização</th><th>Tipo</th><th>Prioridade</th><th>Status</th><th>Aberto em</th><th>Prazo</th></tr></thead><tbody>${L.map(t=>{const u=tkUser(t);return `<tr style="cursor:pointer" data-act="tk" data-x="${t.id}"><td class="small mut">${t.id}</td><td><div class="nm">${esc(t.ass)}</div><div class="em">${esc(u.nome)}</div></td><td class="small">${esc(u.org)}</td><td class="small">${esc(t.tipo)}</td><td><span class="pill ${t.pri==="Alta"?"bad":t.pri==="Média"?"warn":""}">${t.pri}</span></td><td>${t.st==="Resolvido"?'<span class="pill ok">Resolvido</span>':t.st==="Aberto"?'<span class="pill warn">Aberto</span>':'<span class="pill br">Em andamento</span>'}</td><td class="small mut">${esc(t.ab)}</td><td class="small">${esc(t.prazo)}</td></tr>`;}).join("")||'<tr><td colspan="8" class="mut">Nenhum chamado.</td></tr>'}</tbody></table></div>`;};
+function tkDrawer(id){const t=S.tickets.find(x=>x.id===+id);if(!t)return;const u=tkUser(t);
+ openDrawer(`<div style="display:flex;justify-content:space-between;align-items:start"><div><span class="eyebrow">Chamado #${t.id} · ${esc(t.tipo)}</span><h2 style="font-size:28px">${esc(t.ass)}</h2><span class="small mut">${esc(u.nome)} · ${esc(u.org)} · aberto em ${esc(t.ab)}</span></div><button class="mclose" style="position:static" data-act="close" aria-label="Fechar">×</button></div>
+ <div class="thr">${t.msgs.map(([q,m])=>`<div class="${q==="Equipe da escola"?"me":""}"><b class="small">${esc(q)}</b><p>${esc(m)}</p></div>`).join("")}</div>
+ <form id="tkf" data-x="${t.id}" class="ckl" style="gap:10px"><label class="f">Responder<textarea class="inp" name="m" rows="3" placeholder="Escreva a resposta para ${esc(u.nome.split(" ")[0])}"></textarea></label><label class="f">Status<select class="inp" name="st">${["Aberto","Em andamento","Resolvido"].map(s=>`<option ${s===t.st?"selected":""}>${s}</option>`).join("")}</select></label><button class="btn pri" style="justify-self:start">Enviar e salvar</button></form>`);}
+A.feedbacks=()=>{const N=npsOf(S.nps);const items=S.nps.filter(n=>n[2]).map(n=>({tp:"NPS",n:n[0],ref:n[1],txt:n[2],org:"Coop Vale Verde",dt:"Nov/2026"})).concat(S.fbs);const f=UI.fbt;const L=items.filter(x=>f==="Todos"||x.tp===f||(f==="Aulas"&&x.tp==="Aula")||(f==="Sugestões"&&x.tp==="Sugestão"));
+ const au=S.fbs.filter(x=>x.tp==="Aula");const med=(au.reduce((s,x)=>s+x.n,0)/Math.max(au.length,1)).toFixed(1).replace(".",",");
+ return aHead("Feedbacks","O que os membros dizem das trilhas, das aulas e da escola.")+aKpis([["star","c1",N.nps,"NPS das trilhas"],["chat","c5",S.nps.length,"respostas de NPS"],["check","c2",med+" de 5","nota média das aulas"],["inbox","c4",S.fbs.filter(x=>x.tp==="Sugestão").length,"sugestões"]])+
+ `<div class="chips" style="margin-bottom:14px">${["Todos","NPS","Aulas","Sugestões"].map(s=>`<button class="chip ${f===s?"on":""}" data-act="fbt" data-x="${s}">${s}</button>`).join("")}</div>
+ <div class="fbg">${L.map(x=>`<div class="card fbc"><div class="fbh">${x.tp==="Sugestão"?`<span class="fbn s">${ic("inbox",16)}</span>`:`<span class="fbn ${x.tp==="NPS"?(x.n>=9?"ok":x.n>=7?"":"bad"):(x.n>=4?"ok":x.n>=3?"":"bad")}">${x.n}${x.tp==="Aula"?"/5":""}</span>`}<div><b class="small">${x.tp==="NPS"?"NPS da trilha":x.tp==="Aula"?"Avaliação de aula":"Sugestão"}</b><span class="small mut">${esc(x.ref)}</span></div></div><p>“${esc(x.txt)}”</p><span class="small mut">${esc(x.org)} · ${esc(x.dt)}</span></div>`).join("")}</div>`;};
+
+/* Auditoria */
+A.auditoria=()=>{const q=(UI.aq||"").toLowerCase(),tp=UI.at;const acts=[...new Set(S.audit.map(a=>a.acao))].sort();const L=S.audit.filter(a=>(!q||(a.quem+a.acao+a.alvo+a.det).toLowerCase().includes(q))&&(!tp||a.acao===tp));const hj=new Date().toLocaleDateString("pt-BR");
+ return aHead("Auditoria","Quem fez o quê e quando. Os registros não podem ser editados e ficam guardados por 5 anos.",`<button class="btn line" data-act="aexp">${ic("down",16)} Exportar registros</button>`)+aKpis([["shield","c1",S.audit.filter(a=>a.dt.startsWith(hj)).length,"registros hoje"],["down","c5",S.audit.filter(a=>a.acao==="Exportou dados").length,"exportações de dados"],["users","c4",S.audit.filter(a=>/acesso|trilha|permiss/i.test(a.acao)).length,"alterações de acesso"],["file","c2",S.audit.filter(a=>/certificado/i.test(a.acao)).length,"certificados emitidos ou revogados"]])+
+ `<div class="fbar"><input class="inp srch" data-f="aq" placeholder="Buscar por pessoa, ação ou alvo" value="${esc(UI.aq)}" aria-label="Buscar registro"><select class="inp" data-f="at" aria-label="Ação"><option value="">Todas as ações</option>${acts.map(a=>`<option ${tp===a?"selected":""}>${esc(a)}</option>`).join("")}</select></div>
+ <div class="tw"><table><thead><tr><th>Data e hora</th><th>Quem</th><th>Ação</th><th>Alvo</th><th>Detalhe</th><th>IP</th></tr></thead><tbody id="alist">${auditRows(L)}</tbody></table></div>`;};
+function auditRows(L){return L.map(a=>`<tr><td class="small mut" style="white-space:nowrap">${esc(a.dt)}</td><td class="small">${esc(a.quem)}</td><td><span class="pill">${esc(a.acao)}</span></td><td class="small">${esc(a.alvo)}</td><td class="small mut">${esc(a.det)}</td><td class="small mut">${esc(a.ip)}</td></tr>`).join("")||'<tr><td colspan="6" class="mut">Nenhum registro.</td></tr>';}
+
+/* Eventos (admin) */
+A.eventos=()=>{const base=[0,46,4,48,34,22,61,14,29,38,0,0];return aHead("Eventos","Inscrições e vagas da agenda da escola.",`<button class="btn line" data-act="uexp" data-x="Lista de inscritos">${ic("down",16)} Exportar inscritos</button>`)+aKpis([["cal","c1",EVT.filter(e=>!e.past).length,"próximos eventos"],["users","c5",base.reduce((s,x)=>s+x,0)+Object.keys(S.ins).length,"inscrições"],["check","c2",EVT.filter(e=>e.pres&&!e.past).length,"presenciais"],["star","c4",seatsUsed()+" de "+SEATS,"assentos das empresas em uso"]])+
+ `<div class="tw"><table><thead><tr><th>Data</th><th>Evento</th><th>Tipo</th><th>Inscritos</th><th>Status</th></tr></thead><tbody>${EVT.map((e,i)=>`<tr><td class="small" style="white-space:nowrap">${esc(e.dia)} ${esc(e.mes)}</td><td><div class="nm">${esc(e.t)}</div><div class="em">${esc(e.h)} · ${esc(e.loc)}</div></td><td class="small">${esc(e.k)}</td><td>${(base[i]||0)+(S.ins[e.t]?1:0)}</td><td class="small"><b>${esc(e.st)}</b><br><span class="mut">${esc(e.mot)}</span></td></tr>`).join("")}</tbody></table></div>`;};
+
+/* menu do admin em grupos */
+const ADMG=[["Início",[["indicadores","Indicadores",["admin"]],["comercial","Oportunidades",["admin"]]]],
+ ["Escola",[["conteudo","Trilhas e conteúdo",["admin","especialista"]],["experts","Experts e acervo",["admin","especialista"]],["eventos","Eventos",["admin"]],["certificados","Certificados",["admin"]]]],
+ ["Pessoas",[["usuarios","Usuários",["admin"]],["acessos","Organizações e planos",["admin"]]]],
+ ["Atendimento",[["suporte","Suporte",["admin"]],["feedbacks","Feedbacks",["admin","especialista"]]]],
+ ["Sistema",[["marca","Marca (white label)",["admin"]],["auditoria","Auditoria",["admin"]],["bastidores","Por dentro (técnico)",["admin","especialista"]]]]];
+V.admin=(sub)=>{ensureAdm();const r=role();const ok=ADMG.flatMap(g=>g[1]).filter(a=>a[2].includes(r)).map(a=>a[0]);if(sub==="biblioteca"&&!["admin","especialista"].includes(r))sub="";if(sub!=="biblioteca"&&!ok.includes(sub))sub=ok[0];const hl=sub==="biblioteca"?"experts":sub;
+ return `<div class="adm"><nav class="anav">${ADMG.map(([g,L])=>{const it=L.filter(a=>a[2].includes(r));return it.length?`<span class="ag">${g}</span>${it.map(([k,t])=>`<a href="#admin-${k}" class="${k===hl?"on":""}">${t}</a>`).join("")}`:"";}).join("")}</nav><div>${sub==="biblioteca"?abTabs("biblioteca")+A.biblioteca():A[sub]()}</div></div>`;};
+
+const ADMACT={
+ dd(el){const x=el.dataset.x;UI.dd=UI.dd===x?null:x;rr();},
+ usel(el){UI.usel=+el.dataset.x;UI.utab="geral";UI.dd=null;rr();},
+ uclose(){UI.usel=null;rr();},
+ utab(el){UI.utab=el.dataset.x;rr();},
+ uchk(el){const id=+el.dataset.x;UI.uchk[id]=!UI.uchk[id];listUsers();},
+ uchkall(){const L=uFiltered().slice((UI.upage-1)*UPP,UI.upage*UPP);const all=L.every(u=>UI.uchk[u.id]);L.forEach(u=>UI.uchk[u.id]=!all);listUsers();},
+ upage(el){UI.upage=+el.dataset.x;listUsers();},
+ usort(){UI.usort*=-1;rr();},
+ ureq(){UI.ureq=UI.ureq?0:1;UI.upage=1;rr();},
+ ucol(el){const k=el.dataset.x;UI.ucols[k]=UI.ucols[k]?0:1;rr();},
+ uexp(el){const n=el.dataset.x==="Lista de inscritos"?"inscritos dos eventos":`${uFiltered().length} usuários`;audit("Exportou dados",el.dataset.x,n);UI.dd=null;toast(`Exportação preparada: ${n}. Ela fica registrada na Auditoria.`);rr();},
+ ubulk(el){const ids=Object.keys(UI.uchk).filter(k=>UI.uchk[k]).map(Number);UI.dd=null;if(!ids.length){toast("Selecione pelo menos uma pessoa na tabela");rr();return;}const x=el.dataset.x,us=S.users.filter(u=>ids.includes(u.id));
+  if(x==="lib"){openModal(`<span class="eyebrow">Ações em massa</span><h2>Liberar trilha</h2><p class="mut">${us.length} pessoa(s) selecionada(s).</p><form id="ulibf" class="ckl" style="gap:12px;margin-top:14px"><label class="f">Trilha<select class="inp" name="g">${GRUPOS.map(g=>`<option>${esc(g)}</option>`).join("")}</select></label><div class="mfoot"><button type="button" class="btn line" data-act="close">Cancelar</button><button class="btn pri">Liberar</button></div></form>`);return;}
+  if(x==="inv"){audit("Reenviou convite",`${us.length} pessoa(s)`,us.map(u=>u.nome).slice(0,3).join(", "));toast(`Convite reenviado para ${us.length} pessoa(s)`);}
+  if(x==="pause"||x==="on"){us.forEach(u=>u.status=x==="pause"?"Suspenso":"Ativo");audit(x==="pause"?"Pausou acesso":"Reativou acesso",`${us.length} pessoa(s)`,us.map(u=>u.nome).slice(0,3).join(", "));toast(`${us.length} acesso(s) ${x==="pause"?"pausado(s)":"reativado(s)"}`);}
+  UI.uchk={};save();rr();},
+ upause(el){const u=S.users.find(x=>x.id===+el.dataset.x);if(!u)return;const p=u.status!=="Suspenso";u.status=p?"Suspenso":"Ativo";audit(p?"Pausou acesso":"Reativou acesso",u.nome,"");save();toast(`${u.nome}: acesso ${p?"pausado":"reativado"}`);rr();},
+ reqok(el){const r=S.reqs.find(x=>x.id===+el.dataset.x);if(!r)return;r.st="Aprovado";const u=S.users.find(x=>x.id===r.uid);if(u&&r.tipo==="Liberar trilha"&&!u.grupos.includes(r.alvo))u.grupos=u.grupos.concat([r.alvo]);audit(r.tipo==="Liberar trilha"?"Liberou trilha":"Aprovou solicitação",u?u.nome:"",r.alvo);toast("Solicitação aprovada. A pessoa recebe um aviso por e-mail.");rr();},
+ reqno(el){const r=S.reqs.find(x=>x.id===+el.dataset.x);if(!r)return;r.st="Recusado";const u=S.users.find(x=>x.id===r.uid);audit("Recusou solicitação",u?u.nome:"",r.alvo);toast("Solicitação recusada");rr();},
+ acv(el){acvDrawer(el.dataset.x);},
+ acvst(el){const id=el.dataset.x,to=el.dataset.to,eid=id.split("-")[0];const m=(S.acervo[eid]||[]).find(x=>x.id===id);if(!m)return;
+  if(to==="Em uso pela IA"&&!S.consent[eid]){toast("Registre o consentimento do Expert antes de liberar para a IA");return;}
+  m.st=to;audit(to==="Em uso pela IA"?"Liberou material para a IA":to==="Autorizado"&&el.textContent.includes("Retirar")?"Retirou material da IA":"Aprovou material do acervo",expById(eid).nome,m.t);save();acvDrawer(eid);if($("#app .akpis"))rr();},
+ acvcons(el){const id=el.dataset.x;S.consent[id]=today();audit("Registrou consentimento",expById(id).nome,"Uso do acervo na IA do Expert");save();toast("Consentimento registrado");acvDrawer(id);rr();},
+ tk(el){tkDrawer(el.dataset.x);},
+ sup(el){UI.sup=el.dataset.x;rr();},
+ fbt(el){UI.fbt=el.dataset.x;rr();},
+ aexp(){audit("Exportou dados","Auditoria",`${S.audit.length} registros`);toast("Registros exportados. A exportação também fica registrada.");rr();},
+ newtk(){$("#menu").hidden=true;openModal(`<span class="eyebrow">Ajuda e suporte</span><h2>Como podemos ajudar?</h2><p class="mut">A equipe da escola responde em até 4 horas úteis.</p><form id="tkn" class="ckl" style="gap:12px;margin-top:14px"><label class="f">Tipo<select class="inp" name="tp">${["Acesso","Certificado","Problema técnico","Conteúdo","Dúvida"].map(x=>`<option>${x}</option>`).join("")}</select></label><label class="f">Assunto<input class="inp" name="a" required placeholder="Resuma em uma frase"></label><label class="f">Mensagem<textarea class="inp" name="m" rows="4" required></textarea></label><div class="mfoot"><button type="button" class="btn line" data-act="close">Cancelar</button><button class="btn pri">Enviar</button></div></form>`);}
+};
+function admSubmit(f,fd){
+ if(f.id==="ulibf"){const g=fd.get("g");const ids=Object.keys(UI.uchk).filter(k=>UI.uchk[k]).map(Number);const us=S.users.filter(u=>ids.includes(u.id));us.forEach(u=>{if(!u.grupos.includes(g))u.grupos=u.grupos.concat([g]);});audit("Liberou trilha",`${us.length} pessoa(s)`,g);UI.uchk={};save();closeAll();toast(`${g} liberada para ${us.length} pessoa(s)`);rr();return true;}
+ if(f.id==="acvf"){const id=f.dataset.x;const L=S.acervo[id]=S.acervo[id]||[];L.unshift({id:id+"-n"+Date.now(),t:fd.get("t"),tp:fd.get("tp"),st:"Em revisão",dt:today()});audit("Enviou material ao acervo",expById(id).nome,fd.get("t"));save();toast("Material enviado. Ele passa por revisão antes de ir para a IA.");acvDrawer(id);rr();return true;}
+ if(f.id==="tkf"){const t=S.tickets.find(x=>x.id===+f.dataset.x);const m=String(fd.get("m")||"").trim();if(m)t.msgs.push(["Equipe da escola",m]);const was=t.st;t.st=fd.get("st");if(t.st==="Resolvido")t.prazo="—";audit("Atualizou chamado","#"+t.id,(m?"Respondeu":"")+(was!==t.st?(m?" · ":"")+"status "+t.st:""));save();closeAll();toast(`Chamado #${t.id} atualizado`);rr();return true;}
+ if(f.id==="tkn"){const u=S.users.find(x=>x.email===S.user.email)||{id:0};const id=Math.max(...S.tickets.map(t=>t.id))+1;S.tickets.unshift({id,ass:fd.get("a"),uid:u.id,tipo:fd.get("tp"),pri:"Média",st:"Aberto",ab:nowBR(),prazo:"Em até 4 h úteis",msgs:[[S.user.nome,fd.get("m")]]});save();closeAll();toast(`Chamado #${id} aberto. Respondemos em até 4 horas úteis.`);return true;}
+ return false;}
+function auditRefresh(){const el=$("#alist");if(!el)return;const q=(UI.aq||"").toLowerCase(),tp=UI.at;el.innerHTML=auditRows(S.audit.filter(a=>(!q||(a.quem+a.acao+a.alvo+a.det).toLowerCase().includes(q))&&(!tp||a.acao===tp)));}
+
 /* ---------- casca ---------- */
 function navItems(){const r=role();const n=[["inicio","Início"],["trilhas","Trilhas"],["experts","Experts"],["eventos","Eventos"],["comunidades","Comunidades"],["ias","IA aplicada"]];
- if(r==="gestor"||r==="admin")n.push(["equipe","Equipe"]);if(r==="admin"||r==="especialista")n.push(["admin","Administração"]);return n;}
+ if(r==="gestor"||r==="admin")n.push(["equipe","Equipe"]);if(r==="admin"||r==="especialista")n.push(["admin","Admin"]);return n;}
 function shell(cur){const b=brand();const r=document.documentElement.style;r.setProperty("--brand",b.brand);if(b.accent)r.setProperty("--accent",b.accent);else r.removeProperty("--accent");
  document.title=b.nome;$("#logo").innerHTML=logoHTML();
  $("#foot").innerHTML=`${S.user?`<div class="fmore"><span class="eyebrow">Mais da TD</span>${TDX.map(t=>`<button data-act="interest" data-x="${esc(t.t)}" title="${esc(t.d)}">${esc(t.t)}</button>`).join("")}</div>`:""}<span>${esc(b.nome)} · escola de negócios com tecnologia TD Business</span><span>Protótipo para validação · <a href="#verificar">Verificar certificado</a></span>`;
@@ -1468,7 +1697,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeAll();$("#menu
 $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")closeAll();});
 $("#drawer").addEventListener("click",e=>{if(e.target.id==="drawer")closeAll();});
 
-function menuHTML(){const u=S.user;return `<div class="who"><b>${esc(u.nome)}</b><br><span class="small mut">${esc(roleLabel(u.role))} · ${esc(u.org)}</span></div><a href="#perfil">Meu perfil</a><a href="#certificados">Meus certificados</a><a href="#jornada">Minha jornada</a>${["gestor","admin"].includes(u.role)?'<a href="#equipe">Painel da equipe</a>':""}${["admin","especialista"].includes(u.role)?'<a href="#admin">Administração</a>':""}<div class="eyebrow" style="padding:10px 10px 0">Ver como (protótipo)</div><div class="rl">${Object.entries(ROLES).map(([k,r])=>`<button class="${u.role===k?"on":""}" data-act="login" data-x="${k}">${roleLabel(k)}</button>`).join("")}</div><button class="mi" data-act="logout">Sair</button>`;}
+function menuHTML(){const u=S.user;return `<div class="who"><b>${esc(u.nome)}</b><br><span class="small mut">${esc(roleLabel(u.role))} · ${esc(u.org)}</span></div><a href="#perfil">Meu perfil</a><a href="#certificados">Meus certificados</a><a href="#jornada">Minha jornada</a><button class="mi" data-act="newtk">Ajuda e suporte</button>${["gestor","admin"].includes(u.role)?'<a href="#equipe">Painel da equipe</a>':""}${["admin","especialista"].includes(u.role)?'<a href="#admin">Administração</a>':""}<div class="eyebrow" style="padding:10px 10px 0">Ver como (protótipo)</div><div class="rl">${Object.entries(ROLES).map(([k,r])=>`<button class="${u.role===k?"on":""}" data-act="login" data-x="${k}">${roleLabel(k)}</button>`).join("")}</div><button class="mi" data-act="logout">Sair</button>`;}
 function doLogin(r,email){const R=ROLES[r];const prev=S.user&&S.user.role===r?S.user:null;S.user=prev||{role:r,nome:R.nome,cargo:R.cargo,area:R.area,org:R.org,email:email||R.email,li:""};
  save();$("#menu").hidden=true;toast(`Entrou como ${R.label}`);location.hash=r==="admin"?"#admin-indicadores":r==="especialista"?"#admin-conteudo":r==="gestor"?"#equipe":"#inicio";rr();}
 
@@ -1543,8 +1772,9 @@ const ACT={
  brand(el){S.brand=el.dataset.x;save();rr();toast(`Agora a plataforma é ${brand().nome}`);},
  reset(){const u=S.user;S=fresh();S.user=u;save();toast("Dados de exemplo restaurados");rr();}
 };
-Object.assign(ACT,V2ACT);
+Object.assign(ACT,V2ACT,ADMACT);
 document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");
+ if(UI.dd&&(!el||el.dataset.act!=="dd")&&!e.target.closest(".ddm")){UI.dd=null;document.querySelectorAll(".ddm").forEach(x=>x.remove());}
  if(!el){const m=$("#menu");if(!m.hidden&&!e.target.closest("#menu"))m.hidden=true;return;}
  const f=ACT[el.dataset.act];if(!f)return;
  if(el.tagName==="BUTTON"||el.dataset.act==="openref"||el.dataset.act==="edituser"||el.dataset.act==="unlock")e.preventDefault();
@@ -1552,6 +1782,7 @@ document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");
  f(el,e);});
 document.addEventListener("input",e=>{const t=e.target;
  if(t.dataset.f==="eq"){UI.eq=t.value;listExperts();}
+ if(t.dataset.f==="aq"){UI.aq=t.value;auditRefresh();}
  if(t.dataset.f==="q"){UI.q=t.value;listTrilhas();}
  if(t.dataset.f==="lq"){UI.lq=t.value;listRefs();}
  if(["uq"].includes(t.dataset.f)){UI.uq=t.value;listUsers();}
@@ -1565,8 +1796,9 @@ document.addEventListener("change",e=>{const t=e.target;
  if(t.dataset.logo){fileTo(t,d=>{UI.logoData=d;toast("Logo carregado");});}
  if(t.closest&&t.closest("#tf"))tplPreview();
  if(t.dataset.f==="lc"){UI.lc=t.value;listRefs();}
- if(["up","uo","us"].includes(t.dataset.f)){UI[t.dataset.f]=t.value;listUsers();}});
+ if(["up","uo","us"].includes(t.dataset.f)){UI[t.dataset.f]=t.value;UI.upage=1;listUsers();}if(t.dataset.f==="at"){UI.at=t.value;auditRefresh();}});
 document.addEventListener("submit",e=>{const f=e.target;e.preventDefault();const fd=new FormData(f);
+ if(admSubmit(f,fd))return;
  if(f.id==="hcxf"){const q=$("#hcxq").value.trim();if(q)goAsk(q);return;}
  if(f.id==="seatf"){const t=f.dataset.x,n=fd.get("p");S.seats=Object.assign({},S.seats);S.seats[t]=(S.seats[t]||[]).filter(x=>x!==n).concat([n]);save();closeAll();toast(`${n} indicado(a) para ${t}`);rr();return;}
  if(f.dataset.cx){const i=f.querySelector("input");const q=i.value;i.value="";ask(f.dataset.cx,q,CURCTX);return;}
@@ -1586,7 +1818,7 @@ document.addEventListener("submit",e=>{const f=e.target;e.preventDefault();const
  if(f.id==="vf"){verify($("#vcode").value);return;}
  if(f.id==="mf"){msearch($("#mq").value);return;}
  if(f.id==="pf"){Object.assign(S.user,{nome:fd.get("nome")||S.user.nome,cargo:fd.get("cargo"),area:fd.get("area"),li:fd.get("li")});save();toast("Perfil atualizado");rr();return;}
- if(f.id==="uf"){const u=S.users.find(x=>x.id===+f.dataset.id);Object.assign(u,{nome:fd.get("nome"),email:fd.get("email"),org:fd.get("org"),perfil:fd.get("perfil"),turma:fd.get("turma"),val:fd.get("val"),status:fd.get("status"),grupos:fd.getAll("grupos")});S.users=S.users.slice();save();closeAll();toast(`${u.nome} atualizado`);rr();return;}
+ if(f.id==="uf"){const u=S.users.find(x=>x.id===+f.dataset.id);audit("Editou usuário",fd.get("nome"),"Dados e acessos");Object.assign(u,{nome:fd.get("nome"),email:fd.get("email"),org:fd.get("org"),perfil:fd.get("perfil"),turma:fd.get("turma"),val:fd.get("val"),status:fd.get("status"),grupos:fd.getAll("grupos")});S.users=S.users.slice();save();closeAll();toast(`${u.nome} atualizado`);rr();return;}
  if(f.id==="if"){const ems=String(fd.get("em")).split(/[\s,;]+/).filter(x=>/@/.test(x));const org=fd.get("org")||(S.user.org);let id=Math.max(...S.users.map(u=>u.id))+1;ems.forEach(em=>{S.users.push({id:id++,nome:em.split("@")[0].replace(/[._]/g," ").replace(/\b\w/g,c=>c.toUpperCase()),email:em,org,perfil:fd.get("perfil")||"membro",turma:fd.get("turma"),status:"Convite pendente",ult:"—",val:"2027-12-31",grupos:GRUPOS.slice(),prog:0});});save();closeAll();toast(`${ems.length} convite(s) enviado(s) (simulado)`);rr();return;}
  if(f.id==="of"){const o=S.orgs[+f.dataset.k];Object.assign(o,{n:fd.get("n"),lic:+fd.get("lic"),val:fd.get("val"),marca:fd.get("marca"),acesso:fd.get("acesso"),grupos:fd.getAll("grupos")});S.orgs=S.orgs.slice();save();closeAll();toast("Organização salva");rr();return;}
  if(f.id==="cf"){const id=+f.dataset.id;const rows=[...f.querySelectorAll("[data-row]")].map(r=>({t:r.querySelector('[name="at"]').value.trim()||"Tema sem título",f:r.querySelector('[name="af"]').value.trim(),dur:+r.querySelector('[name="ad"]').value||10}));S.ed[id]={n:fd.get("n"),s:fd.get("s"),m:fd.get("m"),status:fd.get("status"),aulas:rows};save();closeAll();toast("Trilha salva. O catálogo já mostra a mudança");rr();return;}
