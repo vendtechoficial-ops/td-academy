@@ -479,6 +479,107 @@ body.authless footer{display:none}
  .lvl{grid-template-columns:1fr 1fr}
  .roles{grid-template-columns:1fr}
 }
+/* ---------- V2 ---------- */
+.htop{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:20px;margin-top:28px;align-items:stretch}
+.hcx,.exfeat,.exprom{position:relative;overflow:hidden;border-radius:26px;color:#fff;background:radial-gradient(110% 90% at 100% 0%,color-mix(in srgb,var(--brand) 55%,transparent),transparent 62%),radial-gradient(60% 60% at 0% 100%,color-mix(in srgb,var(--brand) 22%,transparent),transparent 70%),#120E24;border:1px solid color-mix(in srgb,var(--brand) 20%,transparent)}
+.hcx{padding:34px;display:flex;flex-direction:column;gap:14px}
+.hcx .eyebrow,.exfeat .eyebrow,.exprom .eyebrow{color:rgba(255,255,255,.68);display:flex;align-items:center;gap:6px}
+.hcx h1{font-family:var(--serif);font-size:clamp(32px,4vw,50px);line-height:1.02;letter-spacing:-.01em}
+.hcx h1 em{font-style:italic;color:color-mix(in srgb,var(--brand) 30%,#fff)}
+.hcxf{display:flex;gap:8px;background:#fff;border-radius:18px;padding:7px 7px 7px 18px;margin-top:6px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.hcxf input{flex:1;min-width:0;border:0;outline:none;background:none;color:#15131F;font-size:15px}
+.hcxf input::placeholder{color:#8E8C9C}
+.hcxf button{width:46px;height:46px;border:0;border-radius:13px;background:var(--brand);color:#fff;display:grid;place-items:center;cursor:pointer;flex:0 0 auto}
+.hq{margin-top:4px}
+.hqs{display:flex;flex-wrap:wrap;gap:8px}
+.hqs button{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;border-radius:12px;padding:9px 13px;font-size:13.5px;font-weight:500;cursor:pointer;text-align:left;line-height:1.3}
+.hqs button:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.35)}
+.hpriv{font-size:12px;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:6px;margin-top:auto;padding-top:6px}
+.hnext{padding:26px;display:flex;flex-direction:column;gap:14px}
+.hnt{font-size:19px;line-height:1.4}
+.hnext .btn{align-self:flex-start}
+.hsum{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border-top:1px solid var(--line);padding-top:14px;margin-top:auto}
+.hsum b{display:block;font-family:var(--serif);font-size:32px;line-height:1;font-weight:400}.hsum span{font-size:12px;color:var(--ink2)}
+.cxpriv{font-size:11.5px;color:var(--ink3);display:flex;gap:6px;align-items:center;margin-top:8px}
+.exav{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:15px;background:color-mix(in srgb,var(--brand) 14%,var(--paper));color:var(--brand);flex:0 0 auto;letter-spacing:.03em}
+.exav.dest{background:linear-gradient(135deg,var(--brand),color-mix(in srgb,var(--brand) 45%,#00FFB6));color:#fff}
+.exav.lg{width:84px;height:84px;font-size:26px}
+.exav.xl{width:136px;height:136px;font-size:48px;font-family:var(--serif);font-weight:400;box-shadow:0 0 0 6px rgba(255,255,255,.08)}
+.exfeat{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:30px;align-items:center;padding:34px}
+.exfeat h2,.exprom h2{font-size:clamp(34px,4vw,52px);line-height:1;margin-top:6px}
+.exprom h2 em{font-style:italic;color:color-mix(in srgb,var(--brand) 30%,#fff)}
+.exfeat p,.exprom p{color:rgba(255,255,255,.8);max-width:62ch}
+.exfeat .exc{color:rgba(255,255,255,.6);font-weight:600;margin:6px 0 10px}
+.extg{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 0}.extg span{font-size:12px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.1);color:#fff}
+.btn.exbtn{background:#00FFB6;color:#120845}
+.exst{display:grid;gap:16px}.exst div{text-align:right}.exst b{display:block;font-family:var(--serif);font-size:40px;line-height:1;font-weight:400}.exst span{font-size:12px;color:rgba(255,255,255,.6)}
+.exprom{display:grid;grid-template-columns:auto minmax(0,1fr);gap:30px;align-items:center;padding:34px}
+.exprom .hbtn,.exfeat .hbtn{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.exg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.exk{display:flex;flex-direction:column;gap:8px;padding:20px;text-decoration:none;transition:border-color .15s,transform .15s}
+.exk:hover{border-color:color-mix(in srgb,var(--brand) 45%,var(--line));transform:translateY(-2px)}
+.exk b{font-size:16px;line-height:1.25;margin-top:4px}.exk .tg{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.exk .tg .pill{white-space:normal}
+.exk .go{margin-top:auto;padding-top:8px;color:var(--brand);font-weight:600;font-size:13px;display:flex;align-items:center;gap:6px}
+.exprof{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start}
+.exhead{display:flex;gap:20px;align-items:center;padding:24px}.exhead h1{font-size:clamp(32px,4vw,48px);line-height:1;margin:4px 0}
+.exst2{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.exst2 div{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:12px 16px;min-width:120px}.exst2 b{display:block;font-family:var(--serif);font-size:32px;line-height:1;font-weight:400}.exst2 span{font-size:12px;color:var(--ink2)}
+.extg2{display:flex;flex-wrap:wrap;gap:8px}.extg2 .pill{white-space:normal}
+.exhow{margin:0;padding:0;list-style:none;counter-reset:h;display:grid;gap:12px}
+.exhow li{counter-increment:h;display:flex;gap:14px;align-items:baseline;color:var(--ink2)}
+.exhow li::before{content:counter(h);font-family:var(--serif);font-size:28px;line-height:1;color:var(--brand);width:20px;flex:0 0 auto}
+.exhow b{color:var(--ink)}
+.exprof aside{position:sticky;top:84px;display:grid;gap:12px;justify-items:start}
+.exprof aside>.card{width:100%}
+.exwarn{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--ink2);background:var(--paper2);border-radius:16px;padding:14px;width:100%}
+.exwarn svg{flex:0 0 auto;margin-top:2px}
+.tdom{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;margin-top:24px}
+.domL{margin:14px 0 0;padding:0;list-style:none;counter-reset:d;display:grid;gap:12px}
+.domL li{counter-increment:d;display:flex;gap:14px;align-items:baseline;font-size:16px;line-height:1.4}
+.domL li::before{content:counter(d,decimal-leading-zero);font-size:12px;font-weight:700;color:var(--brand);letter-spacing:.06em;flex:0 0 auto}
+.tcount{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tcount span{font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--paper2);color:var(--ink2)}
+.texp{display:flex;flex-direction:column;gap:14px}.texr{display:flex;gap:12px;align-items:center}.texr b{display:block;line-height:1.25}
+.texp .btn{align-self:flex-start;white-space:normal;text-align:left}
+.tcert{border-top:1px solid var(--line);padding-top:14px;margin-top:auto;display:grid;gap:8px}
+.evnext{position:relative;border-radius:26px;overflow:hidden;min-height:320px;display:flex;align-items:flex-end;color:#fff;background:#120E24}
+.evnext img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.evnext::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,8,20,.9),rgba(10,8,20,.4))}
+.evnext .hc{position:relative;z-index:1;padding:34px;max-width:660px;display:flex;flex-direction:column;gap:12px}
+.evnext h2{font-size:clamp(32px,4vw,48px);line-height:1.02}.evnext p{color:rgba(255,255,255,.82)}
+.evnext .hbtn{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.evl{display:grid;gap:10px}
+.evr{display:grid;grid-template-columns:80px minmax(0,1fr) auto;gap:18px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:14px 18px 14px 14px}
+.evr.past{opacity:.8}
+.evd{border-radius:14px;background:color-mix(in srgb,var(--brand) 9%,var(--paper2));text-align:center;padding:10px 4px;display:grid;line-height:1.1;gap:2px}
+.evd b{font-family:var(--serif);font-size:32px;font-weight:400;line-height:1}.evd span{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--brand)}.evd i{font-style:normal;font-size:11px;font-weight:600;color:var(--ink3);letter-spacing:.08em}
+.evb{display:grid;gap:4px;min-width:0}.evb .pill{justify-self:start}.evt{font-size:16px;line-height:1.3}.evm{color:var(--ink3)}
+.evs{display:grid;gap:8px;justify-items:end;text-align:right}
+.evst b{display:block;font-size:13px;color:var(--ok)}.evst span{font-size:12px;color:var(--ink2)}.evst.warn b{color:var(--warn)}.evst.done b{color:var(--ink3)}
+.evben{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.seatb{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:20px;padding:16px 20px}
+.rules{display:grid;margin-top:10px}.rules div{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px}.rules b{color:var(--brand)}
+.rwd{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.rwc{padding:20px;display:flex;flex-direction:column;gap:8px}.rwc .pt{font-weight:700;color:var(--brand);font-size:13px}.rwc b{font-size:16px;line-height:1.3}
+.rwc .btn,.rwc .pill{align-self:flex-start;margin-top:auto}
+.mtask{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.mtask button{border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer}
+.mtask button.on{background:#00FFB6;color:#120845;border-color:#00FFB6}
+@media (max-width:900px){
+ .htop,.tdom,.exprof{grid-template-columns:1fr}
+ .exprof aside{position:static}
+ .exfeat{grid-template-columns:1fr}
+ .exst{grid-template-columns:repeat(4,minmax(0,1fr))}.exst div{text-align:left}
+ .exprom{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+ .hcx,.exfeat,.exprom,.evnext .hc{padding:22px}
+ .exav.xl{width:88px;height:88px;font-size:32px}
+ .exst{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .evr{grid-template-columns:64px minmax(0,1fr);gap:14px}
+ .evs{grid-column:1/-1;justify-items:start;text-align:left;grid-template-columns:minmax(0,1fr) auto;align-items:center}
+ .exhead{flex-direction:column;align-items:flex-start}
+}
+button.ib{cursor:pointer;padding:0}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -486,6 +587,7 @@ body.authless footer{display:none}
   <a href="#inicio" class="logo" id="logo"></a>
   <nav id="nav" aria-label="Principal"></nav>
   <div class="hr">
+    <button class="ib" id="thm" data-act="theme" aria-label="Alternar tema claro e escuro"></button>
     <a href="#biblioteca" class="ib" title="Biblioteca de referências" id="srchbtn"></a>
     <a href="#cortex" class="cxb" id="cxbtn"></a>
     <span class="pts" id="pts"></span>
@@ -501,16 +603,16 @@ body.authless footer{display:none}
 
 <script>
 /* ---------- ícones ---------- */
-const P={search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',play:'<path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/>',check:'<path d="M5 12l5 5L20 7"/>',book:'<path d="M6 3h12v18l-6-4-6 4z"/>',ext:'<path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/>',arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',back:'<path d="M19 12H5M11 6l-6 6 6 6"/>',lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',copy:'<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V4H3v13h5"/>',plus:'<path d="M12 5v14M5 12h14"/>',star:'<path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4 6.5 20.3l1-6.2L3 9.7l6.2-.9z"/>',
+const P={sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',play:'<path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/>',check:'<path d="M5 12l5 5L20 7"/>',book:'<path d="M6 3h12v18l-6-4-6 4z"/>',ext:'<path d="M14 4h6v6M20 4l-9 9M18 14v6H4V6h6"/>',arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',back:'<path d="M19 12H5M11 6l-6 6 6 6"/>',lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',copy:'<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V4H3v13h5"/>',plus:'<path d="M12 5v14M5 12h14"/>',star:'<path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4 6.5 20.3l1-6.2L3 9.7l6.2-.9z"/>',
 spark:'<path d="M12 2l1.9 5.6 5.6 1.9-5.6 1.9L12 17l-1.9-5.6L4.5 9.5l5.6-1.9z" fill="currentColor" stroke="none"/><path d="M19 14l.9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9z" fill="currentColor" stroke="none"/>',
 send:'<path d="M5 12h14M13 6l6 6-6 6"/>',edit:'<path d="M4 20h4L19 9l-4-4L4 16z"/>',li:'<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/>'};
 function ic(n,s=18){return `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n]||''}</svg>`}
 
 /* ---------- dados ---------- */
 const BRANDS={
- td:{nome:"TD Academy",org:"TD Business",mk:"Academy",logo:true,brand:"#7A2CFF",accent:"",dom:"academy.tdbusiness.com.br",ctpl:"eleven",t:{membro:"Membro",membros:"Membros",mentor:"Mentor"}},
- coop:{nome:"Escola Vale Verde",org:"Coop Vale Verde",alt:"Vale Verde",mk:"Escola",brand:"#0F7A4E",accent:"#C9971A",dom:"escola.valeverde.exemplo",ctpl:"coop",t:{membro:"Cooperado",membros:"Cooperados",mentor:"Mentor"}},
- inst:{nome:"Academia Horizonte",org:"Instituto Horizonte",alt:"Horizonte",mk:"Academia",brand:"#2D5BFF",accent:"#E2741F",dom:"academia.horizonte.exemplo",ctpl:"eleven",t:{membro:"Participante",membros:"Participantes",mentor:"Mentor"}}
+ td:{nome:"TD Academy",org:"TD Business",mk:"Academy",logo:true,brand:"#7A2CFF",accent:"",dom:"academy.tdbusiness.com.br",ctpl:"eleven",t:{membro:"Membro",membros:"Membros",mentor:"Expert"}},
+ coop:{nome:"Escola Vale Verde",org:"Coop Vale Verde",alt:"Vale Verde",mk:"Escola",brand:"#0F7A4E",accent:"#C9971A",dom:"escola.valeverde.exemplo",ctpl:"coop",t:{membro:"Cooperado",membros:"Cooperados",mentor:"Expert"}},
+ inst:{nome:"Academia Horizonte",org:"Instituto Horizonte",alt:"Horizonte",mk:"Academia",brand:"#2D5BFF",accent:"#E2741F",dom:"academia.horizonte.exemplo",ctpl:"eleven",t:{membro:"Participante",membros:"Participantes",mentor:"Expert"}}
 };
 /* 6 trilhas do Catálogo Eleven 2027: 5 ligadas às famílias de produtos da TD + 1 transversal */
 const COMP0=[
@@ -652,9 +754,9 @@ const CTPL0=[{id:"eleven",nome:"Eleven · padrão TD",titulo:"CERTIFICADO DE CON
  {id:"coop",nome:"Escola Vale Verde",titulo:"CERTIFICADO DE CONCLUSÃO",bg:"",cbg:"#0B2E20",ca:"#F5C542",cp:"#134B33",logoL:"",logoLT:"Escola Vale Verde",logoR:"img/td-claro.png",emissor:"A Coop Vale Verde certifica que",ass:"Diretoria de Pessoas",cargo:"Coop Vale Verde",sig:""}];
 const LEADS0=[{id:1,data:"21/11/2026",pessoa:"Mariana Costa",org:"Coop Vale Verde",origem:"Trilha bloqueada",interesse:"Futuros e Inteligência Estratégica",destino:"Escola",st:"Em contato",eq:"11 a 30"},{id:2,data:"20/11/2026",pessoa:"Carlos Mendes",org:"Coop Vale Verde",origem:"Mais da TD",interesse:"Plataforma Governance",destino:"Plataformas",st:"Proposta enviada"},{id:3,data:"18/11/2026",pessoa:"Paula Ramos",org:"Instituto Horizonte",origem:"Painel do gestor",interesse:"Jornada de IA Aplicada",destino:"Consultoria",st:"Novo"}];
 const NPS0=[[10,"Liderança de Alta Performance","Saí com o plano da minha equipe pronto."],[9,"Liderança de Alta Performance",""],[9,"Liderança de Alta Performance","O encontro presencial fez toda a diferença."],[10,"Liderança de Alta Performance",""],[8,"Liderança de Alta Performance",""],[10,"Liderança de Alta Performance","Aula com quem faz: os exemplos eram de projetos reais."],[9,"Decisão Orientada a Dados","O Córtex me ajudou a montar o painel da área."],[10,"Decisão Orientada a Dados",""],[7,"Decisão Orientada a Dados","Queria mais exercícios com os nossos dados."],[9,"Decisão Orientada a Dados",""],[6,"Decisão Orientada a Dados","Algumas aulas longas demais."],[10,"Decisão Orientada a Dados",""]].map(([n,tr,c])=>({n,tr,c,data:"nov/2026"}));
-const KEY="tda-v5";
+const KEY="tda-v6";
 const clone=o=>JSON.parse(JSON.stringify(o));
-function fresh(){return{user:null,brand:"td",pts:1720,done:{"6-0":1,"6-1":1,"6-2":1,"6-3":1,"6-4":1,"6-5":1,"6-6":1,"3-1":1,"3-2":1,"2-0":1,"2-1":1,"1-0":1,"3-0":1},quiz:{"6":1},saved:{},notes:{},ins:{},coms:{},badges:["Primeira aula","Trilha concluída","Presença ao vivo"],users:clone(USERS0),perms:clone(PERM0),orgs:clone(ORGS0),certs:clone(CERTS0),fila:clone(FILA0),leads:clone(LEADS0),nps:clone(NPS0),miss:{},wk:0,cxAsk:0,newTr:[],ctpl:clone(CTPL0),brands:clone(BRANDS),refsX:[],ed:{},rules:{aulas:100,nota:70,exp:1},cortexDaily:true,notif:{semanal:true,cortex:true,eventos:true},ranking:true};}
+function fresh(){return{user:null,brand:"td",pts:1720,done:{"6-0":1,"6-1":1,"6-2":1,"6-3":1,"6-4":1,"6-5":1,"6-6":1,"3-1":1,"3-2":1,"2-0":1,"2-1":1,"1-0":1,"3-0":1},quiz:{"6":1},saved:{},notes:{},ins:{"Bases Públicas na Prática: CAGED · Sessão 01":1},coms:{},badges:["Primeira aula","Trilha concluída","Presença ao vivo"],users:clone(USERS0),perms:clone(PERM0),orgs:clone(ORGS0),certs:clone(CERTS0),fila:clone(FILA0),leads:clone(LEADS0),nps:clone(NPS0),miss:{},wk:0,cxAsk:0,newTr:[],ctpl:clone(CTPL0),brands:clone(BRANDS),refsX:[],ed:{},rules:{aulas:100,nota:70,exp:1},cortexDaily:true,notif:{semanal:true,cortex:true,eventos:true},ranking:true,spent:0,resg:{},exu:{},seats:{},avise:{}};}
 let S=fresh();
 try{const raw=localStorage.getItem(KEY);if(raw){const o=JSON.parse(raw);S=Object.assign(fresh(),o);}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
@@ -687,7 +789,7 @@ function myCerts(){return S.certs.filter(c=>S.user&&c.u===S.user.nome);}
 function rankPts(){return S.pts;}
 
 /* ---------- cards ---------- */
-function ccard(c,opt={}){const p=prog(c);return `<a class="cc" href="#trilha-${c.id}"><div class="cv"><img src="${c.img}" alt="" loading="lazy"><span class="tg"><i></i>${c.org?"TRILHA DA "+esc(c.org.toUpperCase()):"TRILHA "+String(c.id).padStart(2,"0")}${c.piloto?" · PILOTO":""}</span><span class="ttl">${serifT(c.s)}</span><span class="who"><b>ESPECIALISTA</b>${esc(c.m)}</span>${p>0?`<span class="pg"><i style="width:${p*100}%"></i></span>`:""}${c.status==="Rascunho"?`<span class="lock">Rascunho · só a equipe TD vê</span>`:!liberada(c)?`<span class="lock">${ic("lock",16)}&nbsp; Fora do plano · 1ª aula aberta</span>`:""}</div><span class="ct">${esc(c.n)}</span><span class="cs">${c.g==="Transversal"?"Transversal":"Família "+esc(c.g)} · ${getAulas(c).length} temas · ${p===1?"Concluída":p?Math.round(p*100)+"% concluído":"Comece agora"}</span></a>`;}
+function ccard(c,opt={}){const p=prog(c);return `<a class="cc" href="#trilha-${c.id}"><div class="cv"><img src="${c.img}" alt="" loading="lazy"><span class="tg"><i></i>${c.org?"TRILHA DA "+esc(c.org.toUpperCase()):"TRILHA "+String(c.id).padStart(2,"0")}${c.piloto?" · PILOTO":""}</span><span class="ttl">${serifT(c.s)}</span><span class="who"><b>ESPECIALISTA</b>${esc(c.m)}</span>${p>0?`<span class="pg"><i style="width:${p*100}%"></i></span>`:""}${c.status==="Rascunho"?`<span class="lock">Rascunho · só a equipe TD vê</span>`:!liberada(c)?`<span class="lock">${ic("lock",16)}&nbsp; Sua empresa pode liberar · 1ª aula aberta</span>`:""}</div><span class="ct">${esc(c.n)}</span><span class="cs">${c.g==="Transversal"?"Transversal":"Família "+esc(c.g)} · ${getAulas(c).length} temas · ${p===1?"Concluída":p?Math.round(p*100)+"% concluído":"Comece agora"}</span></a>`;}
 function acard(c,i){const a=getAulas(c)[i];return `<a class="cc" href="#aula-${c.id}-${i}"><div class="cv"><img src="${c.img}" alt="" loading="lazy"><span class="tg"><i></i>AULA ${String(i+1).padStart(2,"0")} · ${a.dur} MIN</span><span class="ttl">${serifT(c.s)}</span><span class="pg"><i style="width:${prog(c)*100}%"></i></span></div><span class="ct">${esc(a.t)}</span><span class="cs">Continuar · ${esc(c.m)}</span></a>`;}
 function xcard(e){const on=S.ins[e.t];return `<div class="xc"><div class="xi"><img src="${e.img}" alt="" loading="lazy"><span class="k">${esc(e.k)}</span></div><div class="xb"><span class="xt">${serifT(e.t)}</span><span class="mut small">${esc(e.d)}</span><div class="xw"><span class="pill">${esc(e.w)}</span><button class="btn ${on?"ok":"dark"} sm" data-act="ins" data-x="${esc(e.t)}">${on?ic("check",14)+" Vaga garantida":"Garantir vaga"}</button></div></div></div>`;}
 function refCard(r){const sv=S.saved[r.id];const cs=r.c.map(id=>sk(id)).filter(Boolean);return `<article class="ref ${UI.hl===r.id?"hl":""}" id="ref-${r.id}"><div class="top"><span class="pill ${r.td?"br":""}">${esc(r.tp)}</span>${r.cur?'<span class="pill warn">Em curadoria</span>':""}${r.nv?'<span class="nw">NOVA HOJE</span>':""}</div><div class="rt">${esc(r.t)}</div><div class="rf">${esc(r.f)} · ${esc(r.a)}</div><div class="rw">${esc(r.w)}</div><div class="rf">${cs.map(c=>esc(c.s)).join(" · ")}</div><div class="ra">${r.u?`<a class="btn line sm" href="${esc(r.u)}" target="_blank" rel="noopener">Abrir ${ic("ext",14)}</a>`:`<span class="btn line sm" style="cursor:default">${r.td?"Material interno TD":"Livro"}</span>`}<button class="btn ${sv?"ok":"line"} sm" data-act="saveref" data-x="${r.id}">${ic("book",14)} ${sv?"Na minha lista":"Salvar"}</button><button class="btn line sm" data-act="askref" data-x="${r.id}">${ic("spark",14)} Córtex</button></div></article>`;}
@@ -728,7 +830,7 @@ function md(t){let h=esc(t);
  h.split("\n").forEach(l=>{const t=l.trim();if(/^([-•*]|\d+\.)\s+/.test(t)){if(!ul){ul=[];out.push(ul);}ul.push(t.replace(/^([-•*]|\d+\.)\s+/,""));}else{ul=null;if(t)out.push(t);}});
  return out.map(x=>Array.isArray(x)?`<ul>${x.map(li=>`<li>${li}</li>`).join("")}</ul>`:`<p>${x}</p>`).join("");}
 function renderMsgs(key){const el=document.getElementById("msgs");if(!el||el.dataset.k!==key)return;const L=CH[key]||[];
- el.innerHTML=L.length?L.map(m=>m.r==="u"?`<div class="m u">${esc(m.t)}</div>`:`<div class="m a">${m.pending&&!m.t?'<span class="think">Pensando…</span>':md(m.t)}${m.demo?'<span class="demo">Resposta de demonstração. Com o Córtex ligado, ele responde a partir das aulas e da biblioteca.</span>':""}</div>`).join(""):`<div class="m a mut">${key==="geral"?"":"Estou acompanhando esta aula com você. Pause o vídeo e pergunte o que quiser."}</div>`;
+ el.innerHTML=L.length?L.map(m=>m.r==="u"?`<div class="m u">${esc(m.t)}</div>`:`<div class="m a">${m.pending&&!m.t?'<span class="think">Pensando…</span>':md(m.t)}${m.demo?'<span class="demo">Resposta de demonstração. Com o Córtex ligado, ele responde a partir das aulas e da biblioteca.</span>':""}</div>`).join(""):`<div class="m a mut">${key==="geral"?"":key.startsWith("expert-")?"Sou a IA treinada no acervo deste Expert. Conte o seu desafio ou escolha uma pergunta abaixo.":"Estou acompanhando esta aula com você. Pause o vídeo e pergunte o que quiser."}</div>`;
  el.scrollTop=el.scrollHeight;}
 async function ask(key,q,ctx){q=q.trim();if(!q)return;S.cxAsk=1;save();CH[key]=CH[key]||[];const L=CH[key];
  if(L.some(m=>m.pending))return;
@@ -741,7 +843,7 @@ async function ask(key,q,ctx){q=q.trim();if(!q)return;S.cxAsk=1;save();CH[key]=C
  }
  await new Promise(r=>setTimeout(r,700));
  m.t=demoAnswer(q,ctx);m.demo=true;m.pending=false;renderMsgs(key);addPts(5,"+5 pontos por estudar com o Córtex");}
-function cortexBox(key,ctx,chips){return `<div class="cx"><div class="cxh">${ic("spark")} Córtex <span>${ctx?"assistente desta aula":"assistente de estudos"}</span></div><div class="msgs" id="msgs" data-k="${key}"></div><div class="qs">${chips.map(c=>`<button data-act="chip" data-x="${esc(c)}">${esc(c)}</button>`).join("")}</div><form class="cxf" data-cx="${key}"><input id="cxq" placeholder="${ctx?"Pergunte sobre esta aula…":"Pergunte sobre gestão, dados, liderança…"}" autocomplete="off" aria-label="Pergunta ao Córtex"><button aria-label="Enviar">${ic("send")}</button></form></div>`;}
+function cortexBox(key,ctx,chips){const ex=ctx&&ctx.expert;return `<div class="cx"><div class="cxh">${ic("spark")} ${ex?"IA do Expert":"Córtex"} <span>${ex?"treinada no acervo de "+esc(ex.dest?ex.nome:"quem ensina esta disciplina"):ctx?"assistente desta aula":"assistente de estudos"}</span></div><div class="msgs" id="msgs" data-k="${key}"></div><div class="qs">${chips.map(c=>`<button data-act="chip" data-x="${esc(c)}">${esc(c)}</button>`).join("")}</div><form class="cxf" data-cx="${key}"><input id="cxq" placeholder="${ex?"Conte o seu desafio para a IA do Expert…":ctx?"Pergunte sobre esta aula…":"Pergunte sobre gestão, dados, liderança…"}" autocomplete="off" aria-label="Pergunta ao Córtex"><button aria-label="Enviar">${ic("send")}</button></form><p class="cxpriv">${ic("lock",11)} Mostra a fonte de cada resposta. Suas conversas não treinam a IA.</p></div>`;}
 let CURCTX=null,CURKEY="geral";
 
 /* ---------- views ---------- */
@@ -762,8 +864,8 @@ V.entrar=()=>`<section class="login">
 
 V.inicio=()=>{const u=S.user,cs=comps(),c4=getComp(4);
  const cont=cs.filter(c=>{const p=prog(c);return p>0&&p<1;});
- return `
- <section class="hero"><img src="img/h1.jpg" alt="">
+ return `${homeTop()}
+ <section class="hero" style="margin-top:20px"><img src="img/h1.jpg" alt="">
   <div class="hc"><span class="live"><i></i>AO VIVO · QUINTA, 19H</span>
    <h1>Dashboard sem cultura analítica é <em>decoração</em></h1>
    <p>Aula aberta com o time de Análise de Dados da TD. Traga um painel da sua área: os melhores viram estudo de caso.</p>
@@ -774,14 +876,11 @@ V.inicio=()=>{const u=S.user,cs=comps(),c4=getComp(4);
  <section class="sec"><div class="sh"><h2>Missões da semana</h2><span class="cnt">Nível ${lvlOf(S.pts).n} · ★ ${S.pts.toLocaleString("pt-BR")}</span><a class="dash sp" href="#jornada">MINHA JORNADA</a></div>${missHTML()}</section>
  <section class="sec"><div class="sh"><h2>Trilhas da escola</h2><span class="cnt">${String(cs.length).padStart(2,"0")} trilhas · uma para cada família da TD e uma de liderança</span><a class="dash sp" href="#trilhas">VER TODAS</a></div><div class="row">${cs.map(c=>ccard(c)).join("")}</div></section>
  <section class="sec"><div class="sh"><h2>Comunidades</h2><span class="cnt">05 comunidades · abertura em dezembro</span><a class="dash sp" href="#comunidades">VER TODAS</a></div><div class="row">${COMS.map(comCard).join("")}</div></section>
- <section class="sec"><div class="sh"><h2>As 11 <em class="it">disciplinas</em></h2><span class="cnt">cada uma com mentor, aulas e material</span><a class="dash sp" href="#competencias">VER O MAPA</a></div>${skGrid()}</section>
- <section class="sec card cxpromo">
-  <div class="shot"><div class="mini-chat"><span class="u">Como aplico isso na minha cooperativa?</span><span class="a">Escolha uma decisão que se repete toda semana e teste o método só nela por 30 dias. Veja também:</span><span class="src">${ic("play",11)} Do dado à decisão de segunda-feira</span><span class="src">${ic("book",11)} Novo CAGED</span></div><div class="mini-vid"><img src="${c4.img}" alt=""></div></div>
-  <div class="txt"><span class="eyebrow">Nova forma de aprender</span><h2>Seu assistente de <em>estudos</em></h2><p class="mut">O Córtex conhece todas as aulas e toda a biblioteca da escola. Pause o vídeo e pergunte na hora: ele explica de outro jeito, dá exemplos da sua área, indica a próxima aula e as leituras certas.</p><div class="hbtn"><a class="btn dark" href="#cortex">${ic("spark",16)} Conversar com o Córtex</a><a class="btn line" href="#aula-4-2">Ver dentro de uma aula</a></div></div>
- </section>
+ <section class="sec"><div class="sh"><h2>As 11 <em class="it">disciplinas</em></h2><span class="cnt">cada uma com Expert, IA, aulas e material</span><a class="dash sp" href="#competencias">VER O MAPA</a></div>${skGrid()}</section>
+ ${exPromo()}
  <section class="sec"><a class="mand iaban" href="#ias"><div><img src="img/eleven.png" alt="" style="height:36px"><span class="mey" style="margin-top:18px">IA aplicada · banco de soluções</span><h1 style="font-size:clamp(32px,4.5vw,52px)">Um problema. <span>Uma solução.</span></h1><p class="mp">Diga o que trava o seu dia a dia e veja o que a TD já criou para isso, área por área, e as ferramentas do mercado que resolvem.</p><span class="btn" style="background:#00FFB6;color:#120845;margin-top:16px">Abrir o banco de IAs ${ic("arrow",16)}</span></div><div style="pointer-events:none">${wheel(-1)}</div></a></section>
  <section class="sec"><div class="sh"><h2>Novas na biblioteca</h2><span class="cnt">Atualizada todos os dias</span><a class="dash sp" href="#biblioteca">VER TODAS</a></div><div class="refs">${allRefs().filter(r=>r.nv).slice(0,3).map(refCard).join("")}</div></section>
- <section class="sec"><div class="sh"><h2>Experiências</h2><span class="cnt">${EXP.length} próximas</span><a class="dash sp" href="#experiencias">VER TODAS</a></div><div class="row">${EXP.map(xcard).join("")}</div></section>
+ <section class="sec"><div class="sh"><h2>Próximos eventos</h2><span class="cnt">agenda da escola</span><a class="dash sp" href="#eventos">VER A AGENDA</a></div><div class="evl">${EVT.filter(e=>!e.past).slice(0,3).map(evRow).join("")}</div></section>
  <section class="sec"><div class="sh"><h2>Mais da TD</h2></div><div class="grid">${TDX.map(t=>`<div class="card pad"><span class="eyebrow">${esc(t.k)}</span><h3 class="serif" style="font-size:30px;margin:8px 0">${esc(t.t)}</h3><p class="mut">${esc(t.d)}</p><button class="btn line sm" style="margin-top:14px" data-act="interest" data-x="${esc(t.t)}">Quero saber mais</button></div>`).join("")}</div></section>`;};
 
 V.trilhas=()=>`<div class="ph"><div><span class="eyebrow">Catálogo Eleven 2027</span><h1>As seis <em>trilhas</em></h1><p class="mut">Cinco trilhas, uma para cada família de produtos da TD (Governança e IA, Inteligência de Dados, Transformação Digital, Planejamento e Observatórios), e uma trilha de liderança que atravessa todas. Cada trilha tem temas curtos, entrega prática, comunidade e certificado.</p></div><div class="act"><a class="btn line" href="#competencias">Ver as 11 competências</a></div></div>
@@ -802,7 +901,8 @@ V.trilha=(id)=>{const c=getComp(id);if(!c)return V.inicio();const lk=!liberada(c
  if(UI.dtab==="certificado")body=`<div class="two"><div class="card pad"><h3 class="serif" style="font-size:30px">Como conquistar</h3>${reqs(c)}</div><div>${cert?`<div class="cert-card">${certMini(cert)}<div class="cb"><b>Emitido em ${cert.data}</b><div class="acts"><button class="btn pri sm" data-act="cert" data-x="${cert.cod}">Ver certificado</button></div></div></div>`:`<div class="card pad"><p class="mut">O certificado é emitido automaticamente quando os requisitos ficam completos, com código público de verificação.</p></div>`}</div></div>`;
  return `<div class="crumb"><a href="#trilhas">${ic("back",14)} Catálogo</a></div>
  <section class="dhero"><img src="${c.img}" alt=""><div class="hc"><span class="eyebrow" style="color:rgba(255,255,255,.7)">Trilha ${String(c.id).padStart(2,"0")} · ${c.g==="Transversal"?"Transversal":"Família "+esc(c.g)}${c.piloto?" · Piloto":""}</span><h1>${serifT(c.n)}</h1><div class="meta"><span>${A.length} temas</span><span>${A.reduce((s,a)=>s+a.dur,0)} min de vídeo</span><span>${esc(c.m)} · TD</span><span>${p===1?"Concluída":Math.round(p*100)+"% concluído"}</span></div><div class="hbtn">${lk?`<button class="btn light" data-act="unlock" data-x="${c.id}">${ic("lock",16)} Quero liberar esta trilha</button><a class="btn ghost-w" href="#aula-${c.id}-0">${ic("play",16)} Assistir a aula aberta</a>`:`<a class="btn light" href="#aula-${c.id}-${n}">${ic("play",16)} ${p===0?"Começar":p===1?"Rever":"Continuar"}: aula ${n+1}</a>`}${ex?`<button class="btn ghost-w" data-act="ins" data-x="${esc(ex.t)}">${esc(ex.k)}: ${esc(ex.w)}</button>`:""}</div></div></section>
- ${lk?`<div class="lockband">${ic("lock",20)}<div><b>Esta trilha não está no plano da ${esc(S.user.org)}.</b><br><span class="small mut">A primeira aula é aberta para você conhecer. Peça a liberação e o comercial da TD prepara a proposta.</span></div><button class="btn pri sm" data-act="unlock" data-x="${c.id}">Pedir liberação</button></div>`:""}
+ ${lk?`<div class="lockband">${ic("lock",20)}<div><b>Sua empresa pode liberar esta trilha.</b><br><span class="small mut">Ela ainda não está no plano da ${esc(S.user.org)}. A primeira aula é aberta para você conhecer. Peça a liberação: o comercial da TD conversa com a sua organização.</span></div><button class="btn pri sm" data-act="unlock" data-x="${c.id}">Pedir liberação</button></div>`:""}
+ ${trDom(c)}
  <div class="tinfo"><div><span class="eyebrow">Sobre a trilha</span><p>${esc(c.d)}</p></div><div><span class="eyebrow">Para quem</span><p>${esc(c.para)}</p></div><div><span class="eyebrow">Entrega prática</span><p>${esc(c.ent)}</p></div><div><span class="eyebrow">Disciplinas que desenvolve</span><div class="sktr">${c.cp.map(x=>`<a href="#disciplina-${x}">${String(x).padStart(2,"0")} · ${esc(sk(x).s)}</a>`).join("")}</div></div><div><span class="eyebrow">Comunidade e família TD</span><p>${cm?`<a href="#comunidades">Comunidade ${esc(cm.n)}</a> · leva à família ${esc(c.g)} da TD`:"Atravessa as 5 comunidades"}</p></div></div>
  <div class="tabs">${tabs.map(([k,t])=>`<button class="${UI.dtab===k?"on":""}" data-act="dtab" data-x="${k}">${t}</button>`).join("")}</div>${body}`;};
 function reqs(c){const A=getAulas(c),d=A.filter((_,i)=>S.done[`${c.id}-${i}`]).length,R=S.rules;const exOk=Object.keys(S.ins).length>=R.exp;
@@ -824,7 +924,7 @@ V.aula=(cid,i)=>{const c=getComp(cid);if(!c)return V.inicio();i=+i||0;if(!libera
  </div>`;};
 function sideBody(){const {c,i,a}=CURCTX;const k=`${c.id}-${i}`;
  if(UI.stab==="cortex")return cortexBox(CURKEY,CURCTX,["Resuma esta aula","Me dê um exemplo da minha área","Que leituras aprofundam isso?","Crie perguntas para eu testar"]);
- if(UI.stab==="sobre")return `<p class="mut">Nesta aula, o ${esc(c.m.toLowerCase())} da TD mostra ${esc(a.t.toLowerCase())}, com exemplos de organizações atendidas pela TD.</p><h3 style="font-weight:700;font-size:15px;margin:16px 0 6px">O que você vai aprender</h3><ul class="mut" style="padding-left:18px;margin:0">${pontos(c,i).map(p=>`<li>${esc(p)}</li>`).join("")}</ul><h3 style="font-weight:700;font-size:15px;margin:16px 0 6px">${esc(term("mentor"))}</h3><p class="mut">${esc(sk(a.k).m)} · TD Business</p>`;
+ if(UI.stab==="sobre")return `<p class="mut">Nesta aula, o ${esc(c.m.toLowerCase())} da TD mostra ${esc(a.t.toLowerCase())}, com exemplos de organizações atendidas pela TD.</p><h3 style="font-weight:700;font-size:15px;margin:16px 0 6px">O que você vai aprender</h3><ul class="mut" style="padding-left:18px;margin:0">${pontos(c,i).map(p=>`<li>${esc(p)}</li>`).join("")}</ul><h3 style="font-weight:700;font-size:15px;margin:16px 0 6px">${esc(term("mentor"))}</h3><p class="mut">${esc(sk(a.k).m)} · TD Business</p><a class="btn line sm" style="margin-top:10px" href="#expert-sk${a.k}">${ic("spark",14)} Perguntar à IA do Expert</a>`;
  if(UI.stab==="notas")return `<label class="f">Suas anotações desta aula<textarea class="inp" rows="10" data-note="${k}" placeholder="Escreva aqui. Fica salvo neste navegador.">${esc(S.notes[k]||"")}</textarea></label><p class="small mut" style="margin-top:8px">Na versão final, as anotações ficam na sua conta e o Córtex pode usá-las nas respostas.</p>`;
  return `<div class="ckl">${["Slides da aula","Exercício aplicado","Planilha de apoio"].map(m=>`<div class="req" style="border-bottom:1px solid var(--line)"><span>${m}</span><button class="btn line sm" style="margin-left:auto" data-act="dl">Baixar</button></div>`).join("")}</div><h3 style="font-weight:700;font-size:15px;margin:16px 0 6px">Da biblioteca</h3>${allRefs().filter(r=>r.c.some(x=>c.cp.includes(x))&&!r.cur).slice(0,3).map(r=>`<a class="src" href="#biblioteca" data-act="openref" data-x="${r.id}">${ic("book",11)} ${esc(r.t)}</a> `).join("")}`;}
 
@@ -854,11 +954,12 @@ function radar(){const cs=SK,N=cs.length,R=120,cx=160,cy=150;const ent=[2,2,1,2,
  const pt=(v,i)=>{const a=-Math.PI/2+i*2*Math.PI/N;return [cx+Math.cos(a)*R*v/5,cy+Math.sin(a)*R*v/5];};
  const poly=a=>a.map((v,i)=>pt(v,i).join(",")).join(" ");
  return `<svg viewBox="0 0 320 300" width="100%" style="max-width:420px" role="img" aria-label="Diagnóstico de entrada comparado com hoje">${[1,2,3,4,5].map(l=>`<polygon points="${poly(Array(N).fill(l))}" fill="none" stroke="var(--line)"/>`).join("")}<polygon points="${poly(ent)}" fill="color-mix(in srgb,var(--ink3) 18%,transparent)" stroke="var(--ink3)" stroke-dasharray="4 3"/><polygon points="${poly(now)}" fill="color-mix(in srgb,var(--brand) 22%,transparent)" stroke="var(--brand)" stroke-width="2"/>${cs.map((c,i)=>{const [x,y]=pt(5.9,i);return `<text x="${x}" y="${y}" font-size="9" fill="var(--ink2)" text-anchor="middle" dominant-baseline="middle">${String(c.id).padStart(2,"0")}</text>`;}).join("")}</svg>`;}
-V.jornada=()=>{const L=MEMBROS.map(m=>m[2]?[S.user.nome.split(" ")[0]+" (você)",S.pts,1]:m).sort((a,b)=>b[1]-a[1]);
+V.jornada=()=>{const L=MEMBROS.map(m=>m[2]?[S.ranking?S.user.nome.split(" ")[0]+" (você)":"Você · oculto para a turma",S.pts,1]:m).sort((a,b)=>b[1]-a[1]);
  return `<div class="ph"><div><span class="eyebrow">${esc(S.user.nome)} · ${esc(S.user.org)}</span><h1>Minha <em>jornada</em></h1></div><div class="act"><a class="btn line" href="#certificados">Meus certificados</a><a class="btn line" href="#perfil">Editar perfil</a></div></div>
  ${jornadaTop()}<div class="two"><div class="card pad"><span class="eyebrow">Nível de maturidade · diagnóstico</span><h2 class="serif" style="font-size:40px;margin-top:6px">Estruturado</h2><div class="lvl">${LVL.map((l,i)=>`<div class="${i<2?"done":i===2?"on":""}">${String(i+1).padStart(2,"0")}<br><b>${l}</b></div>`).join("")}</div>
   <div style="margin-top:22px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:center"><div>${radar()}</div><div><p class="small mut"><span style="display:inline-block;width:18px;border-top:2px dashed var(--ink3);vertical-align:middle"></span> Diagnóstico de entrada (ago/26)</p><p class="small mut" style="margin-top:6px"><span style="display:inline-block;width:18px;border-top:2px solid var(--brand);vertical-align:middle"></span> Hoje</p><p class="small mut" style="margin-top:12px">Maior evolução: ${esc(sk(9).n)} e ${esc(sk(4).n)}. Próximo foco sugerido: ${esc(sk(5).n)}, na trilha <a href="#trilha-1">IA para Líderes e Equipes</a>.</p></div></div></div>
-  <div class="card pad"><span class="eyebrow">Ranking da turma · Lideranças 2026.2</span>${L.map((m,i)=>`<div class="rk ${m[2]?"me":""}"><span class="p">${i+1}</span><span>${esc(m[0])}</span><span class="s">${m[1].toLocaleString("pt-BR")}</span></div>`).join("")}<p class="small mut" style="margin-top:10px">Você pode sair do ranking em Meu perfil.</p></div></div>
+  <div class="card pad"><span class="eyebrow">Ranking da sua turma · Lideranças 2026.2</span><p class="small mut" style="margin:6px 0 4px">Só as pessoas da ${esc(S.user.org)} veem.</p>${L.map((m,i)=>`<div class="rk ${m[2]?"me":""}"><span class="p">${i+1}</span><span>${esc(m[0])}</span><span class="s">${m[1].toLocaleString("pt-BR")}</span></div>`).join("")}<button class="btn line sm" style="margin-top:12px" data-act="rank2">${S.ranking?"Ocultar meu nome":"Mostrar meu nome"}</button></div></div>
+ ${rwdHTML()}
  <section class="sec"><div class="sh"><h2>Medalhas</h2></div><div class="badges">${S.badges.map(b=>`<span class="bdg"><i>★</i>${esc(b)}</span>`).join("")}</div></section>
  <section class="sec"><div class="sh"><h2>Passaporte Eleven</h2><span class="cnt">Explorador → Praticante → Referência</span></div><div class="passg">${SK.map(x=>`<a class="card" href="#disciplina-${x.id}" style="padding:14px;text-decoration:none"><span class="eyebrow">${pad(x.id)}</span><b style="display:block;font-size:14px;margin:4px 0 8px;line-height:1.3">${esc(x.n)}</b><span class="pill ${NOW[x.id-1]>=4?"ok":NOW[x.id-1]>=3?"br":""}">${passLvl(NOW[x.id-1])}</span></a>`).join("")}</div></section>
  <section class="sec"><div class="sh"><h2>Seu progresso</h2></div><div class="grid">${comps().filter(c=>prog(c)>0).map(c=>ccard(c)).join("")}</div></section>`;};
@@ -894,7 +995,7 @@ V.equipe=()=>{const org=role()==="admin"?"Coop Vale Verde":S.user.org;const T=S.
  return `<div class="ph"><div><span class="eyebrow">${esc(org)} · visão do gestor</span><h1>Painel da <em>equipe</em></h1><p class="mut">Adesão, evolução e onde a equipe precisa de reforço. Você vê só as pessoas da sua organização.</p></div><div class="act"><button class="btn dark" data-act="invite" data-x="${esc(org)}">${ic("plus",16)} Convidar pessoas</button></div></div>
  <div class="kpis"><div class="kpi"><span>Pessoas ativas</span><b>${at.length}/${T.length}</b></div><div class="kpi"><span>Progresso médio</span><b>${Math.round(T.reduce((s,u)=>s+u.prog,0)/Math.max(T.length,1))}%</b></div><div class="kpi"><span>Maturidade média</span><b>2,8</b><span>era 2,1 na entrada</span></div><div class="kpi"><span>Certificados</span><b>${S.certs.filter(c=>T.some(u=>u.nome===c.u)&&c.st==="Válido").length}</b></div></div>
  <div class="two"><div class="tw"><table><thead><tr><th>Pessoa</th><th>Turma</th><th>Progresso</th><th>Status</th><th>Último acesso</th></tr></thead><tbody>${T.map(u=>`<tr><td><div class="nm">${esc(u.nome)}</div><div class="em">${esc(u.email)}</div></td><td>${esc(u.turma)}</td><td style="min-width:120px"><div class="meter"><i style="width:${u.prog}%"></i></div><span class="small mut">${u.prog}%</span></td><td>${stPill(u.status)}</td><td class="small mut">${esc(u.ult)}</td></tr>`).join("")}</tbody></table></div>
- <div class="card pad"><h3 class="serif" style="font-size:28px">Onde reforçar</h3><p class="small mut" style="margin-bottom:10px">Média da equipe por competência (0 a 100)</p><div class="hbars">${fr.map(([n,v])=>`<div class="hb"><span>${n}</span><div class="meter"><i style="width:${v}%;background:${v<45?"var(--bad)":v<65?"var(--warn)":"var(--ok)"}"></i></div><b>${v}</b></div>`).join("")}</div><button class="btn line sm" style="margin-top:14px" data-act="interest" data-x="Turma de reforço">Pedir uma turma de reforço à TD</button></div></div>`;};
+ <div class="card pad"><h3 class="serif" style="font-size:28px">Onde reforçar</h3><p class="small mut" style="margin-bottom:10px">Média da equipe por competência (0 a 100)</p><div class="hbars">${fr.map(([n,v])=>`<div class="hb"><span>${n}</span><div class="meter"><i style="width:${v}%;background:${v<45?"var(--bad)":v<65?"var(--warn)":"var(--ok)"}"></i></div><b>${v}</b></div>`).join("")}</div><button class="btn line sm" style="margin-top:14px" data-act="interest" data-x="Turma de reforço">Pedir uma turma de reforço à TD</button></div></div>${seatSec(T)}`;};
 function stPill(s){return `<span class="pill ${s==="Ativo"||s==="Válido"||s==="Publicado"?"ok":s==="Convite pendente"||s==="Rascunho"?"warn":"bad"}">${esc(s)}</span>`;}
 
 /* ---------- administração ---------- */
@@ -1076,7 +1177,7 @@ function wpanel(k){if(k<0)return `<span class="mey">Clique em uma área da manda
 V.ias=()=>`<section class="mand">
  <div class="mhead"><img src="img/eleven.png" alt="Eleven Skills" class="mlogo"><span class="mey">IA aplicada · banco de soluções</span><h1>Um problema. <span>Uma solução.</span></h1><p class="mp">Descreva o que trava o seu dia a dia. Mostramos o que a TD já criou para um problema parecido e as ferramentas do mercado que resolvem.</p>
   <form class="msearch" id="mf"><input id="mq" placeholder="Ex.: perco tempo montando relatórios" value="${esc(UI.mq||"")}" aria-label="Qual é o seu problema?" autocomplete="off"><button class="btn" style="background:#00FFB6;color:#120845">${ic("search",16)} Buscar solução</button></form>
-  <div class="mqs">${MPROB.slice(0,6).map(p=>`<button data-act="mprob" data-x="${esc(p.p)}">${esc(p.p)}</button>`).join("")}</div>
+  <div class="mtask">${MTASK.map(([k,t])=>`<button class="${(UI.mtask||"")===k?"on":""}" data-act="mtask" data-x="${k}">${t}</button>`).join("")}</div><div class="mqs">${probsFor().map(p=>`<button data-act="mprob" data-x="${esc(p.p)}">${esc(p.p)}</button>`).join("")}</div>
   <div id="mres"></div></div>
  <div class="mgrid"><div>${wheel(UI.wk??-1)}</div><div class="mpanel" id="mpanel">${wpanel(UI.wk??-1)}</div></div>
  <div class="mfoot">13 líderes · 11 áreas · 35 ferramentas em uso · 21 criações próprias · fonte: formulário Mandala da Inteligência, novembro de 2026</div>
@@ -1095,7 +1196,7 @@ function msearch(q){UI.mq=q;const STOP=["muito","tempo","perco","minha","minhas"
 
 /* ---------- V1: acesso, comercial, gamificação, disciplinas, white label ---------- */
 const pad=n=>String(n).padStart(2,"0");
-function term(k){const t=(brand().t)||{};return t[k]||{membro:"Membro",membros:"Membros",mentor:"Mentor",hub:brand().nome}[k];}
+function term(k){const t=(brand().t)||{};return t[k]||{membro:"Membro",membros:"Membros",mentor:"Expert",hub:brand().nome}[k];}
 function roleLabel(k){return k==="membro"?term("membro"):ROLES[k].label;}
 function staff(){return ["admin","especialista"].includes(role());}
 function myOrg(){return S.user?S.orgs.find(o=>o.n===S.user.org):null;}
@@ -1121,7 +1222,7 @@ V.disciplina=(id)=>{const x=sk(id);if(!x)return V.competencias();const L=[];comp
  <section class="dsk"><div><span class="eyebrow" style="color:rgba(255,255,255,.65)">Disciplina ${pad(x.id)} · ${esc(x.p)}</span><h1>${serifT(x.n)}</h1><p>${esc(x.d)}</p><div class="meta"><span>${L.length} aulas</span><span>${trs.length} ${trs.length>1?"trilhas":"trilha"}</span><span>${esc(term("mentor"))}: ${esc(x.m)} · TD</span></div></div><div class="dskn">${pad(x.id)}</div></section>
  <div class="two" style="margin-top:28px"><div><div class="sh"><h2>Aulas</h2><span class="cnt">aula com quem faz</span></div>${L.map(([c,a,i],j)=>{const lk=!liberada(c)&&i>0;return `<a class="lsn" href="#aula-${c.id}-${i}" ${lk?`data-act="unlock" data-x="${c.id}"`:""}><span class="ln">${pad(j+1)}</span><span><span class="lt">${esc(a.t)}</span>${a.novo?' <span class="pill ok">Nova</span>':""}<br><span class="ls">Aula com ${esc(x.m)} · trilha ${esc(c.s)} · ${a.dur} min</span></span><span class="lr">${lk?`<span class="ck lk">${ic("lock",13)}</span>`:`<span class="ck ${S.done[c.id+"-"+i]?"on":""}">${ic("check",14)}</span>`}</span></a>`;}).join("")}
   <div class="sh" style="margin-top:30px"><h2>Material de apoio</h2></div><div class="grid">${["Guia da disciplina","Ferramenta de autodiagnóstico","Exercício para a equipe"].map(m=>`<div class="card pad"><span class="pill">Material</span><p style="margin-top:10px;font-weight:600">${m}</p><button class="btn line sm" style="margin-top:12px" data-act="dl">Baixar</button></div>`).join("")}</div></div>
- <div><div class="card pad mentor"><span class="mav">${esc(initials(x.m.replace("Especialista em ","").replace("Gerente de ","")))}</span><span class="eyebrow">${esc(term("mentor"))} da disciplina</span><h3 class="serif" style="font-size:28px;line-height:1.05;margin:6px 0">${esc(x.m)}</h3><p class="small mut">TD Business · conduz as aulas, os encontros ao vivo e responde dúvidas na comunidade.</p><button class="btn dark sm" style="margin-top:12px" data-act="mentoria" data-x="${esc(x.n)}">Pedir uma mentoria</button></div>
+ <div><div class="card pad mentor"><span class="mav">${esc(initials(x.m.replace("Especialista em ","").replace("Gerente de ","")))}</span><span class="eyebrow">${esc(term("mentor"))} da disciplina</span><h3 class="serif" style="font-size:28px;line-height:1.05;margin:6px 0">${esc(x.m)}</h3><p class="small mut">TD Business · conduz as aulas, os encontros ao vivo e responde dúvidas na comunidade.</p><div class="hbtn" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn dark sm" href="#expert-sk${x.id}">${ic("spark",14)} Conversar com a IA</a><button class="btn line sm" data-act="mentoria" data-x="${esc(x.n)}">Pedir mentoria</button></div></div>
   <div class="card pad" style="margin-top:16px"><span class="eyebrow">Seu Passaporte nesta disciplina</span><div class="pass">${["Explorador","Praticante","Referência"].map(l=>`<span class="${passLvl(v)===l?"on":(["Explorador","Praticante","Referência"].indexOf(l)<["Explorador","Praticante","Referência"].indexOf(passLvl(v))?"done":"")}">${l}</span>`).join("")}</div></div>
   <div class="card pad" style="margin-top:16px"><span class="eyebrow">Trilhas com esta disciplina</span><div class="sktr" style="margin-top:10px">${trs.map(t=>`<a href="#trilha-${t.id}">${esc(t.n)}${liberada(t)?"":" · bloqueada"}</a>`).join("")}</div></div>
   ${refs.length?`<div class="card pad" style="margin-top:16px"><span class="eyebrow">Para ler</span><div style="margin-top:8px">${refs.map(r=>`<a class="src" href="#biblioteca" data-act="openref" data-x="${r.id}">${ic("book",11)} ${esc(r.t)}</a> `).join("")}</div></div>`:""}</div></div>`;};
@@ -1166,13 +1267,166 @@ function jornadaTop(){const L=lvlOf(S.pts),nx=L.next,base=LEVELS.find(l=>l[0]===
 function dupModal(id,mode){const c=id?getComp(id):null;const orgs=S.orgs.filter(o=>o.n!=="TD Business");
  openModal(`<span class="eyebrow">${mode==="new"?"Nova trilha":"Duplicar trilha"}</span><h2>${mode==="new"?"Trilha própria de um cliente":esc(c.n)}</h2><p class="mut">${mode==="new"?"Crie uma trilha que só as pessoas da organização escolhida vão ver.":"A cópia leva os temas, as disciplinas e o especialista. Ela fica só para a organização escolhida, como rascunho, para você adaptar."}</p><form id="df" data-id="${id||""}" data-mode="${mode||"dup"}" class="ckl" style="gap:12px;margin-top:14px"><label class="f">Para qual organização<select class="inp" name="org">${orgs.map(o=>`<option>${esc(o.n)}</option>`).join("")}</select></label><label class="f">Nome da trilha<input class="inp" name="n" value="${esc(c?c.n:"")}" required></label><div class="mfoot"><button type="button" class="btn line" data-act="close">Cancelar</button><button class="btn pri">${mode==="new"?"Criar e editar":"Duplicar e editar"}</button></div></form>`);}
 
+/* ---------- V2: benchmark de mercado (Início, Experts, Trilhas, Eventos, Jornada, tema) ---------- */
+/* tema claro / escuro */
+function isDark(){const a=document.documentElement.getAttribute("data-theme");if(a)return a==="dark";try{return matchMedia("(prefers-color-scheme: dark)").matches;}catch(e){return false;}}
+(function(){try{const t=localStorage.getItem("tda-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+function thmIcon(){const b=document.getElementById("thm");if(b){b.innerHTML=ic(isDark()?"sun":"moon");b.title=isDark()?"Mudar para o tema claro":"Mudar para o tema escuro";}}
+
+/* Início: perguntas pela trilha e pelo momento do membro */
+const TQ={1:["Como uso IA para ganhar tempo na minha rotina?","Que cuidados preciso ter ao usar IA com dados da empresa?"],2:["Como escolho os indicadores certos para a minha área?","Como apresento números numa reunião sem perder as pessoas?"],3:["Por onde começo a digitalizar um processo da minha área?","Como envolvo a equipe numa mudança de processo?"],4:["Como transformo a estratégia em metas para a minha equipe?","Como acompanho um plano sem virar só planilha?"],5:["Como percebo uma mudança no meu setor antes dos outros?","Como monto cenários para o próximo ano?"],6:["Como dou um feedback difícil sem criar conflito?","Como organizo as prioridades da minha equipe na semana?"]};
+function trAtual(){const cs=comps().filter(liberada);return cs.find(c=>{const p=prog(c);return p>0&&p<1;})||cs.find(c=>prog(c)===0)||cs[0];}
+function sugestoes(){const c=trAtual();const L=(c&&TQ[c.id])?TQ[c.id].slice():[];const nd=Object.keys(S.done).length;
+ L.push(role()==="gestor"?"Como acompanho a evolução da minha equipe?":"Monte um roteiro de estudo para esta semana");
+ L.push(nd<3?"Por onde eu começo na escola?":"Qual deve ser o meu próximo passo?");return L.slice(0,4);}
+function fmtMin(m){const h=Math.floor(m/60),r=m%60;return h?`${h} h${r?" "+r+" min":""}`:`${r} min`;}
+function proximoPasso(){const c=trAtual();if(!c)return null;const A=getAulas(c),d=A.filter((_,i)=>S.done[`${c.id}-${i}`]).length,f=A.length-d,n=nextAula(c);const qz=!S.quiz[c.id];
+ const t=d===0?`Comece pela trilha <b>${esc(c.n)}</b>: são ${A.length} aulas curtas, ${fmtMin(A.reduce((s,a)=>s+a.dur,0))} no total.`:`Faltam <b>${f} ${f===1?"aula":"aulas"}${qz?" e o quiz":""}</b> para o certificado de <b>${esc(c.n)}</b>.`;
+ return {c,t,href:`#aula-${c.id}-${n}`,cta:d===0?"Começar a trilha":`Continuar: aula ${n+1}`,p:prog(c)};}
+function goAsk(q){CH.geral=CH.geral||[];location.hash="#cortex";setTimeout(()=>ask("geral",q,null),80);}
+function homeTop(){const u=S.user,pp=proximoPasso(),h=new Date().getHours();const sd=h<12?"Bom dia":h<18?"Boa tarde":"Boa noite";
+ return `<section class="htop"><div class="hcx"><span class="eyebrow">${ic("spark",14)} Córtex · assistente de estudos</span><h1>${sd}, ${esc(u.nome.split(" ")[0])}. <em>Em que posso ajudar hoje?</em></h1>
+ <form class="hcxf" id="hcxf"><input id="hcxq" placeholder="Conte uma situação do seu trabalho ou um tema que quer aprender" autocomplete="off" aria-label="Pergunta ao Córtex"><button aria-label="Perguntar">${ic("arrow",18)}</button></form>
+ <span class="eyebrow hq">Você também pode perguntar</span><div class="hqs">${sugestoes().map(q=>`<button data-act="homeask" data-x="${esc(q)}">${esc(q)}</button>`).join("")}</div>
+ <p class="hpriv">${ic("lock",12)} Responde com base nas aulas e na biblioteca da escola e mostra de onde veio. Suas conversas não treinam a IA.</p></div>
+ ${pp?`<div class="hnext card"><span class="eyebrow">Seu próximo passo</span><p class="hnt">${pp.t}</p><div><div class="meter"><i style="width:${pp.p*100}%"></i></div><span class="small mut">${Math.round(pp.p*100)}% da trilha concluída</span></div><a class="btn pri" href="${pp.href}">${ic("play",14)} ${esc(pp.cta)}</a><div class="hsum"><div><b>${Object.keys(S.done).length}</b><span>aulas concluídas</span></div><div><b>${myCerts().length}</b><span>certificados</span></div><div><b>${Object.keys(S.ins).length}</b><span>eventos</span></div></div><a class="small" href="#jornada" style="color:var(--brand);font-weight:600;text-decoration:none">Ver minha jornada →</a></div>`:""}</section>`;}
+
+/* Trilha: o que você vai dominar */
+const DOMINAR={
+ 1:["Usar assistentes de IA para escrever, resumir e analisar no dia a dia","Escolher uma tarefa da sua área para automatizar com IA","Saber os cuidados de segurança e de LGPD antes de usar IA com dados","Explicar para a equipe o que a IA faz e o que continua com as pessoas","Medir o ganho de tempo ou de qualidade de um caso de uso"],
+ 2:["Ler e questionar um indicador, mesmo sem ser da área técnica","Escolher os poucos indicadores que ajudam a decidir","Montar um painel simples com os dados da sua área","Usar bases públicas, como o CAGED, para dar contexto aos números","Apresentar dados com clareza numa reunião"],
+ 3:["Mapear um serviço ou processo da sua área do começo ao fim","Redesenhar esse processo a partir de quem usa","Entregar melhorias em ciclos curtos, com método ágil","Envolver as pessoas na mudança desde o início","Acompanhar se a transformação está dando resultado"],
+ 4:["Traduzir a estratégia em objetivos claros para a sua área","Desdobrar metas em resultados-chave por equipe","Planejar um projeto com escopo, prazo e responsáveis","Mapear e priorizar os riscos do plano","Acompanhar o plano com indicadores e corrigir a rota"],
+ 5:["Reconhecer sinais de mudança no seu setor","Montar cenários simples para mais de um futuro","Usar dados de observatórios e do território nas decisões","Entender como a economia afeta o seu negócio","Preparar a área para responder rápido às mudanças"],
+ 6:["Conduzir uma conversa de feedback sem criar conflito","Organizar as prioridades da equipe na semana","Comunicar uma decisão difícil com clareza","Negociar com quem não está sob o seu comando","Montar um plano de desenvolvimento para a sua equipe"]};
+function dominar(c){return DOMINAR[c.id]||getAulas(c).slice(0,5).map(a=>a.f||a.t);}
+
+/* Experts e as IAs treinadas no acervo de cada um */
+const SKQ={1:["Como percebo uma mudança no meu setor antes dos outros?","Como monto cenários simples para o próximo ano?"],2:["Como explico a estratégia da empresa para a minha equipe?","Como testo uma ideia de serviço sem gastar muito?"],3:["Que regras mínimas a equipe precisa para usar IA com segurança?","Como mapeio os riscos de um projeto?"],4:["Como escolho os indicadores certos para a minha área?","Como questiono um número que parece errado?"],5:["Que tarefas da minha rotina a IA pode fazer por mim?","Como escrevo um bom pedido para um assistente de IA?"],6:["Por onde começo a digitalizar um processo?","Como sei se um processo digital está funcionando?"],7:["Como organizo o trabalho em ciclos curtos?","Como priorizo quando tudo parece urgente?"],8:["Como envolvo a equipe numa mudança?","O que fazer quando a equipe resiste a algo novo?"],9:["Como dou um feedback difícil sem criar conflito?","Como defino metas claras para a equipe?"],10:["Como me preparo para uma negociação importante?","Como apresento uma ideia em 5 minutos?"],11:["Como lido com a pressão no trabalho?","Como crio o hábito de aprender toda semana?"]};
+const EXPERTS=[{id:"sidnei",nome:"Sidnei Rodrigues",cargo:"CEO da TD Business",dest:1,
+ bio:"Lidera a TD Business e conduz projetos de estratégia, transformação digital e inteligência de dados com empresas, cooperativas e governos. A IA dele foi treinada nas palestras, aulas, artigos e na metodologia da TD.",
+ temas:["Estratégia e modelos de negócio","Transformação digital","Liderança de organizações","Inteligência de dados"],sk:[2,6,9,4],tr:[4,3,6],
+ ac:[["palestras",24],["aulas",18],["artigos",36],["métodos TD",7]],qs:["Como a liderança deve conduzir a transformação digital?","Por onde começar a usar dados nas decisões?","Como alinhar estratégia, projetos e rotina?"]}];
+SK.forEach(x=>{const au=COMP0.flatMap(c=>aulasBase(c).filter(a=>a.k===x.id).map(a=>a.t));
+ EXPERTS.push({id:"sk"+x.id,nome:x.m,cargo:"Expert TD · Disciplina "+pad(x.id)+" · "+x.s,sk:[x.id],tr:trilhasDe(x.id).map(t=>t.id),
+  temas:[x.n].concat(au.slice(0,3)),bio:`Conduz a disciplina ${x.n}. ${x.d} A IA foi treinada nas aulas, nos materiais e nos encontros ao vivo da disciplina.`,
+  ac:[["aulas",au.length],["materiais",3],["encontros ao vivo",2+x.id%3]],qs:(SKQ[x.id]||[]).concat(["Qual aula você me indica para começar?"])});});
+function expById(id){return EXPERTS.find(e=>e.id===id);}
+function expDaTrilha(c){return c&&c.cp?expById("sk"+c.cp[0]):null;}
+function exIni(e){if(e.dest)return initials(e.nome);const w=e.nome.replace(/^(Especialista em|Gerente de Projetos de|Facilitador de)\s+/,"").split(" ").filter(s=>s.length>2);return (w[0][0]+(w[1]?w[1][0]:w[0][1])).toUpperCase();}
+function exAv(e,cls){return `<span class="exav ${cls||""} ${e.dest?"dest":""}" aria-hidden="true">${esc(exIni(e))}</span>`;}
+function exCard(e){return `<a class="card exk" href="#expert-${e.id}">${exAv(e)}<b>${esc(e.nome)}</b><span class="small mut">${esc(e.cargo)}</span><span class="tg">${e.temas.slice(1,3).map(t=>`<span class="pill">${esc(t)}</span>`).join("")}</span><span class="go">${ic("spark",14)} Conversar com a IA</span></a>`;}
+function listExperts(){const q=norm(UI.eq||"");const L=EXPERTS.slice(1).filter(e=>!q||norm(e.nome+" "+e.cargo+" "+e.temas.join(" ")).includes(q));const el=$("#exlist");if(el)el.innerHTML=L.length?L.map(exCard).join(""):`<p class="mut">Nenhum Expert encontrado. Pergunte ao <a href="#cortex">Córtex</a>.</p>`;}
+function exPromo(){const s=EXPERTS[0];return `<section class="sec exprom">${exAv(s,"xl")}<div><span class="eyebrow">Novo · Experts</span><h2 class="serif">Converse com a IA de quem <em>ensina</em></h2><p>Cada Expert da escola tem uma IA treinada no acervo dele. Comece pela de ${esc(s.nome)}: estratégia, transformação digital e liderança, a qualquer hora, com a fonte de cada resposta.</p><div class="hbtn"><a class="btn exbtn" href="#expert-sidnei">${ic("spark",16)} Conversar com a IA do Sidnei</a><a class="btn ghost-w" href="#experts">Ver todos os Experts</a></div></div></section>`;}
+V.experts=()=>{const s=EXPERTS[0];return `<div class="ph"><div><span class="eyebrow">Quem ensina na escola</span><h1>Experts</h1><p class="mut">Cada Expert tem uma IA treinada no acervo dele: aulas, palestras, artigos e materiais. Converse a qualquer hora sobre o seu desafio, no seu nível. Toda resposta mostra de qual conteúdo veio.</p></div></div>
+ <section class="exfeat">${exAv(s,"xl")}<div><span class="eyebrow">Expert em destaque</span><h2 class="serif">${esc(s.nome)}</h2><p class="exc">${esc(s.cargo)}</p><p>${esc(s.bio)}</p><div class="extg">${s.temas.map(t=>`<span>${esc(t)}</span>`).join("")}</div><div class="hbtn" style="margin-top:16px"><a class="btn exbtn" href="#expert-sidnei">${ic("spark",16)} Conversar com a IA do Sidnei</a></div></div><div class="exst">${s.ac.map(([k,v])=>`<div><b>${v}</b><span>${esc(k)}</span></div>`).join("")}</div></section>
+ <div class="sh" style="margin-top:44px"><h2>Experts das 11 <em class="it">disciplinas</em></h2><span class="cnt">um por disciplina, com a IA de cada um</span></div>
+ <div class="fbar"><input class="inp srch" data-f="eq" placeholder="Buscar Expert ou tema" value="${esc(UI.eq||"")}" aria-label="Buscar Expert"></div>
+ <div class="exg" id="exlist"></div>`;};
+V.expert=(id)=>{const e=expById(id);if(!e)return V.experts();CURCTX={expert:e};CURKEY="expert-"+e.id;const trs=e.tr.map(getComp).filter(Boolean);
+ return `<div class="crumb"><a href="#experts">${ic("back",14)} Experts</a></div>
+ <div class="exprof"><div><section class="exhead card">${exAv(e,"lg")}<div><span class="eyebrow">${e.dest?"Expert em destaque":"Expert TD"}</span><h1 class="serif">${esc(e.nome)}</h1><p class="mut">${esc(e.cargo)}</p></div></section>
+  <p style="margin-top:18px;font-size:16px">${esc(e.bio)}</p>
+  <div class="exst2">${e.ac.map(([k,v])=>`<div><b>${v}</b><span>${esc(k)} no acervo</span></div>`).join("")}</div>
+  <div class="sh" style="margin-top:32px"><h2>Do que <em class="it">fala</em></h2></div><div class="extg2">${e.temas.map(t=>`<span class="pill">${esc(t)}</span>`).join("")}</div>
+  <div class="sh" style="margin-top:32px"><h2>Como funciona a <em class="it">IA</em></h2></div><ol class="exhow"><li><span><b>Você conta</b> um desafio ou uma dúvida, com as suas palavras.</span></li><li><span><b>A IA procura</b> só no acervo autorizado do Expert.</span></li><li><span><b>Responde</b> e mostra a aula ou o material de onde tirou a resposta.</span></li><li><span><b>Você aprofunda</b> no conteúdo indicado ou leva a dúvida para a comunidade.</span></li></ol>
+  <div class="sh" style="margin-top:32px"><h2>Trilhas e disciplinas</h2></div><div class="sktr">${trs.map(t=>`<a href="#trilha-${t.id}">Trilha · ${esc(t.n)}</a>`).join("")}${e.sk.map(k=>`<a href="#disciplina-${k}">Disciplina ${pad(k)} · ${esc(sk(k).s)}</a>`).join("")}</div></div>
+ <aside><div class="card pad">${cortexBox(CURKEY,CURCTX,e.qs)}</div><div class="exwarn">${ic("lock",15)}<span><b>É uma IA, não o Expert ao vivo.</b> Ela foi treinada no acervo autorizado ${e.dest?"de "+esc(e.nome):"do Expert"}, responde só com base nesse conteúdo e pode errar: use com senso crítico. Suas conversas não são usadas para treinar a IA.</span></div><button class="btn line sm" data-act="mentoria" data-x="${esc(e.nome)}">Pedir uma conversa com o Expert</button></aside></div>`;};
+const _preamble=preamble;
+preamble=function(ctx){if(!(ctx&&ctx.expert))return _preamble(ctx);const e=ctx.expert,u=S.user;const au=e.tr.map(getComp).filter(Boolean).map(c=>getAulas(c).map((a,i)=>`[aula ${c.id}-${i}] ${a.t} (trilha: ${c.n})`).join("\n")).join("\n");
+ return `Você é a IA do Expert ${e.nome} (${e.cargo}) na ${brand().nome}, a escola de negócios da TD Business. Você é uma IA treinada no acervo desse Expert: não finja ser a pessoa ao vivo. Responda em português do Brasil, em linguagem simples, com no máximo 170 palavras e listas curtas com "- " quando ajudar.
+Use só o que está no acervo do Expert. Temas do acervo: ${e.temas.join("; ")}.
+Sempre termine com "Fonte:" e o código de uma ou duas aulas entre colchetes, por exemplo [aula 4-1], ou de uma referência, por exemplo [ref 7]. Nunca invente códigos fora das listas. Se a pergunta fugir do acervo, diga isso com franqueza e sugira o Córtex ou outro Expert.
+Quem pergunta: ${u.nome}, ${u.cargo}, ${u.org}. Ajuste o nível da resposta à pessoa: nem todo mundo é executivo.
+Aulas do acervo:
+${au}
+Biblioteca da escola:
+${biblio()}`;};
+const _demoAnswer=demoAnswer;
+demoAnswer=function(q,ctx){if(!(ctx&&ctx.expert))return _demoAnswer(q,ctx);const e=ctx.expert;const c=getComp(e.tr[0])||getComp(2);const A=getAulas(c);const k=Math.min(1,A.length-1);const r=allRefs().find(x=>x.c.some(y=>e.sk.includes(y))&&!x.cur);
+ return `${e.dest?"Pelo que trabalho nas minhas palestras e aulas":"Pelo que trabalhamos nesta disciplina"}, eu seguiria assim:\n- **Comece pequeno:** escolha uma situação real da sua semana ligada a ${e.temas[e.dest?0:1].toLowerCase()}.\n- **Aplique um método simples** só nessa situação, por 30 dias.\n- **Compare o antes e o depois** e leve o resultado para a comunidade.\nFonte: [aula ${c.id}-0] [aula ${c.id}-${k}]${r?` [ref ${r.id}]`:""}`;};
+const _ask=ask;
+ask=async function(key,q,ctx){const first=String(key).startsWith("expert-")&&!(S.exu||{})[key]&&String(q||"").trim();await _ask(key,q,ctx);if(first){S.exu=Object.assign({},S.exu,{[key]:1});save();setTimeout(()=>addPts(50,"Primeira conversa com a IA deste Expert · +50 pontos"),1200);}};
+
+/* Eventos */
+const EVT=[
+ {t:"Bases Públicas na Prática: CAGED · Sessão 01",k:"Laboratório",d:"Os dados oficiais do emprego formal, do microdado ao painel em Power BI.",dia:"17",mes:"NOV",sem:"TER",h:"14h",loc:"Auditório TD · Florianópolis",st:"Realizado",mot:"certificados emitidos",past:1,c:2,img:"img/h1.jpg"},
+ {t:EXP[0].t,k:"Aula ao vivo",d:EXP[0].d,dia:"26",mes:"NOV",sem:"QUI",h:"19h",loc:"Online",st:"Inscrições abertas",mot:"ao vivo, com gravação depois",c:2,img:"img/e2.jpg"},
+ {t:EXP[3].t,k:"Missão",d:EXP[3].d,dia:"01",mes:"DEZ",sem:"TER",h:"3 semanas",loc:"Em equipe · online",st:"Inscrições abertas",mot:"equipes de 3 a 6 pessoas",c:4,img:"img/e5.jpg"},
+ {t:"1º encontro da Comunidade IA",k:"Comunidade",d:COMS[0].pq+".",dia:"02",mes:"DEZ",sem:"QUA",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[0].m} participantes`,c:1,img:COMS[0].img},
+ {t:EXP[1].t,k:"Laboratório",d:EXP[1].d,dia:"04",mes:"DEZ",sem:"SEX",h:"14h",loc:"Auditório TD · Florianópolis",st:"Últimas vagas",mot:"restam 6 de 40",c:1,img:"img/e4.jpg",warn:1,pres:1},
+ {t:"1º encontro da Comunidade Planejamento",k:"Comunidade",d:COMS[1].pq+".",dia:"05",mes:"DEZ",sem:"SÁB",h:"10h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[1].m} participantes`,c:4,img:COMS[1].img},
+ {t:"1º encontro da Comunidade Inteligência de Dados",k:"Comunidade",d:COMS[2].pq+".",dia:"09",mes:"DEZ",sem:"QUA",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[2].m} participantes`,c:2,img:COMS[2].img},
+ {t:EXP[2].t,k:"Visita técnica",d:EXP[2].d,dia:"11",mes:"DEZ",sem:"SEX",h:"9h",loc:"Projeto TD em operação · Grande Florianópolis",st:"Inscrições abertas",mot:"20 vagas",c:3,img:"img/e1.jpg",pres:1},
+ {t:"1º encontro da Comunidade Observatórios",k:"Comunidade",d:COMS[3].pq+".",dia:"11",mes:"DEZ",sem:"SEX",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[3].m} participantes`,c:5,img:COMS[3].img},
+ {t:"1º encontro da Comunidade Transformação Digital",k:"Comunidade",d:COMS[4].pq+".",dia:"16",mes:"DEZ",sem:"QUA",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[4].m} participantes`,c:3,img:COMS[4].img},
+ {t:EXP[4].t,k:"Encontro presencial",d:"Encontro exclusivo com 30 a 40 lideranças das organizações participantes, com agenda estratégica para aprimorar os planejamentos.",dia:"FEV",mes:"2027",sem:"",h:"data a confirmar",loc:"Florianópolis",st:"Em breve",mot:"por convite · inscrições em janeiro",c:6,img:"img/e3.jpg",pres:1},
+ {t:"Tendências, futuro e comportamento",k:"Encontro on-line",d:"Encontro ao vivo para 200 a 300 colaboradores das organizações participantes: o que muda no trabalho, na tecnologia e no comportamento.",dia:"MAR",mes:"2027",sem:"",h:"data a confirmar",loc:"Online · ao vivo",st:"Em breve",mot:"aberto às equipes das organizações",c:0,img:"img/c1.jpg"}];
+const SEATS=20,SEATS_USED=7;
+function plano(e){const c=getComp(e.c);return !c||liberada(c);}
+function evBtn(e){const on=S.ins[e.t];if(e.past)return on?`<span class="pill ok">${ic("check",12)} Você participou</span>`:`<span class="pill">Encerrado</span>`;
+ if(!plano(e))return `<button class="btn line sm" data-act="evlib" data-x="${esc(e.t)}">${ic("lock",13)} Sua empresa pode liberar</button>`;
+ if(e.st==="Em breve")return `<button class="btn line sm" data-act="evavise" data-x="${esc(e.t)}">${S.avise&&S.avise[e.t]?ic("check",14)+" Vamos avisar":"Avise-me"}</button>`;
+ return `<button class="btn ${on?"ok":"dark"} sm" data-act="ins" data-x="${esc(e.t)}">${on?ic("check",14)+" Inscrito":"Quero participar"}</button>`;}
+function evRow(e){return `<div class="evr ${e.past?"past":""}"><div class="evd"><b>${esc(e.dia)}</b><span>${esc(e.mes)}</span>${e.sem?`<i>${esc(e.sem)}</i>`:""}</div><div class="evb"><span class="pill ${e.k==="Comunidade"?"br":""}">${esc(e.k)}</span><b class="evt">${esc(e.t)}</b><span class="small mut">${esc(e.d)}</span><span class="small evm">${esc(e.h)} · ${esc(e.loc)}${!e.past&&plano(e)?" · incluído no plano da sua empresa":""}</span></div><div class="evs"><div class="evst ${e.warn?"warn":""} ${e.past||e.st==="Em breve"?"done":""}"><b>${esc(e.st)}</b><span>${esc(e.mot)}</span></div>${evBtn(e)}</div></div>`;}
+function seatsUsed(){return SEATS_USED+Object.values(S.seats||{}).reduce((s,l)=>s+l.length,0);}
+function seatBand(){return `<div class="card seatb">${ic("user",18)}<div style="flex:1;min-width:220px"><b>Assentos da sua empresa em eventos presenciais</b><br><span class="small mut">${seatsUsed()} de ${SEATS} usados em 2026/2027. Indique quem vai em cada evento.</span></div><a class="btn dark sm" href="#equipe">Indicar pessoas</a></div>`;}
+V.eventos=()=>{const up=EVT.filter(e=>!e.past),ks=["Todos",...new Set(EVT.map(e=>e.k))],ek=UI.ek||"Todos";const f=e=>ek==="Todos"||e.k===ek;const nx=up[0];
+ return `<div class="ph"><div><span class="eyebrow">Agenda da escola</span><h1>Eventos</h1><p class="mut">Aulas ao vivo, laboratórios no auditório da TD, visitas técnicas, missões em equipe e os encontros das comunidades. A participação conta pontos na sua jornada e vale para os certificados.</p></div></div>
+ <section class="evnext"><img src="${nx.img}" alt=""><div class="hc"><span class="live"><i></i>PRÓXIMO EVENTO · ${esc(nx.sem)} ${esc(nx.dia)} ${esc(nx.mes)} · ${esc(nx.h)}</span><h2 class="serif">${serifT(nx.t)}</h2><p>${esc(nx.d)}</p><div class="hbtn">${S.ins[nx.t]?`<span class="btn ok">${ic("check",16)} Você está inscrito</span>`:`<button class="btn light" data-act="ins" data-x="${esc(nx.t)}">Quero participar</button>`}<span class="small" style="color:rgba(255,255,255,.75)">${esc(nx.st)} · ${esc(nx.mot)}</span></div></div></section>
+ ${["gestor","admin"].includes(role())?seatBand():""}
+ <div class="chips" style="margin:28px 0 0">${ks.map(k=>`<button class="chip ${ek===k?"on":""}" data-act="ek" data-x="${esc(k)}">${esc(k)}</button>`).join("")}</div>
+ <section class="sec" style="margin-top:24px"><div class="sh"><h2>Próximos</h2><span class="cnt">${up.filter(f).length} eventos</span></div><div class="evl">${up.filter(f).map(evRow).join("")||'<p class="mut">Nenhum evento deste tipo por enquanto.</p>'}</div></section>
+ <section class="sec"><div class="sh"><h2>Já aconteceu</h2></div><div class="evl">${EVT.filter(e=>e.past&&f(e)).map(evRow).join("")||'<p class="mut">Nada por aqui ainda.</p>'}</div></section>
+ <div class="card pad evben"><div><span class="eyebrow">Incluído no plano da sua empresa</span><p style="margin-top:8px">Aulas ao vivo e encontros das comunidades ligadas às trilhas liberadas, com gravação e certificado de participação.</p></div><div><span class="eyebrow">Fora do plano</span><p style="margin-top:8px">O evento aparece com “Sua empresa pode liberar”. Peça a liberação e o comercial da TD conversa com a sua organização.</p></div><div><span class="eyebrow">Conta para a jornada</span><p style="margin-top:8px">Cada participação vale +20 pontos e é um dos marcos para subir de nível.</p></div></div>`;};
+function seatSec(T){const ev=EVT.filter(e=>!e.past&&e.pres);return `<section class="sec"><div class="sh"><h2>Assentos em <em class="it">eventos</em></h2><span class="cnt">${seatsUsed()} de ${SEATS} usados · você indica quem vai</span></div><div class="evl">${ev.map(e=>{const L=(S.seats||{})[e.t]||[];return `<div class="evr"><div class="evd"><b>${esc(e.dia)}</b><span>${esc(e.mes)}</span>${e.sem?`<i>${esc(e.sem)}</i>`:""}</div><div class="evb"><span class="pill">${esc(e.k)}</span><b class="evt">${esc(e.t)}</b><span class="small mut">${L.length?"Indicados: "+L.map(esc).join(", "):"Ninguém indicado ainda"}</span></div><div class="evs"><button class="btn line sm" data-act="seat" data-x="${esc(e.t)}">${ic("plus",14)} Indicar pessoa</button></div></div>`;}).join("")}</div></section>`;}
+
+/* Jornada: níveis por marco, regras do jogo e troca por experiências */
+function trC(){return comps().filter(c=>prog(c)===1).length;}
+const MARCOS=[["Explorador",[]],
+ ["Praticante",[["Concluir 1 trilha",()=>trC()>=1],["Participar de 1 evento",()=>Object.keys(S.ins).length>=1]]],
+ ["Referência",[["Concluir 3 trilhas",()=>trC()>=3],["Participar de 1 comunidade",()=>Object.values(S.coms).some(Boolean)],["Conversar com a IA de 1 Expert",()=>Object.keys(S.exu||{}).length>=1]]],
+ ["Embaixador",[["Ser convidado pela escola para conduzir um encontro da comunidade",()=>false]]]];
+lvlOf=function(){let i=0;if(S.user){for(let k=1;k<MARCOS.length;k++){if(MARCOS[k][1].every(m=>m[1]()))i=k;else break;}}return {n:MARCOS[i][0],i,next:MARCOS[i+1]||null};};
+const REGRAS=[["Concluir uma aula",10],["Acertar o quiz da trilha",80],["Concluir uma trilha",100],["1ª conversa com a IA de cada Expert",50],["Participar de um evento",20],["Entrar numa comunidade",30],["Avaliar uma trilha",20],["Perguntar ao Córtex",5]];
+const RWD=[["Kit da escola","Caderno e material oficial, entregue no próximo encontro.",1500],["Vaga prioritária em evento presencial","Seu lugar garantido antes de abrir as inscrições.",2000],["Conversa de 30 minutos com um Expert","Agenda com o Expert da disciplina que você escolher.",3000],["Encontro de embaixadores","Encontro fechado com a TD e os embaixadores das comunidades.",5000]];
+function saldo(){return S.pts-(S.spent||0);}
+jornadaTop=function(){const L=lvlOf(),nx=L.next;
+ return `<div class="jtop"><div class="card pad"><span class="eyebrow">Seu nível na escola</span><h2 class="serif" style="font-size:44px;margin-top:4px">${L.n}</h2><div class="lvlrow">${MARCOS.map((m,i)=>`<span class="${i<=L.i?"on":""}">${m[0]}</span>`).join("")}</div>${nx?`<p class="small" style="margin:16px 0 4px;font-weight:600">Para chegar a ${nx[0]}</p>${nx[1].map(([t,f])=>`<div class="req"><span class="ck ${f()?"on":""}">${ic("check",14)}</span><span class="small">${esc(t)}</span></div>`).join("")}`:`<p class="small mut" style="margin-top:12px">Você chegou ao nível mais alto da escola.</p>`}<p class="small mut" style="margin-top:12px">O nível sobe por marcos cumpridos, não por tempo de tela. Embaixadores ajudam a conduzir as comunidades.</p></div>
+ <div class="card pad"><span class="eyebrow">Missões da semana</span>${missHTML()}</div>
+ <div class="card pad"><span class="eyebrow">Regras do jogo</span><div class="rules">${REGRAS.map(([t,p])=>`<div><span>${esc(t)}</span><b>+${p}</b></div>`).join("")}</div><p class="small mut" style="margin-top:10px">Não damos ponto por entrar todo dia: só pelo que você aprende e aplica.</p></div></div>`;};
+function rwdHTML(){const sd=saldo(),R=S.resg||{};return `<section class="sec"><div class="sh"><h2>Troque pontos por <em class="it">experiências</em></h2><span class="cnt">Saldo: ★ ${sd.toLocaleString("pt-BR")} pontos</span></div><div class="rwd">${RWD.map(([t,d,p],i)=>`<div class="card rwc"><span class="pt">★ ${p.toLocaleString("pt-BR")}</span><b>${esc(t)}</b><span class="small mut">${esc(d)}</span>${R[i]?`<span class="pill ok">${ic("check",12)} Pedido enviado</span>`:sd>=p?`<button class="btn pri sm" data-act="resg" data-x="${i}">Trocar pontos</button>`:`<span class="pill">Faltam ${(p-sd).toLocaleString("pt-BR")} pontos</span>`}</div>`).join("")}</div></section>`;}
+
+/* IA aplicada: atalhos por tarefa */
+const MTASK=[["","Todas"],["resolver","Resolver um problema"],["reuniao","Preparar uma reunião"],["aprender","Aprender um tema"],["planejar","Planejar"]];
+const MTASKP={resolver:["Perco tempo montando relatórios","Tarefas repetitivas entre sistemas","Painel com erro chegando ao cliente","Ninguém acha a informação nos documentos"],reuniao:["Reuniões sem registro e tarefas esquecidas","Apresentações feitas do zero","Status de projetos em PowerPoint"],aprender:["Pesquisar referências e tendências toma tempo","Ninguém acha a informação nos documentos","Preciso de vídeo, narração ou tradução"],planejar:["Projeções e previsões feitas à mão","Contratos e prazos em planilhas soltas","Status de projetos em PowerPoint"]};
+function probsFor(){return UI.mtask?MPROB.filter(p=>MTASKP[UI.mtask].includes(p.p)):MPROB.slice(0,6);}
+
+/* ações novas */
+const V2ACT={
+ theme(){const n=isDark()?"light":"dark";document.documentElement.setAttribute("data-theme",n);try{localStorage.setItem("tda-theme",n);}catch(e){}thmIcon();},
+ homeask(el){goAsk(el.dataset.x);},
+ ek(el){UI.ek=el.dataset.x;rr();},
+ mtask(el){UI.mtask=el.dataset.x;rr();},
+ evlib(el){const t=el.dataset.x;leadAdd({origem:"Evento fora do plano",interesse:t,destino:"Escola"});toast("Pedido enviado. O comercial da TD conversa com a sua organização");},
+ evavise(el){S.avise=Object.assign({},S.avise,{[el.dataset.x]:1});save();toast("Combinado: avisamos quando as inscrições abrirem");rr();},
+ seat(el){const t=el.dataset.x;const org=role()==="admin"?"Coop Vale Verde":S.user.org;const T=S.users.filter(u=>u.org===org&&u.status==="Ativo");if(seatsUsed()>=SEATS){toast("Todos os assentos do ano já estão em uso");return;}
+  openModal(`<span class="eyebrow">Assento em evento</span><h2>${esc(t)}</h2><p class="mut">Quem recebe o convite ganha a vaga garantida e o evento entra na agenda da pessoa.</p><form id="seatf" data-x="${esc(t)}" class="ckl" style="gap:12px;margin-top:14px"><label class="f">Pessoa da equipe<select class="inp" name="p">${T.map(u=>`<option>${esc(u.nome)}</option>`).join("")}</select></label><div class="mfoot"><button type="button" class="btn line" data-act="close">Cancelar</button><button class="btn pri">Indicar</button></div></form>`);},
+ resg(el){const i=+el.dataset.x,r=RWD[i];if(!r||(S.resg||{})[i])return;if(saldo()<r[2]){toast("Pontos insuficientes");return;}S.spent=(S.spent||0)+r[2];S.resg=Object.assign({},S.resg,{[i]:1});leadAdd({origem:"Troca de pontos",interesse:r[0],destino:"Escola"});save();toast("Pedido enviado. A escola confirma com você");rr();},
+ rank2(){S.ranking=!S.ranking;save();toast(S.ranking?"Seu nome aparece para a turma":"Seu nome ficou oculto para a turma");rr();}
+};
+function trDom(c){const e=expDaTrilha(c);const A=getAulas(c),d=A.filter((_,i)=>S.done[`${c.id}-${i}`]).length,f=A.length-d,q=!!S.quiz[c.id];const lk=!liberada(c);
+ const st=lk?`A trilha ainda não está no plano da sua empresa. A primeira aula é aberta.`:f===0&&q?`<b>Requisitos cumpridos.</b> Seu certificado já está em Certificados.`:`Faltam <b>${f} ${f===1?"aula":"aulas"}${q?"":" e o quiz"}</b> para o certificado.`;
+ return `<section class="tdom"><div class="card pad"><span class="eyebrow">O que você vai dominar</span><ol class="domL">${dominar(c).map(t=>`<li>${esc(t)}</li>`).join("")}</ol><div class="tcount"><span>${A.length} aulas</span><span>1 quiz</span><span>${fmtMin(A.reduce((s,a)=>s+a.dur,0))}</span><span>certificado</span></div></div>
+ <div class="card pad texp">${e?`<span class="eyebrow">Expert da trilha</span><div class="texr">${exAv(e)}<div><b>${esc(e.nome)}</b><span class="small mut">Expert TD · tem uma IA treinada no acervo</span></div></div><a class="btn dark sm" href="#expert-${e.id}">${ic("spark",14)} Perguntar à IA do Expert sobre esta trilha</a>`:""}<div class="tcert"><span class="eyebrow">Seu certificado</span><p class="small">${st}</p><div class="meter"><i style="width:${prog(c)*100}%"></i></div></div></div></section>`;}
+
 /* ---------- casca ---------- */
-function navItems(){const r=role();const n=[["inicio","Início"],["trilhas","Trilhas"],["competencias","Disciplinas"],["comunidades","Comunidades"],["ias","IA aplicada"],["experiencias","Experiências"],["biblioteca","Biblioteca"],["jornada","Minha jornada"],["certificados","Certificados"]];
+function navItems(){const r=role();const n=[["inicio","Início"],["trilhas","Trilhas"],["competencias","Disciplinas"],["comunidades","Comunidades"],["ias","IA aplicada"],["experts","Experts"],["eventos","Eventos"],["biblioteca","Biblioteca"],["jornada","Minha jornada"],["certificados","Certificados"]];
  if(r==="gestor"||r==="admin")n.push(["equipe","Equipe"]);if(r==="admin"||r==="especialista")n.push(["admin","Administração"]);return n;}
 function shell(cur){const b=brand();const r=document.documentElement.style;r.setProperty("--brand",b.brand);if(b.accent)r.setProperty("--accent",b.accent);else r.removeProperty("--accent");
  document.title=b.nome;$("#logo").innerHTML=logoHTML();
  $("#foot").innerHTML=`<span>${esc(b.nome)} · escola de negócios com tecnologia TD Business</span><span>Protótipo para validação · <a href="#verificar">Verificar certificado</a></span>`;
- if(!S.user)return;
+ thmIcon();if(!S.user)return;
  $("#nav").innerHTML=navItems().map(([h,t])=>`<a href="#${h}" class="${cur===h?"on":""}">${t}</a>`).join("");
  $("#srchbtn").innerHTML=ic("search");$("#cxbtn").innerHTML=`${ic("spark",16)}<span>Córtex</span>`;
  $("#pts").textContent=`★ ${S.pts.toLocaleString("pt-BR")} · ${lvlOf(S.pts).n}`;$("#me").textContent=initials(S.user.nome);}
@@ -1181,15 +1435,17 @@ function route(){const h=decodeURIComponent((location.hash||"").slice(1));const 
  if(v==="verificar")a=[parts.slice(1).join("-")];
  if(!S.user&&v!=="verificar")v="entrar";
  if(S.user&&v==="entrar")v="inicio";
+ if(v==="experiencias")v="eventos";
  if(!V[v])v="inicio";
  if(v==="equipe"&&!["gestor","admin"].includes(role()))v="inicio";
  if(v==="admin"&&!["admin","especialista"].includes(role()))v="inicio";
  document.body.classList.toggle("authless",!S.user);
  $("#menu").hidden=true;
- shell(v);$("#app").innerHTML=V[v](...a);after(v,a);
+ shell(v==="expert"?"experts":v);$("#app").innerHTML=V[v](...a);after(v,a);
  const key=v+a.join("-");if(key!==LAST){window.scrollTo(0,0);LAST=key;}}
 function after(v,a){
  if(v==="trilhas")listTrilhas();
+ if(v==="experts")listExperts();
  if(v==="biblioteca")listRefs();
  if(v==="admin"&&$("#list")&&(a[0]||"usuarios")==="usuarios"&&role()==="admin")listUsers();
  if(document.getElementById("msgs"))renderMsgs(document.getElementById("msgs").dataset.k);
@@ -1223,7 +1479,7 @@ const ACT={
  ins(el){const t=el.dataset.x;if(S.ins[t]){toast("Você já está inscrito");return;}S.ins[t]=1;save();addPts(20,"Vaga garantida · +20 pontos");rr();},
  com(el){const t=el.dataset.x;S.coms[t]=!S.coms[t];save();if(S.coms[t])addPts(30,"Bem-vindo à comunidade · +30 pontos");rr();},
  interest(el){const t=el.dataset.x;if(/fonte/i.test(t)){toast("Fonte registrada para o robô de referências");return;}const d=/Governance/.test(t)?"Plataformas":/IA Aplicada|Projetos TD/.test(t)?"Consultoria":"Escola";leadAdd({origem:location.hash.includes("equipe")?"Painel do gestor":"Mais da TD",interesse:t,destino:d});toast(`Recebemos seu interesse em ${t}. O comercial da TD entra em contato.`);},
- unlock(el){const c=getComp(el.dataset.x);if(!c)return;openModal(`<span class="pill">${ic("lock",13)} Fora do plano da sua organização</span><h2 style="margin-top:10px">${esc(c.n)}</h2><p class="mut">A primeira aula é aberta. Para liberar a trilha completa para você ou para a sua equipe, o comercial da TD prepara uma proposta.</p><form id="lf" data-x="${c.id}" class="ckl" style="gap:12px;margin-top:14px"><div class="fg"><label class="f">Nome<input class="inp" value="${esc(S.user.nome)}" disabled></label><label class="f">Organização<input class="inp" value="${esc(S.user.org)}" disabled></label><label class="f">Para quem<select class="inp" name="eq"><option>Só para mim</option><option>Equipe de até 10</option><option>11 a 30</option><option>Mais de 30</option></select></label><label class="f">Melhor contato<select class="inp" name="ct"><option>E-mail</option><option>WhatsApp</option><option>Reunião</option></select></label></div><label class="f">Mensagem (opcional)<textarea class="inp" name="msg" rows="2"></textarea></label><div class="mfoot"><a class="btn line" href="#aula-${c.id}-0" data-act="close">Assistir a aula aberta</a><button class="btn pri">Quero liberar</button></div></form>`);},
+ unlock(el){const c=getComp(el.dataset.x);if(!c)return;openModal(`<span class="pill">${ic("lock",13)} Sua empresa pode liberar</span><h2 style="margin-top:10px">${esc(c.n)}</h2><p class="mut">A primeira aula é aberta. Para liberar a trilha completa para você ou para a sua equipe, o comercial da TD prepara uma proposta.</p><form id="lf" data-x="${c.id}" class="ckl" style="gap:12px;margin-top:14px"><div class="fg"><label class="f">Nome<input class="inp" value="${esc(S.user.nome)}" disabled></label><label class="f">Organização<input class="inp" value="${esc(S.user.org)}" disabled></label><label class="f">Para quem<select class="inp" name="eq"><option>Só para mim</option><option>Equipe de até 10</option><option>11 a 30</option><option>Mais de 30</option></select></label><label class="f">Melhor contato<select class="inp" name="ct"><option>E-mail</option><option>WhatsApp</option><option>Reunião</option></select></label></div><label class="f">Mensagem (opcional)<textarea class="inp" name="msg" rows="2"></textarea></label><div class="mfoot"><a class="btn line" href="#aula-${c.id}-0" data-act="close">Assistir a aula aberta</a><button class="btn pri">Quero liberar</button></div></form>`);},
  mentoria(el){leadAdd({origem:"Pedido de mentoria",interesse:el.dataset.x,destino:"Escola"});toast("Pedido de mentoria enviado. A escola confirma a agenda com você");},
  claim(el){const m=MISS.find(x=>x.id===el.dataset.x);if(!m||S.miss[m.id])return;S.miss[m.id]=1;save();addPts(m.p,`Missão cumprida · +${m.p} pontos`);rr();},
  npsv(el){document.querySelectorAll('[data-act="npsv"]').forEach(b=>b.classList.toggle("on",b===el));$("#npsf [name=n]").value=el.dataset.x;},
@@ -1280,6 +1536,7 @@ const ACT={
  brand(el){S.brand=el.dataset.x;save();rr();toast(`Agora a plataforma é ${brand().nome}`);},
  reset(){const u=S.user;S=fresh();S.user=u;save();toast("Dados de exemplo restaurados");rr();}
 };
+Object.assign(ACT,V2ACT);
 document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");
  if(!el){const m=$("#menu");if(!m.hidden&&!e.target.closest("#menu"))m.hidden=true;return;}
  const f=ACT[el.dataset.act];if(!f)return;
@@ -1287,6 +1544,7 @@ document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");
  if(el.dataset.act!=="menu"&&!el.closest("#menu"))$("#menu").hidden=true;
  f(el,e);});
 document.addEventListener("input",e=>{const t=e.target;
+ if(t.dataset.f==="eq"){UI.eq=t.value;listExperts();}
  if(t.dataset.f==="q"){UI.q=t.value;listTrilhas();}
  if(t.dataset.f==="lq"){UI.lq=t.value;listRefs();}
  if(["uq"].includes(t.dataset.f)){UI.uq=t.value;listUsers();}
@@ -1302,6 +1560,8 @@ document.addEventListener("change",e=>{const t=e.target;
  if(t.dataset.f==="lc"){UI.lc=t.value;listRefs();}
  if(["up","uo","us"].includes(t.dataset.f)){UI[t.dataset.f]=t.value;listUsers();}});
 document.addEventListener("submit",e=>{const f=e.target;e.preventDefault();const fd=new FormData(f);
+ if(f.id==="hcxf"){const q=$("#hcxq").value.trim();if(q)goAsk(q);return;}
+ if(f.id==="seatf"){const t=f.dataset.x,n=fd.get("p");S.seats=Object.assign({},S.seats);S.seats[t]=(S.seats[t]||[]).filter(x=>x!==n).concat([n]);save();closeAll();toast(`${n} indicado(a) para ${t}`);rr();return;}
  if(f.dataset.cx){const i=f.querySelector("input");const q=i.value;i.value="";ask(f.dataset.cx,q,CURCTX);return;}
  if(f.id==="lgf"){const em=$("#lgmail").value;$("#lgbox").innerHTML=`<div class="sent">${ic("check",16)} Enviamos um link de acesso para <b>${esc(em)}</b>. Ele vale por 15 minutos.</div><button class="btn pri wide" style="margin-top:10px" data-act="login" data-x="membro">Abrir o link (protótipo)</button>`;S._em=em;return;}
  if(f.id==="lf"){const c=getComp(f.dataset.x);leadAdd({origem:"Trilha bloqueada",interesse:c.n,destino:"Escola",eq:fd.get("eq"),msg:fd.get("msg")});closeAll();toast("Pedido enviado. O comercial da TD fala com você em até 1 dia útil");return;}
