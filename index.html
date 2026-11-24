@@ -800,6 +800,76 @@ button.dash{background:none;cursor:pointer;font-family:inherit}
 @media (max-width:760px){#nav{flex-wrap:wrap;overflow:visible;row-gap:4px}}@media (min-width:761px){#nav a{padding:8px 9px;font-size:13.5px}}
 @media (min-width:761px) and (max-width:1600px){body.stf .pts{display:none}}
 .lg-photo img{filter:brightness(.8) saturate(1.05)!important;object-position:center 60%}.lg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,8,20,.85),transparent 55%);z-index:-1}
+/* V8 sincronizar + método */
+.sync4 .syg{grid-template-columns:repeat(4,minmax(0,1fr))}
+.syi{display:grid;gap:2px;padding-left:16px;border-left:1px solid var(--line);text-decoration:none;color:inherit}.syi:hover b{color:var(--brand)}
+@media (max-width:900px){.sync4 .syg{grid-template-columns:1fr 1fr}}
+.mhero{position:relative;overflow:hidden;border-radius:28px;color:#fff;background:radial-gradient(90% 90% at 100% 0%,color-mix(in srgb,var(--brand) 55%,transparent),transparent 60%),radial-gradient(60% 70% at 0% 100%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%),var(--night);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:30px;align-items:center;padding:40px}
+.mhero .eyebrow{color:rgba(255,255,255,.65)}
+.mhero h1{font-family:var(--serif);font-size:clamp(36px,4.6vw,58px);line-height:1;margin:10px 0 14px;text-wrap:balance}.mhero h1 em{color:color-mix(in srgb,var(--brand) 30%,#fff)}
+.mhero p{color:rgba(255,255,255,.85);font-size:17px;line-height:1.5;max-width:46ch;margin:0}.mhero .mhs{color:rgba(255,255,255,.6);font-size:14px;margin-top:14px}
+.orb{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:18px;align-items:center}
+.orbw{position:relative;aspect-ratio:1;max-width:360px;width:100%;margin:0 auto}
+.ring{position:absolute;inset:14%;border-radius:50%;border:2px dashed rgba(255,255,255,.3);animation:spin 40s linear infinite}
+.ring::after{content:"";position:absolute;inset:16%;border-radius:50%;border:1px solid rgba(255,255,255,.12)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.ring{animation:none}}
+.orbc{position:absolute;inset:34%;border-radius:50%;display:grid;place-items:center;text-align:center;background:color-mix(in srgb,var(--brand) 70%,#000);box-shadow:0 0 60px color-mix(in srgb,var(--brand) 60%,transparent)}
+.orbc b{font-family:var(--serif);font-weight:400;font-size:clamp(15px,1.6vw,20px);line-height:1.05}.orbc em{color:color-mix(in srgb,var(--accent) 60%,#fff)}
+.orbn{position:absolute;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);backdrop-filter:blur(8px);color:#fff;border-radius:999px;padding:10px 16px;font:inherit;font-weight:700;font-size:14px;cursor:pointer;display:flex;gap:8px;align-items:center;white-space:nowrap;transition:background .2s,transform .2s}
+.orbn span{font-size:10px;letter-spacing:.1em;opacity:.65}
+.orbn:hover{background:rgba(255,255,255,.18)}.orbn.on{background:#fff;color:var(--night);transform:translate(-50%,-50%) scale(1.08)}
+.orbn.p0{left:50%;top:12%}.orbn.p1{left:88%;top:50%}.orbn.p2{left:50%;top:88%}.orbn.p3{left:12%;top:50%}
+.orbp{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:20px;display:grid;gap:8px;min-height:230px;align-content:start}
+.orbp h3{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1}.orbp p{font-size:15px}
+.orbe{display:grid;gap:4px;margin-top:6px;padding-top:10px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:rgba(255,255,255,.75)}
+.orbdots{display:flex;gap:6px;margin-top:6px}.orbdots i{width:18px;height:4px;border-radius:4px;background:rgba(255,255,255,.2)}.orbdots i.on{background:var(--accent)}
+@media (max-width:1000px){.mhero{grid-template-columns:1fr;padding:26px}.orb{grid-template-columns:1fr}}
+/* jornada timeline */
+.jl{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.jl::before{content:"";position:absolute;left:10%;right:10%;top:27px;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));border-radius:3px;opacity:.35}
+.jst{position:relative;border:0;background:none;font:inherit;color:var(--ink);cursor:pointer;display:grid;justify-items:center;text-align:center;gap:4px;padding:0 4px}
+.jst .jn{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:26px;background:var(--paper);border:2px solid var(--line);transition:.2s}
+.jst b{font-size:15px;margin-top:6px}.jst .small{color:var(--ink3)}
+.jst.past .jn{border-color:var(--brand);color:var(--brand)}
+.jst.on .jn{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 0 0 6px color-mix(in srgb,var(--brand) 18%,transparent)}
+.jp{margin-top:18px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:18px;padding:24px;border-radius:22px;background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--brand)}
+.jp h3{font-family:var(--serif);font-weight:400;font-size:32px;margin:4px 0 8px}.jp p{margin:0;line-height:1.5}
+.jg{display:grid;gap:8px;align-content:start;padding:16px;border-radius:16px;background:color-mix(in srgb,var(--accent) 9%,var(--paper))}.jg .btn{justify-self:start}
+@media (max-width:760px){.jl{grid-template-columns:1fr 1fr 1fr}.jl::before{display:none}.jp{grid-template-columns:1fr}}
+/* pilares */
+.pilg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.pil{position:relative;overflow:hidden;border:0;border-radius:20px;padding:20px;text-align:left;font:inherit;color:#fff;cursor:pointer;display:grid;gap:4px;min-height:150px;align-content:end;background:linear-gradient(160deg,color-mix(in srgb,var(--pc) 85%,#000),color-mix(in srgb,var(--pc) 40%,#0a0814));opacity:.72;transition:.2s}
+.pil .pn{position:absolute;right:16px;top:6px;font-family:var(--serif);font-size:72px;opacity:.35;line-height:1}
+.pil b{font-size:18px;line-height:1.15}.pil:hover{opacity:.9}.pil.on{opacity:1;transform:translateY(-3px);box-shadow:0 14px 30px -12px var(--pc)}
+.pild{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.pild a{display:grid;gap:4px;padding:16px;border-radius:16px;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--pc);text-decoration:none;color:inherit}.pild a:hover{box-shadow:var(--shadow)}
+@media (max-width:760px){.pilg{grid-template-columns:1fr 1fr}}
+/* ciclo e passaporte */
+.mtd2 .card{display:grid;gap:12px;align-content:start}
+.chev{display:flex;margin-top:4px}
+.chev button{flex:1;border:0;font:inherit;font-weight:700;font-size:13px;padding:14px 8px 14px 18px;background:color-mix(in srgb,var(--brand) 14%,var(--paper));color:var(--ink);cursor:pointer;clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%,12% 50%);margin-right:-8px}
+.chev button:first-child{clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%)}
+.chev button.on{background:var(--brand);color:#fff}
+.chp{margin:0;padding:14px;border-radius:14px;background:var(--paper2);line-height:1.5}
+.stair{display:flex;align-items:flex-end;gap:10px;height:170px}
+.stair button{flex:1;height:100%;border:0;background:none;font:inherit;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;gap:3px;text-align:left}
+.stair .bar{display:block;height:var(--h);border-radius:12px 12px 4px 4px;background:color-mix(in srgb,var(--brand) 22%,var(--paper2));transition:.2s}
+.stair button.on .bar{background:linear-gradient(180deg,var(--brand),color-mix(in srgb,var(--brand) 60%,var(--accent)))}
+.stair b{font-size:14px}.stair .small{color:var(--ink3)}
+/* certificado */
+.crt{display:grid;gap:16px}
+.crq{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.crq>div{flex:1;min-width:150px;display:grid;gap:4px;padding:18px;border-radius:18px;background:var(--paper);border:1px solid var(--line)}
+.cri{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--brand) 12%,var(--paper));color:var(--brand)}
+.crplus{font-family:var(--serif);font-size:34px;color:var(--ink3)}
+.crq .crok{background:var(--night);color:#fff;border-color:transparent}.crok .cri{background:var(--accent);color:#06281d}.crok .small{color:rgba(255,255,255,.7)}
+.hbar{padding:20px;border-radius:20px;background:var(--paper);border:1px solid var(--line);display:grid;gap:10px}
+.hb{display:flex;border-radius:12px;overflow:hidden;min-height:46px}.hb span{display:flex;align-items:center;padding:0 12px;color:#fff;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hbt{display:flex;align-items:baseline;gap:10px;justify-content:flex-end}.hbt b{font-family:var(--serif);font-size:36px;font-weight:400}.hbt span{color:var(--ink3);font-size:13px}
+@media (max-width:760px){.hb span{font-size:11px;padding:0 6px}.crplus{display:none}}
+.mtd2>*{min-width:0}.chev button{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media (max-width:760px){.mtd2{grid-template-columns:minmax(0,1fr)!important}.chev button{font-size:11px;padding:12px 4px 12px 12px}.orbn{padding:8px 10px;font-size:12px}}
+.stair button{min-width:0}.stair b{overflow:hidden;text-overflow:ellipsis}@media (max-width:760px){.stair{gap:6px}.stair b{font-size:12px}}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -1826,7 +1896,7 @@ acard=function(c,i){const a=getAulas(c)[i];return `<a class="cc" href="#aula-${c
 function comEx(m){return expDaTrilha(getComp(m.t));}
 function comN(m){return m.m+(S.coms[m.n]?1:0);}
 comCard=function(m,i){const on=S.coms[m.n];const ex=comEx(m);return `<div class="xc xart"><a class="xi art a${(i+1)%6}" href="#comunidade-${i}"><img src="${m.img}" alt="" loading="lazy"><span class="tint"></span><span class="k2">COMUNIDADE</span><span class="xt2">${serifT(m.n)}</span><span class="xdt">${ic("cal",13)} ${esc(m.p)}</span></a><div class="xb"><p class="small mut" style="margin:0">${esc(COMD[m.n]||"")}</p><div class="xex">${ex?exAv(ex,"sm"):""}<span class="small"><span class="mut">Conduzida por</span><br><b>${esc(ex?ex.nome:m.c)}</b></span></div><div class="xw"><span class="small mut">${ic("users",14)} ${comN(m)} ${esc(term("membros").toLowerCase())}</span>${on?`<a class="btn line sm" href="#comunidade-${i}">Abrir comunidade ${ic("arrow",14)}</a>`:`<button class="btn dark sm" data-act="cjoin" data-x="${i}">Participar</button>`}</div></div></div>`;};
-V.comunidades=()=>`${phero({ey:"Sincronizar processos, pessoas e dados",t:"Comunidades",d:"Cinco comunidades para trocar experiência com quem vive os mesmos desafios. Ao participar, você entra no mural, recebe a agenda dos encontros e conversa com o Expert que conduz.",st:[[COMS.length,"comunidades"],[COMS.reduce((s,m)=>s+comN(m),0),term("membros").toLowerCase()],[COMS.length,"encontros em dezembro"],[COMS.length,"Experts conduzindo"]]})}<div class="xgrid">${COMS.map(comCard).join("")}</div>`;
+V.comunidades=()=>`${phero({ey:"Sincronizar processos, pessoas, dados e decisões",t:"Comunidades",d:"Cinco comunidades para trocar experiência com quem vive os mesmos desafios. Ao participar, você entra no mural, recebe a agenda dos encontros e conversa com o Expert que conduz.",st:[[COMS.length,"comunidades"],[COMS.reduce((s,m)=>s+comN(m),0),term("membros").toLowerCase()],[COMS.length,"encontros em dezembro"],[COMS.length,"Experts conduzindo"]]})}<div class="xgrid">${COMS.map(comCard).join("")}</div>`;
 const CSEED=[["Expert","Bem-vindos! No 1º encontro vamos mapear onde cada organização está. Tragam um exemplo real do dia a dia.",1],["Analista de Projetos · cooperativa de crédito","Alguém já tem um modelo de indicador para acompanhar isso com a diretoria?",0],["Coordenação de Pessoas · indústria","Aqui começamos pequeno, com um piloto em uma área. Posso contar no encontro como foi.",0]];
 function cposts(i){S.cposts=S.cposts||{};if(!S.cposts[i]){const ex=comEx(COMS[i]);S.cposts[i]=CSEED.map(([a,t,pin],j)=>({id:i+"-"+j,a:pin&&ex?ex.nome:a,ex:pin,t,d:pin?"há 2 dias":"ontem",l:[7,3,5][j]}));}return S.cposts[i];}
 V.comunidade=(id)=>{const i=+id;const m=COMS[i];if(!m)return V.comunidades();const on=S.coms[m.n];const ex=comEx(m);const tr=getComp(m.t);S.clk=S.clk||{};
@@ -1954,7 +2024,7 @@ exCard=function(e){const on=iaOn(e);return `<a class="card exk" href="#expert-${
 const QUIZ={
  1:{p:"Antes de colocar dados da empresa num assistente de IA, o que o líder precisa garantir?",o:["Que a ferramenta seja a mais nova do mercado","Que existam regras de uso: quais dados podem entrar, quem aprova e como checar a resposta","Que toda a equipe use a mesma ferramenta"],r:1,e:"A IA só gera resultado com segurança quando há regras claras de uso. É a base da governança de IA vista na trilha: dados permitidos, responsável e checagem humana."},
  2:{p:"Um painel mostra queda de 12% nas vendas. Qual é a primeira pergunta de quem decide com dados?",o:["Quem errou?","Comparado com o quê e em qual período?","Dá para mudar a cor do gráfico?"],r:1,e:"Número sem referência não decide nada. Antes de agir, o líder pergunta a base de comparação e o período: é o letramento em dados que a trilha trabalha."},
- 3:{p:"O que diferencia transformação digital de simplesmente comprar tecnologia?",o:["O valor investido","Mudar processos, pessoas e tecnologia juntos, com foco no resultado","Ter um aplicativo próprio"],r:1,e:"Transformação digital é sincronizar processos, pessoas e dados. Tecnologia sozinha, sem mudar o jeito de trabalhar, vira custo."},
+ 3:{p:"O que diferencia transformação digital de simplesmente comprar tecnologia?",o:["O valor investido","Mudar processos, pessoas e tecnologia juntos, com foco no resultado","Ter um aplicativo próprio"],r:1,e:"Transformação digital é sincronizar processos, pessoas, dados e decisões. Tecnologia sozinha, sem mudar o jeito de trabalhar, vira custo."},
  4:{p:"Num plano com OKRs, o que é um bom resultado-chave?",o:["Fazer reuniões semanais","Aumentar de 60% para 80% a satisfação dos clientes até junho","Melhorar a comunicação"],r:1,e:"Resultado-chave é mensurável e tem prazo. Atividade (reunião) e intenção (melhorar) não mostram se o objetivo foi alcançado."},
  5:{p:"Para que servem cenários na inteligência estratégica?",o:["Para prever o futuro com certeza","Para preparar a organização para mais de um futuro possível","Para substituir o planejamento anual"],r:1,e:"Cenários não adivinham o futuro: preparam decisões que funcionam em mais de uma situação. É assim que observatórios apoiam a estratégia."},
  6:{p:"Qual atitude mais sustenta um time de alta performance?",o:["Cobrar resultado só no fim do ano","Combinar metas claras e dar feedback frequente e específico","Evitar conversas difíceis"],r:1,e:"Alta performance nasce de metas claras e feedback contínuo. É o ritual de liderança praticado ao longo da trilha."}};
@@ -1977,6 +2047,40 @@ const _vtr=V.trilha;V.trilha=(id)=>{const c=getComp(id);let h=_vtr(id);if(c)h=h.
 const V7ACT={
  godiag(){location.hash="#jornada";setTimeout(()=>{const el=[...document.querySelectorAll(".eyebrow")].find(x=>/maturidade/i.test(x.textContent));if(el)el.scrollIntoView({behavior:"smooth",block:"start"});},150);}
 };
+
+/* ---------- V8: Sincronizar com 4 dimensões e página do método visual e clicável ---------- */
+const SYNC=[
+ {k:"processos",t:"Processos",c:"como o trabalho acontece",r:"Fluxos claros, sem retrabalho e sem depender de uma pessoa só.",e:"Trilhas de Transformação Digital e Planejamento, missões em equipe e laboratórios."},
+ {k:"pessoas",t:"Pessoas",c:"quem faz e aprende",r:"Líderes e equipes preparados para o que precisa ser feito agora.",e:"Aulas com quem faz, comunidades, encontros ao vivo e o Passaporte das 11 disciplinas."},
+ {k:"dados",t:"Dados",c:"o que mostra a realidade",r:"Informação confiável, na hora certa, para quem precisa decidir.",e:"Trilha Decisão Orientada a Dados, Córtex e observatórios."},
+ {k:"decisoes",t:"Decisões",c:"o que move a organização",r:"Escolhas rápidas e com prioridade, porque não dá para fazer tudo.",e:"Diagnóstico de maturidade, painel do gestor e trilha de Futuros e Inteligência Estratégica."}];
+const SYNC_FRASE="Nenhuma organização tem recursos, pessoas e tempo para fazer tudo. Por isso, o que ela faz precisa andar no mesmo ritmo.";
+syncBand=function(){return `<section class="sync sync4"><div class="syt"><span class="eyebrow">O jeito TD</span><b>Sincronizar</b><span class="small mut" style="display:block;margin-top:6px;max-width:30ch">${SYNC_FRASE}</span><a class="small" href="#metodo" style="display:inline-block;margin-top:8px;color:var(--brand);font-weight:600">Como a escola funciona →</a></div><div class="syg">${SYNC.map((x,i)=>`<a href="#metodo" class="syi"><span class="syn">${pad(i+1)}</span><b>${x.t}</b><span>${x.c}</span></a>`).join("")}</div></section>`;};
+const JORN=[
+ ["Diagnóstico","10 minutos no primeiro acesso","A pessoa responde ao diagnóstico das 11 disciplinas e vê o próprio nível de maturidade.","Um retrato honesto de onde está, e onde crescer primeiro.","#jornada","Ver o diagnóstico"],
+ ["Trilha recomendada","a escola indica, a empresa libera","A escola indica a trilha que mais eleva o nível. A empresa libera as trilhas do plano.","Foco: estudar o que mais faz diferença no trabalho dela.","#trilhas","Ver as trilhas"],
+ ["Execução","aprender aplicando","Aulas curtas com quem faz, Córtex para aplicar na própria área, comunidade e encontros ao vivo.","Aprende na semana e aplica na semana.","#comunidades","Ver as comunidades"],
+ ["Mensuração","provar o que aprendeu","Quiz da trilha, entrega prática validada pelo Expert e certificado verificável.","Certificado que vale: tem regra, código público e pode ser conferido.","#certificados","Ver certificados"],
+ ["Acompanhamento","evolução em 3 meses","Novo diagnóstico em 3 meses. O gestor vê a evolução da equipe e as lacunas por disciplina.","A organização enxerga o retorno do investimento.","#equipe","Ver o painel do gestor"]];
+const CICLO=[["Provocar","Um caso real, um dado ou uma pergunta incômoda abre o encontro."],["Experimentar","As pessoas testam um método ou uma ferramenta, na prática."],["Aplicar","Cada um leva para a própria área, com apoio do Córtex."],["Compartilhar","O que funcionou volta para a comunidade e vira conteúdo."]];
+const PASS=[["Explorador","conhece","Começa as trilhas e participa dos encontros."],["Praticante","aplica","Concluiu 1 trilha e esteve em 1 evento."],["Referência","ensina","Concluiu 3 trilhas e conversa com os Experts."],["Embaixador","conduz","Ajuda a conduzir uma comunidade da escola."]];
+function mtSel(g,d){UI.mt=UI.mt||{};return UI.mt[g]??d;}
+function orbit(){const s=mtSel("sync",0);const x=SYNC[s];
+ return `<div class="orb"><div class="orbw"><div class="ring"></div><div class="orbc"><b>No mesmo<br><em>ritmo</em></b></div>${SYNC.map((y,i)=>`<button class="orbn p${i} ${i===s?"on":""}" data-act="mt" data-g="sync" data-x="${i}"><span>${pad(i+1)}</span>${y.t}</button>`).join("")}</div>
+ <div class="orbp"><span class="eyebrow">${pad(s+1)} · ${esc(x.c)}</span><h3>${x.t}</h3><p>${esc(x.r)}</p><div class="orbe"><span class="eyebrow">Na escola</span><span>${esc(x.e)}</span></div><div class="orbdots">${SYNC.map((y,i)=>`<i class="${i===s?"on":""}"></i>`).join("")}</div></div></div>`;}
+V.metodo=()=>{const j=mtSel("jorn",0),J=JORN[j],c=mtSel("ciclo",0),p=mtSel("pil",0),ps=mtSel("pass",0);const cor=["#7A2CFF","#00A97E","#E2741F","#2D5BFF"];
+ return `<section class="mhero"><div class="mhl"><span class="eyebrow">Como a escola funciona</span><h1>Sincronizar <em>processos, pessoas, dados e decisões</em></h1><p>${SYNC_FRASE}</p><p class="mhs">A escola mede e eleva a maturidade da liderança em 11 disciplinas, com aulas de quem faz isso nos projetos da TD.</p></div>${orbit()}</section>
+ <section class="sec"><div class="sh"><h2>A jornada em <em class="it">5 etapas</em></h2><span class="cnt">clique em cada etapa</span></div>
+  <div class="jl">${JORN.map((x,i)=>`<button class="jst ${i===j?"on":""} ${i<j?"past":""}" data-act="mt" data-g="jorn" data-x="${i}"><span class="jn">${i+1}</span><b>${x[0]}</b><span class="small">${x[1]}</span></button>`).join("")}</div>
+  <div class="jp"><div><span class="eyebrow">Etapa ${j+1} de 5</span><h3>${J[0]}</h3><p>${esc(J[2])}</p></div><div class="jg"><span class="eyebrow">O que a pessoa ganha</span><p>${esc(J[3])}</p><a class="btn pri sm" href="${J[4]}">${J[5]} ${ic("arrow",14)}</a></div></div></section>
+ <section class="sec"><div class="sh"><h2>11 disciplinas em <em class="it">4 pilares</em></h2><span class="cnt">clique em um pilar</span></div>
+  <div class="pilg">${PILARES.map((n,i)=>{const L=SK.filter(x=>x.p===n);return `<button class="pil ${i===p?"on":""}" style="--pc:${cor[i]}" data-act="mt" data-g="pil" data-x="${i}"><span class="pn">${L.length}</span><b>${esc(n)}</b><span class="small">disciplinas</span></button>`;}).join("")}</div>
+  <div class="pild" style="--pc:${cor[p]}">${SK.filter(x=>x.p===PILARES[p]).map(x=>`<a href="#disciplina-${x.id}"><span class="syn">${pad(x.id)}</span><b>${esc(x.n)}</b><span class="small mut">${esc(x.d)}</span></a>`).join("")}</div></section>
+ <section class="sec"><div class="two mtd2"><div class="card pad"><span class="eyebrow">Cada encontro segue o mesmo ciclo</span><div class="chev">${CICLO.map((x,i)=>`<button class="${i===c?"on":""}" data-act="mt" data-g="ciclo" data-x="${i}">${x[0]}</button>`).join("")}</div><p class="chp"><b>${CICLO[c][0]}.</b> ${esc(CICLO[c][1])}</p><p class="small mut">Vale para aula ao vivo, laboratório, missão e encontro de comunidade.</p></div>
+  <div class="card pad"><span class="eyebrow">Passaporte · o nível sobe por marcos</span><div class="stair">${PASS.map((x,i)=>`<button class="${i===ps?"on":""}" style="--h:${34+i*22}%" data-act="mt" data-g="pass" data-x="${i}"><span class="bar"></span><b>${x[0]}</b><span class="small">${x[1]}</span></button>`).join("")}</div><p class="chp"><b>${PASS[ps][0]}.</b> ${esc(PASS[ps][2])}</p></div></div></section>
+ <section class="sec"><div class="sh"><h2>Regra do <em class="it">certificado</em></h2></div><div class="crt"><div class="crq">${[["play","Todas as aulas","assistidas até o fim"],["check","Quiz da trilha","70% de acertos, pode refazer"],["file","Entrega prática","validada pelo Expert"]].map(([i,t,d],k)=>`<div><span class="cri">${ic(i,20)}</span><b>${t}</b><span class="small mut">${d}</span></div>${k<2?'<span class="crplus">+</span>':""}`).join("")}<span class="crplus">=</span><div class="crok"><span class="cri">${ic("star",20)}</span><b>Certificado</b><span class="small">código público, verificável</span></div></div>
+  <div class="hbar"><span class="eyebrow">Carga horária · exemplo da trilha 01</span><div class="hb"><span style="flex:1.75;background:var(--brand)">1 h 45 de aulas</span><span style="flex:2;background:color-mix(in srgb,var(--brand) 55%,var(--accent))">2 h Córtex e quiz</span><span style="flex:4;background:var(--accent)">4 h entrega prática</span></div><div class="hbt"><span>arredondado para</span><b>8 horas</b></div><p class="small mut">Experiências presenciais geram certificado de participação com a duração do encontro. Todo certificado pode ser revogado pela escola.</p></div></div></section>`;};
+const V8ACT={mt(el){UI.mt=UI.mt||{};UI.mt[el.dataset.g]=+el.dataset.x;const y=window.scrollY;rr();window.scrollTo(0,y);}};
 
 /* ---------- casca ---------- */
 function navItems(){const r=role();const n=[["inicio","Início"],["trilhas","Trilhas"],["experts","Experts"],["eventos","Eventos"],["comunidades","Comunidades"],["ias","IA aplicada"]];
@@ -2094,7 +2198,7 @@ const ACT={
  brand(el){S.brand=el.dataset.x;save();rr();toast(`Agora a plataforma é ${brand().nome}`);},
  reset(){const u=S.user;S=fresh();S.user=u;save();toast("Dados de exemplo restaurados");rr();}
 };
-Object.assign(ACT,V2ACT,ADMACT,V5ACT,V7ACT);
+Object.assign(ACT,V2ACT,ADMACT,V5ACT,V7ACT,V8ACT);
 ["quiz","unlock"].forEach(k=>{const f=ACT[k];if(!f)return;ACT[k]=function(el){const c0=getComp(+el.dataset.x);const had=c0&&S.user&&S.certs.some(x=>x.cid===c0.id&&x.u===S.user.nome);const r=f.apply(this,arguments);try{const c=c0;if(k==="quiz"&&c&&!had&&prog(c)===1&&S.quiz[c.id]){syncCerts();addPts(100,"Certificado emitido");setTimeout(()=>npsModal(c),500);}if(k==="quiz"&&+el.dataset.j===+el.dataset.r)audit("Acertou o quiz da trilha",c.n,S.user.org);if(k==="unlock")audit("Pediu liberação de trilha",c.n,S.user.org);}catch(e){}return r;};});
 document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");
  if(UI.dd&&(!el||el.dataset.act!=="dd")&&!e.target.closest(".ddm")){UI.dd=null;document.querySelectorAll(".ddm").forEach(x=>x.remove());}
