@@ -799,6 +799,7 @@ button.dash{background:none;cursor:pointer;font-family:inherit}
 .dhero>img{object-position:center 30%!important}
 @media (max-width:760px){#nav{flex-wrap:wrap;overflow:visible;row-gap:4px}}@media (min-width:761px){#nav a{padding:8px 9px;font-size:13.5px}}
 @media (min-width:761px) and (max-width:1600px){body.stf .pts{display:none}}
+.lg-photo img{filter:brightness(.8) saturate(1.05)!important;object-position:center 60%}.lg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,8,20,.85),transparent 55%);z-index:-1}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -850,7 +851,7 @@ const COMP0=[
  {id:5,n:"Futuros e Inteligência Estratégica",s:"Futuros e inteligência estratégica",g:"Observatórios",com:"Observatórios",m:"Especialista em Observatórios",cp:[1,2],img:"img/tr-5.jpg",
   d:"Como ler sinais, montar cenários e usar inteligência de mercado e de território para antecipar decisões.",para:"Alta liderança, conselhos e áreas de estratégia.",ent:"Um mapa de cenários para a sua área.",
   temas:[["Sinais do futuro e tendências","Identificar os sinais de mudança antes que virem urgência"],["Cenários e futuros","Construir cenários e preparar a organização para mais de um futuro"],["Estratégia para disrupção","Responder a mudanças que alteram as regras do setor"],["Tópicos de economia","Entender conjuntura e macroeconomia para decidir melhor"],["Observatórios e inteligência territorial","Usar dados de observatórios e do território para orientar políticas e negócios"]]},
- {id:6,n:"Liderança de Alta Performance",s:"Liderança de alta performance",g:"Transversal",com:"",m:"Especialista em Desenvolvimento de Lideranças",cp:[9,10,11,8],img:"img/e2.jpg",
+ {id:6,n:"Liderança de Alta Performance",s:"Liderança de alta performance",g:"Transversal",com:"",m:"Especialista em Desenvolvimento de Lideranças",cp:[9,10,11,8],img:"img/com-planejamento.jpg",
   d:"A trilha que atravessa todas as outras: liderar pessoas, conduzir mudanças e comunicar com impacto.",para:"Todos os níveis de liderança.",ent:"Um plano de desenvolvimento da sua equipe.",
   temas:[["Virei líder, e agora?","Os primeiros passos de quem assume uma equipe"],["Liderando a alta performance","Metas, feedback e desenvolvimento de times de alto desempenho"],["Liderança adaptativa e gestão da mudança","Conduzir pessoas em momentos de mudança e incerteza"],["Comunicação e apresentações de alto impacto","Falar, apresentar e convencer com clareza"],["Negociação e influência","Negociar e mobilizar quem não está sob o seu comando"],["Inteligência emocional","Equilíbrio, autoconhecimento e relações no trabalho"],["Pronto para o conselho: sucessão e governança","Preparar líderes para conselhos e para a sucessão"]]}
 ];
@@ -877,18 +878,18 @@ const TEMA_SK={1:[5,5,5,3,5,5],2:[4,4,4,4,10,3],3:[6,6,7,7,8],4:[2,2,2,7,3,2],5:
 COMP0[1].temas.splice(2,0,["Bases públicas na prática: CAGED","Vagas, saldo e setores com os dados oficiais do emprego formal"]);TEMA_SK[2].splice(2,0,4);COMP0[1].novo=2;
 function aulasBase(c){return c.temas.map((x,i)=>({t:x[0],f:x[1],k:x[2]||(TEMA_SK[c.id]||[])[i]||c.cp[0],dur:11+((c.id*7+i*5)%13),novo:c.novo===i}));}
 const EXP=[
- {k:"Aula ao vivo",t:"Dashboard sem cultura analítica é decoração",d:"Com o time de Análise de Dados da TD. Perguntas ao vivo.",w:"Quinta · 19h",c:2,img:"img/e2.jpg"},
- {k:"Laboratório",t:"Agentes de inteligência artificial na prática",d:"O auditório da TD vira laboratório: cada grupo sai com um agente funcionando.",w:"04/12 · 14h",c:1,img:"img/e4.jpg"},
- {k:"Visita técnica",t:"Por dentro de um projeto de cidade inteligente",d:"Visita a um projeto da TD em operação, com o gerente do projeto.",w:"11/12 · 9h",c:3,img:"img/e1.jpg"},
- {k:"Missão",t:"Missão Planejamento 2027",d:"Em 3 semanas, sua equipe entrega o plano com metas e indicadores.",w:"Começa 01/12",c:4,img:"img/e5.jpg"},
- {k:"Encontro presencial",t:"Encontro de Lideranças",d:"30 a 40 líderes das organizações participantes, em Florianópolis.",w:"Fevereiro 2027",c:6,img:"img/e3.jpg"}
+ {k:"Aula ao vivo",t:"Dashboard sem cultura analítica é decoração",d:"Com o time de Análise de Dados da TD. Perguntas ao vivo.",w:"Quinta · 19h",c:2,img:"img/tr-2.jpg"},
+ {k:"Laboratório",t:"Agentes de inteligência artificial na prática",d:"O auditório da TD vira laboratório: cada grupo sai com um agente funcionando.",w:"04/12 · 14h",c:1,img:"img/tr-1.jpg"},
+ {k:"Visita técnica",t:"Por dentro de um projeto de cidade inteligente",d:"Visita a um projeto da TD em operação, com o gerente do projeto.",w:"11/12 · 9h",c:3,img:"img/tr-3.jpg"},
+ {k:"Missão",t:"Missão Planejamento 2027",d:"Em 3 semanas, sua equipe entrega o plano com metas e indicadores.",w:"Começa 01/12",c:4,img:"img/tr-4.jpg"},
+ {k:"Encontro presencial",t:"Encontro de Lideranças",d:"30 a 40 líderes das organizações participantes, em Florianópolis.",w:"Fevereiro 2027",c:6,img:"img/com-ia.jpg"}
 ];
 /* 5 comunidades pedidas pelo CEO, uma por família de produtos da TD */
 const COMS=[
  {n:"IA",t:1,m:48,c:"Especialista em Inteligência Artificial",p:"1º encontro · 02/12",pq:"Como as organizações estão adotando inteligência artificial",img:"img/com-ia.jpg"},
  {n:"Planejamento",t:4,m:41,c:"Especialista em Planejamento Estratégico",p:"1º encontro · 05/12",pq:"Como as organizações estão planejando 2027",img:"img/com-planejamento.jpg"},
  {n:"Inteligência de Dados",t:2,m:56,c:"Especialista em Análise de Dados",p:"1º encontro · 09/12",pq:"Cultura analítica nas lideranças",img:"img/com-dados.jpg"},
- {n:"Observatórios",t:5,m:27,c:"Especialista em Observatórios",p:"1º encontro · 11/12",pq:"Uso de dados do território nas decisões",img:"img/c1.jpg"},
+ {n:"Observatórios",t:5,m:27,c:"Especialista em Observatórios",p:"1º encontro · 11/12",pq:"Uso de dados do território nas decisões",img:"img/tr-5.jpg"},
  {n:"Transformação Digital",t:3,m:39,c:"Gerente de Projetos de Transformação Digital",p:"1º encontro · 16/12",pq:"Maturidade digital dos serviços",img:"img/com-transformacao.jpg"}
 ];
 const TDX=[
@@ -1068,7 +1069,7 @@ let CURCTX=null,CURKEY="geral";
 /* ---------- views ---------- */
 const V={};
 V.entrar=()=>`<section class="login">
- <div class="lg-photo"><img src="img/e4.jpg" alt=""><div class="lg-q"><span class="eyebrow">Escola de negócios da TD Business</span><p class="serif">Onze competências para quem lidera a <em>transformação</em>.</p></div></div>
+ <div class="lg-photo"><img src="img/com-ia.jpg" alt=""><div class="lg-q"><span class="eyebrow">Escola de negócios da TD Business</span><p class="serif">Onze competências para quem lidera a <em>transformação</em>.</p></div></div>
  <div class="lg-form">
   <a class="logo" href="#entrar">${logoHTML()}</a>
   <h1>Entre na sua escola</h1>
@@ -1554,18 +1555,18 @@ ask=async function(key,q,ctx){const first=String(key).startsWith("expert-")&&!(S
 
 /* Eventos */
 const EVT=[
- {t:"Bases Públicas na Prática: CAGED · Sessão 01",k:"Laboratório",d:"Os dados oficiais do emprego formal, do microdado ao painel em Power BI.",dia:"17",mes:"NOV",sem:"TER",h:"14h",loc:"Auditório TD · Florianópolis",st:"Realizado",mot:"2 certificados emitidos",past:1,c:2,img:"img/h1.jpg"},
- {t:EXP[0].t,k:"Aula ao vivo",d:EXP[0].d,dia:"26",mes:"NOV",sem:"QUI",h:"19h",loc:"Online",st:"Inscrições abertas",mot:"ao vivo, com gravação depois",c:2,img:"img/e2.jpg"},
- {t:EXP[3].t,k:"Missão",d:EXP[3].d,dia:"01",mes:"DEZ",sem:"TER",h:"3 semanas",loc:"Em equipe · online",st:"Inscrições abertas",mot:"equipes de 3 a 6 pessoas",c:4,img:"img/e5.jpg"},
+ {t:"Bases Públicas na Prática: CAGED · Sessão 01",k:"Laboratório",d:"Os dados oficiais do emprego formal, do microdado ao painel em Power BI.",dia:"17",mes:"NOV",sem:"TER",h:"14h",loc:"Auditório TD · Florianópolis",st:"Realizado",mot:"2 certificados emitidos",past:1,c:2,img:"img/tr-2.jpg"},
+ {t:EXP[0].t,k:"Aula ao vivo",d:EXP[0].d,dia:"26",mes:"NOV",sem:"QUI",h:"19h",loc:"Online",st:"Inscrições abertas",mot:"ao vivo, com gravação depois",c:2,img:"img/tr-2.jpg"},
+ {t:EXP[3].t,k:"Missão",d:EXP[3].d,dia:"01",mes:"DEZ",sem:"TER",h:"3 semanas",loc:"Em equipe · online",st:"Inscrições abertas",mot:"equipes de 3 a 6 pessoas",c:4,img:"img/tr-4.jpg"},
  {t:"1º encontro da Comunidade IA",k:"Comunidade",d:COMS[0].pq+".",dia:"02",mes:"DEZ",sem:"QUA",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[0].m} participantes`,c:1,img:COMS[0].img},
- {t:EXP[1].t,k:"Laboratório",d:EXP[1].d,dia:"04",mes:"DEZ",sem:"SEX",h:"14h",loc:"Auditório TD · Florianópolis",st:"Últimas vagas",mot:"restam 6 de 40",c:1,img:"img/e4.jpg",warn:1,pres:1},
+ {t:EXP[1].t,k:"Laboratório",d:EXP[1].d,dia:"04",mes:"DEZ",sem:"SEX",h:"14h",loc:"Auditório TD · Florianópolis",st:"Últimas vagas",mot:"restam 6 de 40",c:1,img:"img/tr-1.jpg",warn:1,pres:1},
  {t:"1º encontro da Comunidade Planejamento",k:"Comunidade",d:COMS[1].pq+".",dia:"05",mes:"DEZ",sem:"SÁB",h:"10h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[1].m} participantes`,c:4,img:COMS[1].img},
  {t:"1º encontro da Comunidade Inteligência de Dados",k:"Comunidade",d:COMS[2].pq+".",dia:"09",mes:"DEZ",sem:"QUA",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[2].m} participantes`,c:2,img:COMS[2].img},
- {t:EXP[2].t,k:"Visita técnica",d:EXP[2].d,dia:"11",mes:"DEZ",sem:"SEX",h:"9h",loc:"Projeto TD em operação · Grande Florianópolis",st:"Inscrições abertas",mot:"20 vagas",c:3,img:"img/e1.jpg",pres:1},
+ {t:EXP[2].t,k:"Visita técnica",d:EXP[2].d,dia:"11",mes:"DEZ",sem:"SEX",h:"9h",loc:"Projeto TD em operação · Grande Florianópolis",st:"Inscrições abertas",mot:"20 vagas",c:3,img:"img/tr-3.jpg",pres:1},
  {t:"1º encontro da Comunidade Observatórios",k:"Comunidade",d:COMS[3].pq+".",dia:"11",mes:"DEZ",sem:"SEX",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[3].m} participantes`,c:5,img:COMS[3].img},
  {t:"1º encontro da Comunidade Transformação Digital",k:"Comunidade",d:COMS[4].pq+".",dia:"16",mes:"DEZ",sem:"QUA",h:"18h",loc:"Online",st:"Inscrições abertas",mot:`${COMS[4].m} participantes`,c:3,img:COMS[4].img},
- {t:EXP[4].t,k:"Encontro presencial",d:"Encontro exclusivo com 30 a 40 lideranças das organizações participantes, com agenda estratégica para aprimorar os planejamentos.",dia:"FEV",mes:"2027",sem:"",h:"data a confirmar",loc:"Florianópolis",st:"Em breve",mot:"por convite · inscrições em janeiro",c:6,img:"img/e3.jpg",pres:1},
- {t:"Tendências, futuro e comportamento",k:"Encontro on-line",d:"Encontro ao vivo para 200 a 300 colaboradores das organizações participantes: o que muda no trabalho, na tecnologia e no comportamento.",dia:"MAR",mes:"2027",sem:"",h:"data a confirmar",loc:"Online · ao vivo",st:"Em breve",mot:"aberto às equipes das organizações",c:0,img:"img/c1.jpg"}];
+ {t:EXP[4].t,k:"Encontro presencial",d:"Encontro exclusivo com 30 a 40 lideranças das organizações participantes, com agenda estratégica para aprimorar os planejamentos.",dia:"FEV",mes:"2027",sem:"",h:"data a confirmar",loc:"Florianópolis",st:"Em breve",mot:"por convite · inscrições em janeiro",c:6,img:"img/com-ia.jpg",pres:1},
+ {t:"Tendências, futuro e comportamento",k:"Encontro on-line",d:"Encontro ao vivo para 200 a 300 colaboradores das organizações participantes: o que muda no trabalho, na tecnologia e no comportamento.",dia:"MAR",mes:"2027",sem:"",h:"data a confirmar",loc:"Online · ao vivo",st:"Em breve",mot:"aberto às equipes das organizações",c:0,img:"img/com-ia.jpg"}];
 const SEATS=20,SEATS_USED=7;
 function plano(e){const c=getComp(e.c);return !c||liberada(c);}
 function evBtn(e){const on=S.ins[e.t];if(e.past)return on?`<span class="pill ok">${ic("check",12)} Você participou</span>`:`<span class="pill">Encerrado</span>`;
@@ -2131,7 +2132,7 @@ document.addEventListener("submit",e=>{const f=e.target;e.preventDefault();const
  if(f.id==="npsf"){const n=fd.get("n");if(n===""){toast("Escolha uma nota de 0 a 10");return;}S.nps.unshift({n:+n,tr:f.dataset.tr,c:fd.get("c")||"",data:today()});save();closeAll();addPts(20,"Obrigado pela avaliação · +20 pontos");return;}
  if(f.id==="tf"){const o=tplFromForm(f);S.ctpl=S.ctpl.map(t=>t.id===o.id?o:t);save();closeAll();toast("Modelo de certificado salvo");rr();return;}
  if(f.id==="df"){const org=fd.get("org"),nm=fd.get("n");const nid=Math.max(100,...S.newTr.map(t=>t.id))+1;let o;
-  if(f.dataset.mode==="new"){o={id:nid,n:nm,s:nm.toLowerCase(),g:"Própria do cliente",com:"",m:"Especialista convidado",cp:[9],img:"img/e3.jpg",d:"Descreva o objetivo da trilha.",para:"Defina o público.",ent:"Defina a entrega prática.",temas:[["Primeiro tema","Descreva em uma frase",9]]};}
+  if(f.dataset.mode==="new"){o={id:nid,n:nm,s:nm.toLowerCase(),g:"Própria do cliente",com:"",m:"Especialista convidado",cp:[9],img:"img/com-transformacao.jpg",d:"Descreva o objetivo da trilha.",para:"Defina o público.",ent:"Defina a entrega prática.",temas:[["Primeiro tema","Descreva em uma frase",9]]};}
   else{const c=getComp(f.dataset.id);o=JSON.parse(JSON.stringify(c));delete o.aulas;delete o.novo;o.temas=getAulas(c).map(a=>[a.t,a.f,a.k]);Object.assign(o,{id:nid,n:nm,s:nm.toLowerCase(),piloto:0});}
   Object.assign(o,{org,status:"Rascunho"});S.newTr=S.newTr.concat([o]);save();closeAll();toast(`Trilha criada para ${org}, como rascunho`);rr();setTimeout(()=>compModal(nid),100);return;}
  if(f.id==="bf"){const k=f.dataset.k||("c"+Date.now());const ex=S.brands[k];const org=String(fd.get("org")).trim();
