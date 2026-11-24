@@ -735,6 +735,51 @@ button.dash{background:none;cursor:pointer;font-family:inherit}
 .art .num{color:rgba(255,255,255,.08)}
 .iasf{box-sizing:border-box;max-width:100%}
 @media (max-width:600px){.phs.p3>div{padding:12px}.phs.p3 span{font-size:11px;line-height:1.3}}
+/* V6 pôster Netflix */
+.pv{position:relative;overflow:hidden;border-radius:18px;background:var(--night);isolation:isolate}
+.pv>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:grayscale(1) contrast(1.12) brightness(.9);transition:transform .6s;z-index:-2}
+.pv .tint,.bill .tint{position:absolute;inset:0;background:var(--brand);mix-blend-mode:color;opacity:.75;z-index:-1;pointer-events:none}
+.pv::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,color-mix(in srgb,var(--night) 96%,transparent) 8%,color-mix(in srgb,var(--night) 55%,transparent) 42%,transparent 70%);z-index:-1}
+.cc:hover .pv>img{transform:scale(1.05)}
+.cc.pst{flex:0 0 220px}
+.pst .pv{aspect-ratio:2/3}
+.lnd{flex:0 0 330px}.lnd .pv{aspect-ratio:16/9}
+.ptg{display:inline-block;background:#FF4FB2;color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:7px;letter-spacing:.01em}
+.pv .ptg{position:absolute;left:14px;top:14px}
+.ppl{display:inline-block;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);color:#fff;font-size:11px;font-weight:700;padding:4px 9px;border-radius:7px;letter-spacing:.04em;text-transform:uppercase}
+.pv .ppl{position:absolute;right:12px;top:14px}
+.plk{position:absolute;right:12px;top:46px;display:inline-flex;align-items:center;gap:5px;background:rgba(10,9,16,.7);backdrop-filter:blur(6px);color:#fff;font-size:11px;font-weight:600;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.pv .pb{position:absolute;left:14px;right:14px;bottom:16px;display:grid;gap:6px}
+.pv .pt{color:#fff;font-weight:800;font-size:23px;line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
+.lnd .pv .pt{font-size:18px}
+.pv .pm{color:rgba(255,255,255,.72);font-size:12px;line-height:1.3}
+.pplay{position:absolute;right:14px;top:12px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.18);backdrop-filter:blur(6px);color:#fff}
+.ppg{position:absolute;left:0;right:0;bottom:0;height:4px;background:rgba(255,255,255,.18)}.ppg i{display:block;height:100%;background:#FF4FB2}
+.pst .cs{margin-top:8px;font-size:13px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:20px}
+.pgrid .cc.pst{flex:auto}
+/* billboard */
+.bill{position:relative;border-radius:28px;overflow:hidden;background:var(--night);color:#fff;isolation:isolate;min-height:440px;display:flex;align-items:flex-end;margin-bottom:8px}
+.bill>img{position:absolute;right:0;top:0;width:68%;height:100%;object-fit:cover;object-position:center 25%;filter:grayscale(1) contrast(1.12) brightness(.92);z-index:-2}
+.bill .tint{left:auto;width:68%}
+.bill::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--night) 34%,color-mix(in srgb,var(--night) 55%,transparent) 55%,transparent 80%),linear-gradient(0deg,color-mix(in srgb,var(--night) 70%,transparent),transparent 40%);z-index:-1}
+.bill .bc{padding:40px;max-width:620px;display:grid;gap:14px}
+.bill h1{font-weight:800;font-size:clamp(36px,5vw,60px);line-height:1;letter-spacing:-.03em;text-wrap:balance}
+.bill p{color:rgba(255,255,255,.8);font-size:16px;max-width:52ch;margin:0}
+.btg{display:flex;gap:8px}
+.bmeta{display:flex;gap:16px;flex-wrap:wrap;color:rgba(255,255,255,.65);font-size:14px}
+@media (max-width:760px){.bill{min-height:520px}.bill>img,.bill .tint{width:100%;height:60%}.bill::before{background:linear-gradient(0deg,var(--night) 50%,transparent 85%)}.bill .bc{padding:24px}.cc.pst{flex:0 0 170px}.pv .pt{font-size:19px}.pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}}
+/* página da trilha com o mesmo tratamento */
+.dhero>img{filter:grayscale(1) contrast(1.12) brightness(.92)}
+.dhero::after{content:"";position:absolute;inset:0;background:var(--brand);mix-blend-mode:color;opacity:.75;z-index:-1;pointer-events:none}
+.dhero h1{font-family:inherit;font-weight:800;letter-spacing:-.03em}.dhero h1 em{font-style:normal}
+.xi.art>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:grayscale(1) contrast(1.12) brightness(.85);z-index:-2}
+.xi.art>.tint{position:absolute;inset:0;background:var(--brand);mix-blend-mode:color;opacity:.75;z-index:-1}
+.xi.art::before{z-index:-1;background:linear-gradient(0deg,color-mix(in srgb,var(--night) 92%,transparent) 10%,color-mix(in srgb,var(--night) 35%,transparent) 60%,transparent)}
+.xi.art::after{display:none}
+.xi .xt2{font-family:inherit;font-weight:800;letter-spacing:-.02em;font-size:28px}.xi .xt2 em{font-style:normal;color:#fff}
+.xi .k2{background:#FF4FB2;color:#fff;padding:4px 10px;border-radius:7px;font-size:11px;letter-spacing:.06em}
+.bill::before{z-index:0}.bill .bc{position:relative;z-index:1}.bill>.ppg{z-index:1}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -1760,7 +1805,7 @@ ccard=function(c){const p=prog(c);const n=c.org?"":pad(c.id);const st=p===1?"Con
 acard=function(c,i){const a=getAulas(c)[i];return `<a class="cc" href="#aula-${c.id}-${i}"><div class="cv art a${(c.id||0)%6}">${coverArt(pad(i+1))}<span class="tg"><i></i>AULA ${pad(i+1)} · ${a.dur} MIN</span><span class="ttl">${serifT(c.s)}</span><span class="pg"><i style="width:${prog(c)*100}%"></i></span></div><span class="ct">${esc(a.t)}</span><span class="cs">Continuar · ${esc(c.m)}</span></a>`;};
 function comEx(m){return expDaTrilha(getComp(m.t));}
 function comN(m){return m.m+(S.coms[m.n]?1:0);}
-comCard=function(m,i){const on=S.coms[m.n];const ex=comEx(m);return `<div class="xc xart"><a class="xi art a${(i+1)%6}" href="#comunidade-${i}"><span class="k2">COMUNIDADE</span><span class="xt2">${serifT(m.n)}</span><span class="xdt">${ic("cal",13)} ${esc(m.p)}</span></a><div class="xb"><p class="small mut" style="margin:0">${esc(COMD[m.n]||"")}</p><div class="xex">${ex?exAv(ex,"sm"):""}<span class="small"><span class="mut">Conduzida por</span><br><b>${esc(ex?ex.nome:m.c)}</b></span></div><div class="xw"><span class="small mut">${ic("users",14)} ${comN(m)} ${esc(term("membros").toLowerCase())}</span>${on?`<a class="btn line sm" href="#comunidade-${i}">Abrir comunidade ${ic("arrow",14)}</a>`:`<button class="btn dark sm" data-act="cjoin" data-x="${i}">Participar</button>`}</div></div></div>`;};
+comCard=function(m,i){const on=S.coms[m.n];const ex=comEx(m);return `<div class="xc xart"><a class="xi art a${(i+1)%6}" href="#comunidade-${i}"><img src="${m.img}" alt="" loading="lazy"><span class="tint"></span><span class="k2">COMUNIDADE</span><span class="xt2">${serifT(m.n)}</span><span class="xdt">${ic("cal",13)} ${esc(m.p)}</span></a><div class="xb"><p class="small mut" style="margin:0">${esc(COMD[m.n]||"")}</p><div class="xex">${ex?exAv(ex,"sm"):""}<span class="small"><span class="mut">Conduzida por</span><br><b>${esc(ex?ex.nome:m.c)}</b></span></div><div class="xw"><span class="small mut">${ic("users",14)} ${comN(m)} ${esc(term("membros").toLowerCase())}</span>${on?`<a class="btn line sm" href="#comunidade-${i}">Abrir comunidade ${ic("arrow",14)}</a>`:`<button class="btn dark sm" data-act="cjoin" data-x="${i}">Participar</button>`}</div></div></div>`;};
 V.comunidades=()=>`${phero({ey:"Sincronizar processos, pessoas e dados",t:"Comunidades",d:"Cinco comunidades para trocar experiência com quem vive os mesmos desafios. Ao participar, você entra no mural, recebe a agenda dos encontros e conversa com o Expert que conduz.",st:[[COMS.length,"comunidades"],[COMS.reduce((s,m)=>s+comN(m),0),term("membros").toLowerCase()],["dez","primeiros encontros"],[COMS.length,"Experts conduzindo"]]})}<div class="xgrid">${COMS.map(comCard).join("")}</div>`;
 const CSEED=[["Expert","Bem-vindos! No 1º encontro vamos mapear onde cada organização está. Tragam um exemplo real do dia a dia.",1],["Analista de Projetos · cooperativa de crédito","Alguém já tem um modelo de indicador para acompanhar isso com a diretoria?",0],["Coordenação de Pessoas · indústria","Aqui começamos pequeno, com um piloto em uma área. Posso contar no encontro como foi.",0]];
 function cposts(i){S.cposts=S.cposts||{};if(!S.cposts[i]){const ex=comEx(COMS[i]);S.cposts[i]=CSEED.map(([a,t,pin],j)=>({id:i+"-"+j,a:pin&&ex?ex.nome:a,ex:pin,t,d:pin?"há 2 dias":"ontem",l:[7,3,5][j]}));}return S.cposts[i];}
@@ -1819,6 +1864,22 @@ const V5ACT={
  iak(el){UI.wk=+el.dataset.x;$("#itab").innerHTML=iaTab();},
  mclr(){UI.mq="";const i=$("#mq");if(i)i.value="";$("#mres").innerHTML="";}
 };
+
+/* ---------- V6: formato Netflix (pôster vertical com foto em duotone da marca) ---------- */
+function stTxt(c){const p=prog(c);return p===1?"Concluída":p?Math.round(p*100)+"% concluído":"Comece agora";}
+ccard=function(c){const p=prog(c);const n=c.org?"":pad(c.id);
+ return `<a class="cc pst" href="#trilha-${c.id}"><div class="pv"><img src="${c.img}" alt="" loading="lazy"><span class="tint"></span><span class="ptg">${c.org?"Trilha "+esc(c.org):"Trilha "+n}</span>${c.piloto?`<span class="ppl">Piloto</span>`:""}${c.status==="Rascunho"?`<span class="plk">Rascunho</span>`:!liberada(c)?`<span class="plk">${ic("lock",12)} Sua empresa libera</span>`:""}<div class="pb"><span class="pt">${esc(c.s)}</span><span class="pm">com ${esc(c.m)}</span></div>${p>0?`<span class="ppg"><i style="width:${p*100}%"></i></span>`:""}</div><span class="cs">${getAulas(c).length} aulas · ${stTxt(c)}</span></a>`;};
+acard=function(c,i){const a=getAulas(c)[i];return `<a class="cc lnd" href="#aula-${c.id}-${i}"><div class="pv"><img src="${c.img}" alt="" loading="lazy"><span class="tint"></span><span class="ptg">Aula ${pad(i+1)} · ${a.dur} min</span><span class="pplay">${ic("play",20)}</span><div class="pb"><span class="pt">${esc(a.t)}</span><span class="pm">${esc(c.s)}</span></div><span class="ppg"><i style="width:${prog(c)*100}%"></i></span></div></a>`;};
+function billboard(c){const A=getAulas(c),p=prog(c),n=nextAula(c),lk=!liberada(c);
+ return `<section class="bill"><img src="${c.img}" alt=""><span class="tint"></span><div class="bc"><div class="btg"><span class="ptg">Trilha ${pad(c.id)}</span>${c.piloto?`<span class="ppl">Piloto</span>`:""}</div><h1>${esc(c.s)}</h1><p>${esc(c.d||"")}</p><div class="bmeta"><span>${A.length} aulas</span><span>${A.reduce((s,a)=>s+a.dur,0)} min</span><span>com ${esc(c.m)}</span>${p?`<span>${Math.round(p*100)}% concluído</span>`:""}</div><div class="hbtn">${lk?`<a class="btn light" href="#aula-${c.id}-0">${ic("play",16)} Assistir aula aberta</a>`:`<a class="btn light" href="#aula-${c.id}-${n}">${ic("play",16)} ${p===0?"Começar":p===1?"Rever":"Continuar"}: aula ${n+1}</a>`}<a class="btn ghost-w" href="#trilha-${c.id}">Detalhes</a></div></div>${p>0?`<span class="ppg"><i style="width:${p*100}%"></i></span>`:""}</section>`;}
+function featured(){const cs=comps();return cs.find(c=>{const p=prog(c);return p>0&&p<1&&liberada(c);})||cs.find(c=>c.piloto)||cs[0];}
+V.trilhas=()=>{const cs=comps();const cont=cs.filter(c=>{const p=prog(c);return p>0&&p<1;});
+ return `<div class="tabs ltabs" style="margin-top:0"><a href="#trilhas" class="on">Trilhas</a><a href="#competencias" class="">As 11 disciplinas</a></div>
+ ${billboard(featured())}
+ ${cont.length?`<section class="sec"><div class="sh"><h2>Continue assistindo</h2></div><div class="row">${cont.map(c=>acard(c,nextAula(c))).join("")}</div></section>`:""}
+ <section class="sec"><div class="sh"><h2>Todas as trilhas</h2><span class="cnt">${pad(cs.length)} trilhas · certificado em todas</span></div>
+ <div class="fbar"><input class="inp srch" data-f="q" placeholder="Buscar trilha ou tema" value="${esc(UI.q)}" aria-label="Buscar"></div>
+ <div class="pgrid" id="list"></div></section>`;};
 
 /* ---------- casca ---------- */
 function navItems(){const r=role();const n=[["inicio","Início"],["trilhas","Trilhas"],["experts","Experts"],["eventos","Eventos"],["comunidades","Comunidades"],["ias","IA aplicada"]];
