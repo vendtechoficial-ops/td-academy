@@ -781,6 +781,12 @@ button.dash{background:none;cursor:pointer;font-family:inherit}
 .xi .k2{background:#FF4FB2;color:#fff;padding:4px 10px;border-radius:7px;font-size:11px;letter-spacing:.06em}
 .bill::before{z-index:0}.bill .bc{position:relative;z-index:1}.bill>.ppg{z-index:1}
 .xi.art>img{object-position:center 70%;filter:grayscale(.35) contrast(1.05) brightness(.95)}.xi.art>.tint{opacity:.35}
+.ptg{background:var(--brand)!important}.ppg i{background:var(--accent)!important}
+.pv>img,.bill>img,.dhero>img{filter:grayscale(.3) contrast(1.05) brightness(.95)!important}
+.pv .tint,.bill .tint{opacity:.3!important}.dhero::after{opacity:.3!important}
+.pst .pv>img{object-position:center 40%}.bill>img{object-position:center 35%}
+.xi .k2{background:var(--brand)!important}
+.bill>img{object-position:center 62%!important;filter:grayscale(.2) contrast(1.05) brightness(1.1)!important}.lnd .pv>img{object-position:center 60%}.pv>img{filter:grayscale(.2) contrast(1.05) brightness(1.08)!important}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -817,19 +823,19 @@ const BRANDS={
 };
 /* 6 trilhas do Catálogo Eleven 2027: 5 ligadas às famílias de produtos da TD + 1 transversal */
 const COMP0=[
- {id:1,n:"IA para Líderes e Equipes",s:"IA para líderes e equipes",g:"Governança e IA",com:"IA",m:"Especialista em Inteligência Artificial",cp:[5,3],img:"img/e4.jpg",piloto:1,
+ {id:1,n:"IA para Líderes e Equipes",s:"IA para líderes e equipes",g:"Governança e IA",com:"IA",m:"Especialista em Inteligência Artificial",cp:[5,3],img:"img/tr-1.jpg",piloto:1,
   d:"Como usar inteligência artificial na rotina e na decisão, com segurança, responsabilidade e resultado mensurável.",para:"Líderes e equipes que precisam usar IA com segurança e resultado.",ent:"Um caso de uso de IA na sua área, com ganho estimado e regras de uso.",
   temas:[["IA para líderes","O que a IA muda no negócio e quais decisões cabem ao líder"],["IA na prática","Usar assistentes de IA para escrever, analisar, resumir e planejar no dia a dia"],["Automatizando processos com IA","Identificar tarefas repetitivas e automatizá-las com IA"],["Governança de IA","Regras, riscos, LGPD e uso responsável da IA na organização"],["Liderando produtos com IA","Como liderar projetos e produtos que usam IA, do problema à entrega"],["IA para análises preditivas","Usar IA para antecipar demandas, riscos e tendências a partir dos dados"]]},
- {id:2,n:"Decisão Orientada a Dados",s:"Decisão orientada a dados",g:"Inteligência de Dados",com:"Inteligência de Dados",m:"Especialista em Análise de Dados",cp:[4,10],img:"img/h1.jpg",piloto:1,
+ {id:2,n:"Decisão Orientada a Dados",s:"Decisão orientada a dados",g:"Inteligência de Dados",com:"Inteligência de Dados",m:"Especialista em Análise de Dados",cp:[4,10],img:"img/tr-2.jpg",piloto:1,
   d:"Como transformar dados em decisão: ler indicadores, montar painéis e contar a história que os números mostram.",para:"Gestores que decidem e prestam contas com indicadores.",ent:"Um painel com os indicadores da sua área.",
   temas:[["Dados para líderes","Como o líder usa dados para decidir e cobrar resultado"],["Letramento em dados","Ler, interpretar e questionar dados, mesmo sem ser da área técnica"],["Painéis estratégicos","Escolher os indicadores certos e montar um painel que ajuda a decidir"],["Power BI aplicado","A ferramenta de painéis mais usada, aplicada aos dados da própria área"],["Contar histórias com dados","Apresentar dados com clareza para convencer e mobilizar"],["Governança de dados","Qualidade, segurança, responsabilidades e LGPD no uso dos dados"]]},
- {id:3,n:"Transformação Digital na Prática",s:"Transformação digital na prática",g:"Transformação Digital",com:"Transformação Digital",m:"Gerente de Projetos de Transformação Digital",cp:[6,7,8],img:"img/e1.jpg",piloto:1,
+ {id:3,n:"Transformação Digital na Prática",s:"Transformação digital na prática",g:"Transformação Digital",com:"Transformação Digital",m:"Gerente de Projetos de Transformação Digital",cp:[6,7,8],img:"img/tr-3.jpg",piloto:1,
   d:"Como conduzir a transformação digital de uma área ou organização: tecnologia, processos e pessoas juntos.",para:"Líderes de áreas em digitalização e inovação.",ent:"O redesenho de um serviço ou processo da sua área.",
   temas:[["Transformação digital sistêmica","Integrar tecnologia, processos e pessoas ao modelo de negócio ou de serviço"],["Economia digital e modelos de plataforma","Como funcionam os negócios e serviços digitais e o que aprender com eles"],["Design centrado nas pessoas","Resolver problemas partindo da necessidade real do usuário ou cidadão"],["Métodos ágeis na prática","Entregar em ciclos curtos, com prioridades claras e ajustes rápidos"],["Gestão e cultura de inovação","Transformar ideias em projetos, com método, e criar ambiente para testar e aprender"]]},
- {id:4,n:"Planejamento e Gestão Estratégica",s:"Planejamento e gestão estratégica",g:"Planejamento",com:"Planejamento",m:"Especialista em Planejamento Estratégico",cp:[2,3,7],img:"img/e5.jpg",
+ {id:4,n:"Planejamento e Gestão Estratégica",s:"Planejamento e gestão estratégica",g:"Planejamento",com:"Planejamento",m:"Especialista em Planejamento Estratégico",cp:[2,3,7],img:"img/tr-4.jpg",
   d:"Como definir, executar e acompanhar a estratégia, com metas claras e indicadores.",para:"Alta gestão, áreas de planejamento e escritórios de projetos.",ent:"O plano da sua área com objetivos, resultados-chave e indicadores.",
   temas:[["Planejamento estratégico sistêmico","Definir a estratégia olhando o todo: cenário, recursos, pessoas e resultados"],["Gestão por OKRs","Desdobrar a estratégia em objetivos e resultados-chave por equipe"],["Modelagem com o Business Model Canvas","Desenhar e testar modelos de negócio ou de serviço em uma página"],["Gestão de projetos","Planejar, executar e entregar projetos no prazo e no escopo"],["Gestão de riscos","Mapear, priorizar e tratar os riscos da estratégia"],["Inteligência de mercado e indicadores","Acompanhar o ambiente e os indicadores que mostram se a estratégia funciona"]]},
- {id:5,n:"Futuros e Inteligência Estratégica",s:"Futuros e inteligência estratégica",g:"Observatórios",com:"Observatórios",m:"Especialista em Observatórios",cp:[1,2],img:"img/c1.jpg",
+ {id:5,n:"Futuros e Inteligência Estratégica",s:"Futuros e inteligência estratégica",g:"Observatórios",com:"Observatórios",m:"Especialista em Observatórios",cp:[1,2],img:"img/tr-5.jpg",
   d:"Como ler sinais, montar cenários e usar inteligência de mercado e de território para antecipar decisões.",para:"Alta liderança, conselhos e áreas de estratégia.",ent:"Um mapa de cenários para a sua área.",
   temas:[["Sinais do futuro e tendências","Identificar os sinais de mudança antes que virem urgência"],["Cenários e futuros","Construir cenários e preparar a organização para mais de um futuro"],["Estratégia para disrupção","Responder a mudanças que alteram as regras do setor"],["Tópicos de economia","Entender conjuntura e macroeconomia para decidir melhor"],["Observatórios e inteligência territorial","Usar dados de observatórios e do território para orientar políticas e negócios"]]},
  {id:6,n:"Liderança de Alta Performance",s:"Liderança de alta performance",g:"Transversal",com:"",m:"Especialista em Desenvolvimento de Lideranças",cp:[9,10,11,8],img:"img/e2.jpg",
