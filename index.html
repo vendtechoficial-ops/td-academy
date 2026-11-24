@@ -870,6 +870,32 @@ button.dash{background:none;cursor:pointer;font-family:inherit}
 @media (max-width:760px){.hb span{font-size:11px;padding:0 6px}.crplus{display:none}}
 .mtd2>*{min-width:0}.chev button{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media (max-width:760px){.mtd2{grid-template-columns:minmax(0,1fr)!important}.chev button{font-size:11px;padding:12px 4px 12px 12px}.orbn{padding:8px 10px;font-size:12px}}
 .stair button{min-width:0}.stair b{overflow:hidden;text-overflow:ellipsis}@media (max-width:760px){.stair{gap:6px}.stair b{font-size:12px}}
+/* V9 passaporte */
+.mtd2:has(>:only-child){grid-template-columns:1fr}
+.pss{position:relative;overflow:hidden;margin-top:34px;border-radius:28px;color:#fff;padding:36px;background:radial-gradient(70% 90% at 100% 100%,color-mix(in srgb,var(--accent) 30%,transparent),transparent 60%),radial-gradient(80% 90% at 0% 0%,color-mix(in srgb,var(--brand) 50%,transparent),transparent 60%),var(--night)}
+.pss .eyebrow{color:rgba(255,255,255,.6)}
+.pssh{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;flex-wrap:wrap}
+.pssh h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1;margin:8px 0 10px}.pssh h2 em{color:color-mix(in srgb,var(--accent) 55%,#fff)}
+.pssh p{margin:0;max-width:52ch;color:rgba(255,255,255,.8);font-size:16px;line-height:1.5}
+.pssme{display:grid;gap:2px;padding:14px 18px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);min-width:200px}.pssme b{font-family:var(--serif);font-weight:400;font-size:30px}.pssme span:last-child{font-size:13px;color:rgba(255,255,255,.65)}
+.psst{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end;margin-top:30px;min-height:330px}
+.pstp{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:20px 20px 14px 14px;background:rgba(255,255,255,.06);color:#fff;font:inherit;text-align:left;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-start;gap:4px;padding:18px;transition:.25s}
+.pstp.s0{height:150px}.pstp.s1{height:200px}.pstp.s2{height:250px}.pstp.s3{height:310px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 45%,transparent),rgba(255,255,255,.05));border-color:color-mix(in srgb,var(--accent) 60%,transparent);box-shadow:0 0 50px -10px color-mix(in srgb,var(--accent) 70%,transparent)}
+.pstp.done:not(.s3){background:color-mix(in srgb,var(--brand) 40%,rgba(255,255,255,.04));border-color:color-mix(in srgb,var(--brand) 70%,transparent)}
+.pstp:hover{transform:translateY(-4px)}.pstp.on{outline:2px solid #fff;outline-offset:3px}
+.psn{font-size:11px;letter-spacing:.12em;opacity:.6;font-weight:700}
+.pstp b{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1}
+.psv{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--accent) 60%,#fff)}
+.psr{font-size:13px;line-height:1.4;color:rgba(255,255,255,.75);margin-top:auto}
+.pshere{position:absolute;top:-30px;left:14px;background:#fff;color:var(--night);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.pshere::after{content:"";position:absolute;left:16px;bottom:-5px;border:5px solid transparent;border-top-color:#fff;border-bottom:0}
+.pssp{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;padding:22px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.pssp.emb{background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 22%,transparent),rgba(255,255,255,.05));border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.pssp h3{font-family:var(--serif);font-weight:400;font-size:34px;margin:4px 0 10px}
+.pssp ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}.pssp li{display:flex;gap:8px;align-items:flex-start;font-size:15px}.pssp li svg{color:var(--accent);flex:0 0 auto;margin-top:3px}
+.psemb{display:grid;gap:14px;align-content:center}.psemb p{margin:0;color:rgba(255,255,255,.82);line-height:1.5}.psemb .btn{justify-self:start}
+.pss .btn.line{color:#fff;border-color:rgba(255,255,255,.35)}
+@media (max-width:760px){.pss{padding:24px}.psst{grid-template-columns:1fr 1fr;min-height:0;align-items:stretch}.pstp,.pstp.s0,.pstp.s1,.pstp.s2,.pstp.s3{height:auto;min-height:170px}.pshere{top:-12px;left:auto;right:10px}.pshere::after{display:none}.pssp{grid-template-columns:1fr}}
 </style>
 
 <div class="proto"><i></i>Protótipo navegável · dados de exemplo</div>
@@ -2082,6 +2108,20 @@ V.metodo=()=>{const j=mtSel("jorn",0),J=JORN[j],c=mtSel("ciclo",0),p=mtSel("pil"
   <div class="hbar"><span class="eyebrow">Carga horária · exemplo da trilha 01</span><div class="hb"><span style="flex:1.75;background:var(--brand)">1 h 45 de aulas</span><span style="flex:2;background:color-mix(in srgb,var(--brand) 55%,var(--accent))">2 h Córtex e quiz</span><span style="flex:4;background:var(--accent)">4 h entrega prática</span></div><div class="hbt"><span>arredondado para</span><b>8 horas</b></div><p class="small mut">Experiências presenciais geram certificado de participação com a duração do encontro. Todo certificado pode ser revogado pela escola.</p></div></div></section>`;};
 const V8ACT={mt(el){UI.mt=UI.mt||{};UI.mt[el.dataset.g]=+el.dataset.x;const y=window.scrollY;rr();window.scrollTo(0,y);}};
 
+/* ---------- V9: Passaporte em destaque, com o caminho até Embaixador ---------- */
+const PASSD=[
+ {n:"Explorador",v:"conhece",req:"Fez o diagnóstico e começou uma trilha.",lib:["Córtex em todas as aulas","Comunidades e eventos on-line","Missões da semana"]},
+ {n:"Praticante",v:"aplica",req:"Concluiu 1 trilha e participou de 1 evento.",lib:["Certificado verificável","Missões em equipe","Laboratórios presenciais"]},
+ {n:"Referência",v:"ensina",req:"Concluiu 3 trilhas, participa de uma comunidade e conversou com a IA de um Expert.",lib:["Conversa com um Expert","Vaga prioritária em eventos","Seus casos publicados na comunidade"]},
+ {n:"Embaixador",v:"conduz",req:"Convidado pela escola para conduzir encontros de uma comunidade.",lib:["Conduz encontros da sua comunidade","Encontro anual de embaixadores com a TD","Kit exclusivo e destaque no perfil","Voz no desenho das próximas trilhas"]}];
+function passaporteSec(){const cur=S.user?lvlOf().i:0;const sel=mtSel("pass",3);const P=PASSD[sel];
+ return `<section class="pss"><div class="pssh"><div><span class="eyebrow">Passaporte das 11 disciplinas</span><h2>O caminho até <em>Embaixador</em></h2><p>O nível sobe por marcos, não por tempo de tela. No topo, a pessoa deixa de só aprender e passa a conduzir a comunidade.</p></div><div class="pssme"><span class="eyebrow">Você está em</span><b>${PASSD[cur].n}</b><span>${cur<3?`próximo: ${PASSD[cur+1].n}`:"topo do Passaporte"}</span></div></div>
+ <div class="psst">${PASSD.map((x,i)=>`<button class="pstp s${i} ${i===sel?"on":""} ${i<=cur?"done":""}" data-act="mt" data-g="pass" data-x="${i}">${i===cur?`<span class="pshere">Você está aqui</span>`:""}<span class="psn">${pad(i+1)}</span><b>${x.n}</b><span class="psv">${x.v}</span><span class="psr">${esc(x.req)}</span></button>`).join("")}</div>
+ <div class="pssp ${sel===3?"emb":""}"><div><span class="eyebrow">${sel===3?"O próximo nível":"O que desbloqueia"}</span><h3>${P.n}</h3><ul>${P.lib.map(l=>`<li>${ic("check",15)}<span>${esc(l)}</span></li>`).join("")}</ul></div>${sel===3?`<div class="psemb"><p>Embaixadores são convidados pela escola entre quem chegou a Referência. Eles conduzem os encontros, trazem os casos da própria organização e ajudam a comunidade a crescer.</p><button class="btn pri" data-act="quero-emb">${ic("star",16)} Quero ser Embaixador</button></div>`:`<div class="psemb"><p>${esc(P.req)}</p><a class="btn line sm" href="#jornada">Ver minha jornada ${ic("arrow",14)}</a></div>`}</div></section>`;}
+const _vmet=V.metodo;
+V.metodo=()=>{let h=_vmet();h=h.replace(/<div class="card pad"><span class="eyebrow">Passaporte · o nível sobe por marcos<\/span>[\s\S]*?<\/div><\/div><\/section>/,'</div></section>');h=h.replace('<section class="sec"><div class="sh"><h2>11 disciplinas',passaporteSec()+'<section class="sec"><div class="sh"><h2>11 disciplinas');return h;};
+const V9ACT={"quero-emb"(){if(S.embq){toast("Seu interesse já está com a escola");return;}S.embq=1;leadAdd({origem:"Passaporte",interesse:"Quero ser Embaixador",destino:"Escola"});audit("Pediu para ser Embaixador",S.user.org,"Passaporte");save();toast("Recebemos seu interesse. A escola convida embaixadores entre quem chegou a Referência.");}};
+
 /* ---------- casca ---------- */
 function navItems(){const r=role();const n=[["inicio","Início"],["trilhas","Trilhas"],["experts","Experts"],["eventos","Eventos"],["comunidades","Comunidades"],["ias","IA aplicada"]];
  if(r==="gestor"||r==="admin")n.push(["equipe","Equipe"]);if(r==="admin"||r==="especialista")n.push(["admin","Admin"]);return n;}
@@ -2198,7 +2238,7 @@ const ACT={
  brand(el){S.brand=el.dataset.x;save();rr();toast(`Agora a plataforma é ${brand().nome}`);},
  reset(){const u=S.user;S=fresh();S.user=u;save();toast("Dados de exemplo restaurados");rr();}
 };
-Object.assign(ACT,V2ACT,ADMACT,V5ACT,V7ACT,V8ACT);
+Object.assign(ACT,V2ACT,ADMACT,V5ACT,V7ACT,V8ACT,V9ACT);
 ["quiz","unlock"].forEach(k=>{const f=ACT[k];if(!f)return;ACT[k]=function(el){const c0=getComp(+el.dataset.x);const had=c0&&S.user&&S.certs.some(x=>x.cid===c0.id&&x.u===S.user.nome);const r=f.apply(this,arguments);try{const c=c0;if(k==="quiz"&&c&&!had&&prog(c)===1&&S.quiz[c.id]){syncCerts();addPts(100,"Certificado emitido");setTimeout(()=>npsModal(c),500);}if(k==="quiz"&&+el.dataset.j===+el.dataset.r)audit("Acertou o quiz da trilha",c.n,S.user.org);if(k==="unlock")audit("Pediu liberação de trilha",c.n,S.user.org);}catch(e){}return r;};});
 document.addEventListener("click",e=>{const el=e.target.closest("[data-act]");
  if(UI.dd&&(!el||el.dataset.act!=="dd")&&!e.target.closest(".ddm")){UI.dd=null;document.querySelectorAll(".ddm").forEach(x=>x.remove());}
